@@ -47,6 +47,7 @@ export default function Footer() {
                 className="text-white text-3xl w-fit inline "
                 href="https://github.com/Jaagrav"
                 target="_blank"
+                rel="noreferrer"
               >
                 <FiGithub />
               </a>
@@ -54,6 +55,7 @@ export default function Footer() {
                 className="text-white text-3xl w-fit inline "
                 href="https://linkedin.com/in/jaagrav"
                 target="_blank"
+                rel="noreferrer"
               >
                 <FiLinkedin />
               </a>
@@ -61,6 +63,7 @@ export default function Footer() {
                 className="text-white text-3xl w-fit inline "
                 href="https://www.youtube.com/c/TheCoders"
                 target="_blank"
+                rel="noreferrer"
               >
                 <FiYoutube />
               </a>
@@ -68,6 +71,7 @@ export default function Footer() {
                 className="text-white text-3xl w-fit inline "
                 href="https://gitlab.com/Jaagrav"
                 target="_blank"
+                rel="noreferrer"
               >
                 <FiGitlab />
               </a>
@@ -75,6 +79,7 @@ export default function Footer() {
                 className="text-white text-3xl w-fit inline "
                 href="https://twitter.com/xJaagrav"
                 target="_blank"
+                rel="noreferrer"
               >
                 <FiTwitter />
               </a>
@@ -82,6 +87,7 @@ export default function Footer() {
                 className="text-white text-3xl w-fit inline "
                 href="mailto:jaagravseal03@gmail.com"
                 target="_blank"
+                rel="noreferrer"
               >
                 <FiMail />
               </a>
@@ -95,6 +101,7 @@ export default function Footer() {
             href="https://peerlist.io/jaagrav"
             target="_blank"
             className="transition text-pink hover:underline underline-offset-8 text-lg"
+            rel="noreferrer"
           >
             Jaagrav Seal
           </a>

@@ -34,7 +34,7 @@ function Testimonial({
 }) {
   return (
     <div className="h-full w-full px-10 md:px-24">
-      <div className="h-full max-w-screen-xl grid md:grid-cols-[28rem_1fr] bg-bgSecondaryColor mx-auto h-fit">
+      <div className="h-full max-w-screen-xl grid md:grid-cols-[28rem_1fr] bg-bgSecondaryColor mx-auto">
         <div className="relative h-[85vw] md:h-full md:w-[28rem] flex justify-center items-center overflow-hidden">
           <div
             className="w-full h-full flex justify-center items-center blur-sm bg-cover bg-center brightness-50"

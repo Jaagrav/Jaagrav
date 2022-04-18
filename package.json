@@ -10,13 +10,17 @@
   },
   "dependencies": {
     "@formspree/react": "^2.2.4",
+    "framer-motion": "^6.3.0",
     "gsap": "^3.10.3",
     "next": "12.1.5",
+    "next-page-transitions": "^1.0.0-beta.2",
     "react": "18.0.0",
     "react-dom": "18.0.0",
     "react-icons": "^4.3.1",
     "react-responsive-carousel": "^3.2.23",
-    "react-vertical-timeline-component": "^3.5.2"
+    "react-transition-group": "^4.4.2",
+    "react-vertical-timeline-component": "^3.5.2",
+    "scroller-motion": "^1.1.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.4",

@@ -85,8 +85,9 @@ function ThankYouMessage() {
               Thank <span className="text-border">you!</span>
             </h1>
             <div className="text-xl text-white mt-6 max-w-prose mx-auto">
-              I've received your message, if I don't respond, I might be
-              ignoring you, so expect to receive a response soon.
+              {
+                "I've received your message, if I don't respond, I might be ignoring you, so expect to receive a response soon."
+              }
             </div>
           </div>
         </div>

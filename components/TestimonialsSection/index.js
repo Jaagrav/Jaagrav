@@ -3,6 +3,8 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 
 import testimonialData from "../../testimonial-data";
 
+import Link from "next/link";
+
 export default function TestimonialsSection() {
   return (
     <div className="h-fit relative">
@@ -58,13 +60,14 @@ function Testimonial({
             </div>
             <div className="mt-6 text-xl leading-8 text-white text-left">
               This is totally real,{" "}
-              <a
+              <Link
                 href="https://www.linkedin.com/in/jaagrav/details/recommendations/"
                 target="_blank"
-                className="transition text-pink hover:underline underline-offset-8"
               >
-                look here for proof.
-              </a>
+                <a className="transition text-pink hover:underline underline-offset-8">
+                  look here for proof.
+                </a>
+              </Link>
             </div>
           </div>
         </div>

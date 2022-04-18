@@ -42,14 +42,12 @@ export default function Home() {
       />
       <ExperienceSection />
       <span className="relative z-10 block text-center mx-auto my-16 text-white text-xl skew">
-        There's more,{" "}
-        <a
-          href="https://linkedin.com/in/jaagrav"
-          target="_blank"
-          className="transition text-indigo hover:underline underline-offset-8"
-        >
-          click here to find out!
-        </a>
+        {"There's more, "}
+        <Link href="https://linkedin.com/in/jaagrav" target="_blank">
+          <a className="transition text-indigo hover:underline underline-offset-8">
+            click here to find out!
+          </a>
+        </Link>
       </span>
       <SubHeader
         title="Why hire me?"
@@ -57,25 +55,21 @@ export default function Home() {
       />
       <SkillsSection />
       <span className="relative z-10 block text-center mx-auto mt-16 text-white text-xl skew">
-        Dude c'mon if you haven't checked me out on{" "}
-        <a
-          href="https://linkedin.com/in/jaagrav"
-          target="_blank"
-          className="transition text-indigo hover:underline underline-offset-8"
-        >
-          LinkedIn
-        </a>
+        {"Dude c'mon if you haven't checked me out on "}
+        <Link href="https://linkedin.com/in/jaagrav" target="_blank">
+          <a className="transition text-indigo hover:underline underline-offset-8">
+            LinkedIn
+          </a>
+        </Link>
         , do it!
       </span>
       <span className="relative z-10 block text-center mx-auto mt-2 mb-16 text-white text-xl skew">
-        Also here's my{" "}
-        <a
-          href="https://github.com/Jaagrav"
-          target="_blank"
-          className="transition text-pink hover:underline underline-offset-8"
-        >
-          GitHub!!!
-        </a>{" "}
+        {"Also here's my "}
+        <Link href="https://github.com/Jaagrav" target="_blank">
+          <a className="transition text-pink hover:underline underline-offset-8">
+            GitHub!!!
+          </a>
+        </Link>{" "}
       </span>
       <SubHeader
         title="People love me, seriously."

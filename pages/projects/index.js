@@ -1,13 +1,13 @@
 import { SubHeader, ProjectCards } from "../../components";
 import projectData from "../../project-data";
 import Head from "next/head";
+import Link from "next/link";
 
 export default function Projects() {
   return (
     <div className="h-fit w-full overflow-hidden">
       <Head>
         <title>Projects / Jaagrav</title>
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta name="og:image" content={"/assets/images/jaagrav.png"} />
         <meta name="og:title" content={`Projects / Jaagrav`} />
@@ -24,14 +24,12 @@ export default function Projects() {
         <ProjectCards key={`project-card-${index}`} {...props} />
       ))}
       <span className="relative z-10 block text-center mx-auto mt-16 text-white text-xl skew">
-        There's more,{" "}
-        <a
-          href="https://github.com/jaagrav"
-          target="_blank"
-          className="transition text-indigo hover:underline underline-offset-8"
-        >
-          click here to find out!
-        </a>
+        {"There's more, "}
+        <Link href="https://github.com/jaagrav" target="_blank">
+          <a className="transition text-indigo hover:underline underline-offset-8">
+            click here to find out!
+          </a>
+        </Link>
       </span>
     </div>
   );

@@ -1,7 +1,7 @@
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 
-import testimonialData from "./testimonial-data";
+import testimonialData from "../../testimonial-data";
 
 export default function TestimonialsSection() {
   return (

@@ -8,6 +8,13 @@ export default function Projects() {
       <Head>
         <title>Projects / Jaagrav</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta name="og:image" content={"/assets/images/jaagrav.png"} />
+        <meta name="og:title" content={`Projects / Jaagrav`} />
+        <meta
+          name="description"
+          content={`Take a look at the shit I made in the name of Software Development. Honestly I am quite proud how some of them turned out. Some of them are available on Github so go ahead knock yourself out! The others are client/freelance projects.`}
+        />
       </Head>
       <SubHeader
         title="My Projects"

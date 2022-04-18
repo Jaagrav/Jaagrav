@@ -13,6 +13,12 @@ export default function About() {
       <Head>
         <title>About / Jaagrav</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta name="og:image" content={"/assets/images/jaagrav.png"} />
+        <meta name="og:title" content={`About / Jaagrav`} />
+        <meta
+          name="description"
+          content={`A Full Stack Developer based in West Bengal, India. I enjoy designing and developing websites, I am currently 18 years old, and am also in the first year of my college. I am currently pursuing B. Tech in Computer Science and Engineering from University.`}
+        />
       </Head>
       <div className="px-10 md:px-24 pb-12">
         <div className="grid md:grid-cols-[1fr_0.4fr] max-w-screen-xl mx-auto">
@@ -35,10 +41,11 @@ export default function About() {
                 Jaagrav Seal
               </h1>
               <span className="block text-white mt-8 text-xl leading-10">
-                I am a very nice and humble front-end developer. I can design a
-                website on figma, develop it using NextJS, and deploy it on
-                Vercel. Well that’s what I did for this website, if you want to
-                know more, keep scrolling.
+                A Full Stack Developer based in West Bengal, India. I enjoy
+                designing and developing websites, I am currently 18 years old,
+                and am also in the first year of my college. I am currently
+                pursuing B. Tech in Computer Science and Engineering from
+                University.
               </span>
             </div>
           </div>

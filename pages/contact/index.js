@@ -12,6 +12,12 @@ export default function Contact() {
       <Head>
         <title>Contact / Jaagrav</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta name="og:image" content={"/assets/images/jaagrav.png"} />
+        <meta name="og:title" content={`Contact / Jaagrav`} />
+        <meta
+          name="description"
+          content={`You got some shit to say? Feel free to reach out to me, I’ll respond whenever I want, and please don't send me bullshit if you're planning to, and if you're a recruiter, then keep going...`}
+        />
       </Head>
       <SubHeader
         title="Contact Me"

@@ -32,8 +32,8 @@ export default function Footer() {
             <p className="text-white text-xl leading-10 mt-4">
               Ever wanna touch me, hire me or just hang out with me? Feel free
               to contact me any time, it can be by filling a form, emailing me,
-              direct messaging on social media or... Yeah that's it, don't ever
-              call me, I hate smart phones.
+              direct messaging on social media or... Yeah that&apos;s it,
+              don&apos;t ever call me, I hate smart phones.
             </p>
             <div className="flex justify-start items-center gap-6 h-fit mt-6">
               <Link href="/contact">

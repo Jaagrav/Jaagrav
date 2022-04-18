@@ -18,22 +18,22 @@ export default function ProjectCards({
           </span>
           <div className="mt-6">
             {website && (
-              <a
-                href={website}
-                target="_blank"
-                className={`inline-block mt-4 w-full md:w-fit text-center md:text-left md:mr-4 px-8 py-2 text-bgColor text-xl border-white border-2 bg-white`}
-              >
-                Website
-              </a>
+              <Link href={website} target="_blank">
+                <a
+                  className={`inline-block mt-4 w-full md:w-fit text-center md:text-left md:mr-4 px-8 py-2 text-bgColor text-xl border-white border-2 bg-white`}
+                >
+                  Website
+                </a>
+              </Link>
             )}
             {github && (
-              <a
-                href={github}
-                target="_blank"
-                className={`inline-block mt-4 w-full md:w-fit text-center md:text-left md:mr-4 px-8 py-2 text-white text-xl border-white border-2`}
-              >
-                GitHub
-              </a>
+              <Link href={github} target="_blank">
+                <a
+                  className={`inline-block mt-4 w-full md:w-fit text-center md:text-left md:mr-4 px-8 py-2 text-white text-xl border-white border-2`}
+                >
+                  GitHub
+                </a>
+              </Link>
             )}
             {link && (
               <Link href={`/projects/${link}`}>

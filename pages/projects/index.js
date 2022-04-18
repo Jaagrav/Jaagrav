@@ -8,12 +8,32 @@ export default function Projects() {
     <div className="h-fit w-full overflow-hidden">
       <Head>
         <title>Projects / Jaagrav</title>
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <meta name="og:image" content={"/assets/images/jaagrav.webp"} />
-        <meta name="og:title" content={`Projects / Jaagrav`} />
+        <meta name="title" content="Projects / Jaagrav" />
         <meta
           name="description"
-          content={`Take a look at the shit I made in the name of Software Development. Honestly I am quite proud how some of them turned out. Some of them are available on Github so go ahead knock yourself out! The others are client/freelance projects.`}
+          content="Take a look at the shit I made in the name of Software Development. Honestly I am quite proud how some of them turned out. Some of them are available on Github so go ahead knock yourself out! The others are client/freelance projects."
+        />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Projects / Jaagrav" />
+        <meta
+          property="og:description"
+          content="Take a look at the shit I made in the name of Software Development. Honestly I am quite proud how some of them turned out. Some of them are available on Github so go ahead knock yourself out! The others are client/freelance projects."
+        />
+        <meta
+          property="og:image"
+          content="https://jaagrav-2.vercel.app/assets/images/jaagrav.webp"
+        />
+
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:title" content="Projects / Jaagrav" />
+        <meta
+          property="twitter:description"
+          content="Take a look at the shit I made in the name of Software Development. Honestly I am quite proud how some of them turned out. Some of them are available on Github so go ahead knock yourself out! The others are client/freelance projects."
+        />
+        <meta
+          property="twitter:image"
+          content="https://jaagrav-2.vercel.app/assets/images/jaagrav.webp"
         />
       </Head>
       <SubHeader

@@ -5,61 +5,54 @@ import { useRouter } from "next/router";
 import Head from "next/head";
 import Link from "next/link";
 
-export default function Project() {
-  const router = useRouter(),
-    { projectLink } = router.query,
-    [project, setProject] = useState({}),
-    [randomProject, setRandomProject] = useState({}),
-    [projectIndex, setProjectIndex] = useState({});
-
-  useEffect(() => {
-    let index = 0,
-      project = projectData.find((project, i) => {
-        index++;
-        return project.link === projectLink;
-      });
-    setProject(project);
-    setProjectIndex(index);
-  }, [projectLink]);
-
-  useEffect(() => {
-    if (projectIndex < projectData.length) {
-      setRandomProject(projectData[projectIndex]);
-    } else {
-      setRandomProject(projectData[0]);
-    }
-  }, [projectIndex]);
-
+export default function Page({ project, randomProject }) {
   return (
     <div className="h-fit w-full overflow-hidden">
       <Head>
-        <title>{project?.title} / Projects / Jaagrav</title>
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <meta name="og:image" content={project?.img} />
+        <title>{project.title} / Projects / Jaagrav</title>
+        <meta name="title" content={`${project.title} / Projects / Jaagrav`} />
+        <meta name="description" content={project.miniDesc} />
+
+        <meta property="og:type" content="website" />
         <meta
-          name="og:title"
-          content={`${project?.title} / Projects / Jaagrav`}
+          property="og:title"
+          content={`${project.title} / Projects / Jaagrav`}
         />
-        <meta name="description" content={project?.miniDesc} />
+        <meta property="og:description" content={project.miniDesc} />
+        <meta
+          property="og:image"
+          content={`https://jaagrav-2.vercel.app${project.img}`}
+        />
+
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta
+          property="twitter:title"
+          content={`${project.title} / Projects / Jaagrav`}
+        />
+        <meta property="twitter:description" content={project.miniDesc} />
+        <meta
+          property="twitter:image"
+          content={`https://jaagrav-2.vercel.app${project.img}`}
+        />
       </Head>
       <SubHeader
-        title={project?.title}
-        // caption={project?.miniDesc}
+        title={project.title}
+        // caption={project.miniDesc}
       />
       <div className="px-10 md:px-24">
         <div className="relative z-10 max-w-screen-xl mx-auto">
-          <img src={project?.img} className="w-full" />
+          <img src={project.img} className="w-full" />
           <div className="grid md:grid-cols-[1fr_2px_0.6fr] mt-12">
             <div className="py-12 md:pr-12">
               <div className="text-xl leading-10 text-white">
-                {project?.desc}
+                {project.desc}
               </div>
             </div>
             <div className="h-full w-full bg-bgSecondaryColor"></div>
             <div className="py-12 md:pl-12">
               <div className="text-white text-2xl">Technologies used:</div>
               <div className="my-6">
-                {project?.tech?.map((tech, index) => (
+                {project.tech.map((tech, index) => (
                   <span
                     key={`tech-index-${index}`}
                     className="inline-block bg-bgSecondaryColor text-white text-lg md:text-sm px-2 py-1 mb-2 mr-2"
@@ -70,7 +63,7 @@ export default function Project() {
               </div>
               <div className="text-white text-2xl">Check it out:</div>
               <div className="flex mt-6 gap-6">
-                {project?.website && (
+                {project.website && (
                   <Link href={project.website} target="_blank">
                     <a
                       className={`block h-full w-full text-center px-8 py-2 text-bgColor text-xl border-white border-2 bg-white`}
@@ -79,7 +72,7 @@ export default function Project() {
                     </a>
                   </Link>
                 )}
-                {project?.github && (
+                {project.github && (
                   <Link href={project.github} target="_blank">
                     <a
                       className={`block h-full w-full text-center px-8 py-2 text-white text-xl border-white border-2`}
@@ -108,4 +101,21 @@ export default function Project() {
       </span>
     </div>
   );
+}
+
+export async function getServerSideProps({ query }) {
+  let { projectLink } = query,
+    index = 0,
+    project = projectData.find((project) => {
+      index++;
+      return project.link === projectLink;
+    }),
+    randomProject = projectData[index < projectData.length ? index : 0];
+
+  return {
+    props: {
+      project,
+      randomProject,
+    },
+  };
 }

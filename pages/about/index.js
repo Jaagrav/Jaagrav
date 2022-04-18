@@ -12,12 +12,44 @@ export default function About() {
     <div className="h-fit w-full overflow-hidden pt-24">
       <Head>
         <title>About / Jaagrav</title>
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <meta name="og:image" content={"/assets/images/jaagrav.webp"} />
-        <meta name="og:title" content={`About / Jaagrav`} />
+        <meta name="title" content="About / Jaagrav" />
         <meta
           name="description"
-          content={`A Full Stack Developer based in West Bengal, India. I enjoy designing and developing websites, I am currently 18 years old, and am also in the first year of my college. I am currently pursuing B. Tech in Computer Science and Engineering from University.`}
+          content="A Full Stack Developer based in West Bengal, India. I enjoy
+          designing and developing websites, I am currently 18 years old,
+          and am also in the first year of my college. I am currently
+          pursuing B. Tech in Computer Science and Engineering from
+          University."
+        />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="About / Jaagrav" />
+        <meta
+          property="og:description"
+          content="A Full Stack Developer based in West Bengal, India. I enjoy
+          designing and developing websites, I am currently 18 years old,
+          and am also in the first year of my college. I am currently
+          pursuing B. Tech in Computer Science and Engineering from
+          University."
+        />
+        <meta
+          property="og:image"
+          content="https://jaagrav-2.vercel.app/assets/images/jaagrav.webp"
+        />
+
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:title" content="About / Jaagrav" />
+        <meta
+          property="twitter:description"
+          content="A Full Stack Developer based in West Bengal, India. I enjoy
+          designing and developing websites, I am currently 18 years old,
+          and am also in the first year of my college. I am currently
+          pursuing B. Tech in Computer Science and Engineering from
+          University."
+        />
+        <meta
+          property="twitter:image"
+          content="https://jaagrav-2.vercel.app/assets/images/jaagrav.webp"
         />
       </Head>
       <div className="px-10 md:px-24 pb-12">

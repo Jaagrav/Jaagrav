@@ -11,12 +11,32 @@ export default function Contact() {
     <div className="h-fit w-full overflow-hidden">
       <Head>
         <title>Contact / Jaagrav</title>
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <meta name="og:image" content={"/assets/images/jaagrav.webp"} />
-        <meta name="og:title" content={`Contact / Jaagrav`} />
+        <meta name="title" content="Contact / Jaagrav" />
         <meta
           name="description"
-          content={`You got some shit to say? Feel free to reach out to me, I’ll respond whenever I want, and please don't send me bullshit if you're planning to, and if you're a recruiter, then keep going...`}
+          content="You got some shit to say? Feel free to reach out to me, I’ll respond whenever I want, and please don't send me bullshit if you're planning to, and if you're a recruiter, then keep going..."
+        />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Contact / Jaagrav" />
+        <meta
+          property="og:description"
+          content="You got some shit to say? Feel free to reach out to me, I’ll respond whenever I want, and please don't send me bullshit if you're planning to, and if you're a recruiter, then keep going..."
+        />
+        <meta
+          property="og:image"
+          content="https://jaagrav-2.vercel.app/assets/images/jaagrav.webp"
+        />
+
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:title" content="Contact / Jaagrav" />
+        <meta
+          property="twitter:description"
+          content="You got some shit to say? Feel free to reach out to me, I’ll respond whenever I want, and please don't send me bullshit if you're planning to, and if you're a recruiter, then keep going..."
+        />
+        <meta
+          property="twitter:image"
+          content="https://jaagrav-2.vercel.app/assets/images/jaagrav.webp"
         />
       </Head>
       <SubHeader

@@ -20,7 +20,7 @@ function MyApp({ Component, pageProps }) {
           <Header />
           <ScrollerMotion>
             <div className="scroll-animate h-fit w-full">
-              <Content Component={Component} {...pageProps} />
+              <Content Component={Component} pageProps={pageProps} />
               <Footer />
             </div>
           </ScrollerMotion>

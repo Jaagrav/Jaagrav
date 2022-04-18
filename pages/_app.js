@@ -11,6 +11,8 @@ import PageTransition from "../components/PageTransition";
 
 import { PageTransition as Transition } from "next-page-transitions";
 
+import NextNProgress from "nextjs-progressbar";
+
 function MyApp({ Component, pageProps }) {
   return (
     <div>
@@ -20,6 +22,13 @@ function MyApp({ Component, pageProps }) {
           <Header />
           <ScrollerMotion>
             <div className="scroll-animate h-fit w-full">
+              <NextNProgress
+                color="#29D"
+                startPosition={0.3}
+                stopDelayMs={200}
+                height={3}
+                showOnShallow={true}
+              />
               <Content Component={Component} pageProps={pageProps} />
               <Footer />
             </div>

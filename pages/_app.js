@@ -7,7 +7,7 @@ import { Header, Footer } from "../components";
 import { ScrollerMotion, useScrollerMotion } from "scroller-motion";
 import { useMotionValue } from "framer-motion";
 
-import PageTransition, { startTransition } from "../components/PageTransition";
+import PageTransition from "../components/PageTransition";
 
 import { PageTransition as Transition } from "next-page-transitions";
 
@@ -27,24 +27,24 @@ function MyApp({ Component, pageProps }) {
         </div>
       </Transition>
       <style jsx global>{`
-        .page-transition-enter-done .page-transition-cover {
+        .page-transition-enter-done .page-transition {
           height: 0%;
           width: 100%;
           transition: 500ms;
         }
-        .page-transition-enter-active .page-transition-cover {
+        .page-transition-enter-active .page-transition {
           height: 100%;
           width: 100%;
           bottom: 0;
           transition: 500ms;
         }
-        .page-transition-exit .page-transition-cover {
+        .page-transition-exit .page-transition {
           bottom: 0;
           height: 100%;
           width: 100%;
           transition: 500ms;
         }
-        .page-transition-exit-active .page-transition-cover {
+        .page-transition-exit-active .page-transition {
           bottom: 0;
           height: 100%;
           width: 100%;

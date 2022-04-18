@@ -8,6 +8,15 @@ export default function HomeHeroSection() {
       behavior: "smooth",
     });
   };
+
+  useEffect(() => {
+    return () => {
+      try {
+        window.startCanvas();
+      } catch (e) {}
+    };
+  }, []);
+
   return (
     <div className="h-screen w-full relative">
       <div
@@ -47,7 +56,11 @@ export default function HomeHeroSection() {
         Scroll down
       </span> */}
       <Script id="three-min-js" src="/assets/lib/three.min.js" />
-      <Script id="fluid-background-js" src="/assets/lib/fluid-background.js" />
+      <Script
+        id="fluid-background-js"
+        src="/assets/lib/fluid-background.js"
+        onLoad={() => window.startCanvas()}
+      />
     </div>
   );
 }

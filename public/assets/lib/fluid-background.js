@@ -1365,7 +1365,7 @@ window.startCanvas = () => {
     return hash;
   }
   setTimeout(() => {
-    window.addEventListener("mousemove", function (e) {
+    canvas.addEventListener("mousemove", function (e) {
       var pointer = pointers[0];
       var posX = scaleByPixelRatio(e.offsetX);
       var posY = scaleByPixelRatio(e.offsetY);
@@ -1376,7 +1376,7 @@ window.startCanvas = () => {
       updatePointerUpData(pointers[0]);
     });
 
-    window.addEventListener("touchstart", function (e) {
+    canvas.addEventListener("touchstart", function (e) {
       e.preventDefault();
       var touches = e.targetTouches;
       while (touches.length >= pointers.length) {
@@ -1394,7 +1394,7 @@ window.startCanvas = () => {
       }
     });
 
-    window.addEventListener(
+    canvas.addEventListener(
       "touchmove",
       function (e) {
         e.preventDefault();

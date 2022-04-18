@@ -13,8 +13,14 @@ export default function HomeHeroSection() {
     return () => {
       try {
         window.startCanvas();
-        console.log("Started canvas");
       } catch (e) {}
+      // const startCanvas = setInterval(() => {
+      //   console.log("Run");
+      //   try {
+      //     window.startCanvas();
+      //     clearInterval(startCanvas);
+      //   } catch (e) {}
+      // }, 500);
     };
   }, []);
 
@@ -25,7 +31,7 @@ export default function HomeHeroSection() {
         style={{ backgroundImage: `url(./assets/images/hero-section-bg.webp)` }}
       ></div>
       <canvas className="h-full w-full absolute" id="liquid-canvas"></canvas>
-      <div className="absolute h-full w-full bg-gradient-to-b from-transparent to-bgColor translate-y-1"></div>
+      <div className="absolute h-full w-full bg-gradient-to-b from-transparent to-bgColor translate-y-1 pointer-events-none"></div>
       <div className="absolute w-full h-full pointer-events-none">
         <div className="skew max-w-screen-xl absolute top-0 left-0 bottom-0 right-0 m-auto z-10 h-fit w-fit px-10 md:px-24">
           <div className="md:px-20">

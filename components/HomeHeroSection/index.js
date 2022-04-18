@@ -13,6 +13,7 @@ export default function HomeHeroSection() {
     return () => {
       try {
         window.startCanvas();
+        console.log("Started canvas");
       } catch (e) {}
     };
   }, []);

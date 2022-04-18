@@ -7,7 +7,7 @@ const testimonialData = [
     occupation: "Front End Developer",
     testimonial: `Jaagrav is an awesome kid with an awesome skillset. He is quite proficient in web development, and what makes it even better is the ability to combine his creativity with whatever he does. When it comes to problem solving, he is quick to find solutions. His belief that a solution exit if the problem does, and the ability to keenly search for that solution, is quite a distinguishing factor. On top of that, he is really fun to talk to.
     Wish you all the best Jaagrav, have fun and keep learning`,
-    img: "./assets/images/testimonials/Sharique.jpg",
+    img: "./assets/images/testimonials/Sharique.webp",
   },
   {
     first_name: "Salil",
@@ -17,7 +17,7 @@ const testimonialData = [
     occupation: "Creative Developer",
     testimonial: `Jaagrav is an awesome kid with an awesome skillset. He is quite proficient in web development, and what makes it even better is the ability to combine his creativity with whatever he does. When it comes to problem solving, he is quick to find solutions. His belief that a solution exit if the problem does, and the ability to keenly search for that solution, is quite a distinguishing factor. On top of that, he is really fun to talk to.
     Wish you all the best Jaagrav, have fun and keep learning`,
-    img: "./assets/images/testimonials/Salil.jpg",
+    img: "./assets/images/testimonials/Salil.webp",
   },
   {
     first_name: "Trusha",
@@ -25,7 +25,7 @@ const testimonialData = [
     relationship: "Ex UI/UX Designer at HexCoderz · Goa Engineering College",
     occupation: "Aspiring UI/UX Designer",
     testimonial: `If you want to work with a prodigy, Jaagrav is THE person! He is a talented genius whose curiosity to learn and solve any given problem makes him a laudable coder. He puts his heart and soul into his work and will definitely be an asset wherever he goes!`,
-    img: "./assets/images/testimonials/Trusha.jpg",
+    img: "./assets/images/testimonials/Trusha.webp",
   },
   {
     first_name: "Shrutika",
@@ -38,7 +38,7 @@ const testimonialData = [
     He is exceptionally passionate, hardworking, and devoted to his work. 
     His Github activity and Linkedin profile speak for themselves!
     I would highly recommend him to anyone who needs a hardworking and passionate person for designing, web development, and software development services.`,
-    img: "./assets/images/testimonials/Shrutika.jpg",
+    img: "./assets/images/testimonials/Shrutika.webp",
   },
 ];
 

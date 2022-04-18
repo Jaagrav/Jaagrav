@@ -7,7 +7,7 @@ export default function SubHeader({ title, caption }) {
         </h1>
         <img
           className="absolute m-auto top-0 bottom-0 left-0 -translate-x-1/2 max-w-none w-[50rem] md:w-[75rem]"
-          src="/assets/images/blur-ball-blue.png"
+          src="/assets/images/blur-ball-blue.webp"
         />
         <div className="relative z-10">
           <h1 className="m-auto bottom-0 text-white text-5xl">{title}</h1>

@@ -11,7 +11,7 @@ export default function ExperienceSection() {
         <VerticalTimelineElement
           className="vertical-timeline-element--education"
           iconStyle={{ background: "#040c20", color: "#fff" }}
-          icon={<img src="/assets/images/org-cjr.png" />}
+          icon={<img src="/assets/images/org-cjr.webp" />}
           date="Aug 2021 - Present"
         >
           <h3 className="vertical-timeline-element-title text-white text-4xl">
@@ -27,7 +27,7 @@ export default function ExperienceSection() {
         <VerticalTimelineElement
           className="vertical-timeline-element--education"
           iconStyle={{ background: "#040c20", color: "#fff" }}
-          icon={<img src="/assets/images/org-dc.png" />}
+          icon={<img src="/assets/images/org-dc.webp" />}
           date="May 2021 - Present"
         >
           <h3 className="vertical-timeline-element-title text-white text-4xl">
@@ -43,7 +43,7 @@ export default function ExperienceSection() {
         <VerticalTimelineElement
           className="vertical-timeline-element--education"
           iconStyle={{ background: "#040c20", color: "#fff" }}
-          icon={<img src="/assets/images/org-gssoc.png" />}
+          icon={<img src="/assets/images/org-gssoc.webp" />}
           date="March 2021 - May 2021"
         >
           <h3 className="vertical-timeline-element-title text-white text-4xl">

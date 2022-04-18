@@ -489,7 +489,7 @@ window.startCanvas = () => {
   var sunrays;
   var sunraysTemp;
 
-  var ditheringTexture = createTextureAsync("LDR_LLL1_0.png");
+  var ditheringTexture = createTextureAsync("LDR_LLL1_0.webp");
 
   var blurProgram = new Program(blurVertexShader, blurShader);
   var copyProgram = new Program(baseVertexShader, copyShader);

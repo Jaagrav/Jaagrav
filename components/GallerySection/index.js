@@ -7,13 +7,13 @@ export default function GallerySection() {
             <div
               className="duration-300 bg-white h-36 md:h-48 w-full bg-120% hover:bg-100% bg-no-repeat bg-center"
               style={{
-                backgroundImage: `url(./assets/images/gallery-section-1.jpeg)`,
+                backgroundImage: `url(./assets/images/gallery-section-1.webp)`,
               }}
             ></div>
             <div
               className="duration-300 bg-white h-36 md:h-48 w-full bg-120% hover:bg-100% bg-no-repeat bg-center"
               style={{
-                backgroundImage: `url(./assets/images/gallery-section-2.png)`,
+                backgroundImage: `url(./assets/images/gallery-section-2.webp)`,
               }}
             ></div>
           </div>
@@ -21,13 +21,13 @@ export default function GallerySection() {
             <div
               className="duration-300 bg-white h-36 md:h-48 w-full bg-120% hover:bg-100% bg-no-repeat bg-center"
               style={{
-                backgroundImage: `url(./assets/images/gallery-section-3.jpg)`,
+                backgroundImage: `url(./assets/images/gallery-section-3.webp)`,
               }}
             ></div>
             <div
               className="duration-300 bg-white h-36 md:h-48 w-full bg-120% hover:bg-100% bg-no-repeat bg-center"
               style={{
-                backgroundImage: `url(./assets/images/gallery-section-4.jpeg)`,
+                backgroundImage: `url(./assets/images/gallery-section-4.webp)`,
               }}
             ></div>
           </div>
@@ -37,13 +37,13 @@ export default function GallerySection() {
             <div
               className="duration-300 bg-white h-36 md:h-48 w-full bg-120% hover:bg-100% bg-no-repeat bg-center"
               style={{
-                backgroundImage: `url(./assets/images/gallery-section-5.jpg)`,
+                backgroundImage: `url(./assets/images/gallery-section-5.webp)`,
               }}
             ></div>
             <div
               className="duration-300 bg-white h-36 md:h-48 w-full bg-120% hover:bg-100% bg-no-repeat bg-center"
               style={{
-                backgroundImage: `url(./assets/images/gallery-section-6.jpg)`,
+                backgroundImage: `url(./assets/images/gallery-section-6.webp)`,
               }}
             ></div>
           </div>
@@ -51,13 +51,13 @@ export default function GallerySection() {
             <div
               className="duration-300 bg-white h-36 md:h-48 w-full bg-120% hover:bg-100% bg-no-repeat bg-center"
               style={{
-                backgroundImage: `url(./assets/images/gallery-section-7.jpg)`,
+                backgroundImage: `url(./assets/images/gallery-section-7.webp)`,
               }}
             ></div>
             <div
               className="duration-300 bg-white h-36 md:h-48 w-full bg-120% hover:bg-100% bg-no-repeat bg-center"
               style={{
-                backgroundImage: `url(./assets/images/gallery-section-8.jpg)`,
+                backgroundImage: `url(./assets/images/gallery-section-8.webp)`,
               }}
             ></div>
           </div>

@@ -9,7 +9,7 @@ export default function Projects() {
       <Head>
         <title>Projects / Jaagrav</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <meta name="og:image" content={"/assets/images/jaagrav.png"} />
+        <meta name="og:image" content={"/assets/images/jaagrav.webp"} />
         <meta name="og:title" content={`Projects / Jaagrav`} />
         <meta
           name="description"

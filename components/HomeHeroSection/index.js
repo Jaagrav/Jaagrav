@@ -21,7 +21,7 @@ export default function HomeHeroSection() {
     <div className="h-screen w-full relative">
       <div
         className="h-full w-full absolute bg-center bg-no-repeat bg-cover"
-        style={{ backgroundImage: `url(./assets/images/hero-section-bg.png)` }}
+        style={{ backgroundImage: `url(./assets/images/hero-section-bg.webp)` }}
       ></div>
       <canvas className="h-full w-full absolute" id="liquid-canvas"></canvas>
       <div className="absolute h-full w-full bg-gradient-to-b from-transparent to-bgColor translate-y-1"></div>

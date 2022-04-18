@@ -12,7 +12,7 @@ export default function Contact() {
       <Head>
         <title>Contact / Jaagrav</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <meta name="og:image" content={"/assets/images/jaagrav.png"} />
+        <meta name="og:image" content={"/assets/images/jaagrav.webp"} />
         <meta name="og:title" content={`Contact / Jaagrav`} />
         <meta
           name="description"

@@ -16,11 +16,11 @@ export default function Footer() {
       </h1>
       <img
         className="w-[75vw] absolute z-0 right-0 bottom-0 m-auto -translate-x-0 translate-y-2/3"
-        src="/assets/images/blur-ball-blue.png"
+        src="/assets/images/blur-ball-blue.webp"
       />
       <img
         className="w-[75vw] absolute z-0 left-0 bottom-0 m-auto translate-x-0 translate-y-2/3 opacity-60"
-        src="/assets/images/blur-ball-indigo.png"
+        src="/assets/images/blur-ball-indigo.webp"
       />
       <div className="relative max-w-screen-xl w-full mx-auto mt-10 mb-6">
         <div className="">

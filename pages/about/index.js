@@ -13,7 +13,7 @@ export default function About() {
       <Head>
         <title>About / Jaagrav</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <meta name="og:image" content={"/assets/images/jaagrav.png"} />
+        <meta name="og:image" content={"/assets/images/jaagrav.webp"} />
         <meta name="og:title" content={`About / Jaagrav`} />
         <meta
           name="description"
@@ -25,7 +25,7 @@ export default function About() {
           {/* <div className="block md:hidden">
               <div
                 className="relative z-10 bg-contain bg-black bg-no-repeat bg-center w-full h-[50vw]"
-                style={{ backgroundImage: "url(/assets/images/jaagrav.png)" }}
+                style={{ backgroundImage: "url(/assets/images/jaagrav.webp)" }}
               ></div>
             </div> */}
           <div className="mx-auto -translate-y-1/4 mt-12 md:mt-0">
@@ -34,7 +34,7 @@ export default function About() {
             </h1>
             <img
               className="absolute m-auto top-0 bottom-0 left-0 -translate-x-1/2 max-w-none w-[50rem] md:w-[75rem]"
-              src="/assets/images/blur-ball-blue.png"
+              src="/assets/images/blur-ball-blue.webp"
             />
             <div className="relative z-10">
               <h1 className="m-auto bottom-0 text-white text-5xl">
@@ -50,7 +50,7 @@ export default function About() {
             </div>
           </div>
           <div className="hidden md:block">
-            <img src="/assets/images/jaagrav.png" className="w-full mx-auto" />
+            <img src="/assets/images/jaagrav.webp" className="w-full mx-auto" />
           </div>
         </div>
       </div>

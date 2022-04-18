@@ -5,7 +5,7 @@ const projectData = [
       "Simply upload your favourite car's chassis model and car's wheel model and the RV Engine would automatically create a car with the same look and feel. It would also be able to control the car's movement and rotation...",
     website: "https://rv-engine.vercel.app/",
     github: "https://github.com/Jaagrav/raycast-vehicle-engine",
-    img: "/assets/images/projects/Rv-Engine.png",
+    img: "/assets/images/projects/Rv-Engine.webp",
     link: "raycast-vehicle-engine",
     showOnHome: true,
     tech: [
@@ -27,7 +27,7 @@ const projectData = [
       "Ayasya is a building material manufacturing company founded to address the problem of plastics by manufacturing affordable and sustainable building materials. The company is...",
     website: "https://ayasyaeco.com/",
     github: null,
-    img: "/assets/images/projects/Ayasya.png",
+    img: "/assets/images/projects/Ayasya.webp",
     link: "ayasya-eco",
     showOnHome: true,
     tech: [
@@ -48,7 +48,7 @@ const projectData = [
       "So this website was developed for a client. Wonder who the client is? It’s Saloni Garg and Amit Sagtani. It was a fun little project, developed using Next, Tailwind and lots...",
     website: "https://brisko.app/",
     github: null,
-    img: "/assets/images/projects/Brisko.png",
+    img: "/assets/images/projects/Brisko.webp",
     link: "brisko",
     showOnHome: false,
     tech: [
@@ -70,7 +70,7 @@ const projectData = [
       "My most popular project on Github, CodeX is an online compiler for various languages like Java, C++, Python, etc. Execute code in various...",
     website: "https://codexweb.netlify.app/",
     github: "https://github.com/Jaagrav/CodeX",
-    img: "/assets/images/projects/Codex.png",
+    img: "/assets/images/projects/Codex.webp",
     link: "codex",
     showOnHome: false,
     tech: [
@@ -90,7 +90,7 @@ const projectData = [
       "Xper is a realtime code editor where you can both write and save your code in realtime! The unique thing about Xper is it updates your deployed code in realtime, which means you can...",
     website: "https://xperbycoder.netlify.app/",
     github: "https://github.com/Jaagrav/Xper",
-    img: "/assets/images/projects/Xper.png",
+    img: "/assets/images/projects/Xper.webp",
     link: "xper",
     showOnHome: false,
     tech: [
@@ -109,7 +109,7 @@ const projectData = [
       "Fragments is a light weight code editor which supports multiple languages, store your code/snippets here for future use. In Fragments, you can create/edit/store code and snippets for future use...",
     website: "https://fragmentsbycoder.netlify.app/",
     github: "https://github.com/Jaagrav/Fragments",
-    img: "/assets/images/projects/Fragments.png",
+    img: "/assets/images/projects/Fragments.webp",
     link: "fragments",
     showOnHome: false,
     tech: ["AceJS", "jQuery", "Font-Awesome", "HTML", "CSS", "JavaScript"],

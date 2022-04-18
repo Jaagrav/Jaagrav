@@ -54,11 +54,12 @@ export default function HomeHeroSection() {
       >
         Scroll down
       </span> */}
-      <script id="three-min-js" src="/assets/lib/three.min.js"></script>
+      <script id="three-min-js" src="/assets/lib/three.min.js" async></script>
       <script
         id="fluid-background-js"
         src="/assets/lib/fluid-background.js"
         onLoad={() => startCanvas()}
+        async
       ></script>
     </div>
   );

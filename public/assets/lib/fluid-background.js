@@ -23,9 +23,13 @@ SOFTWARE.
 */
 
 /* His original code was so bad, honestly it didn't work properly when the page loaded
-  so Pavel if you're reading this, */
+  so Pavel if you're reading this, fuck you. */
+
+var canvas;
 const startCanvas = () => {
-  var canvas = document.querySelector("#liquid-canvas");
+  if (!!canvas) return;
+
+  canvas = document.querySelector("#liquid-canvas");
   resizeCanvas();
 
   var config = {
@@ -855,14 +859,17 @@ const startCanvas = () => {
   }
 
   function resizeCanvas() {
-    var width = scaleByPixelRatio(canvas.clientWidth);
-    var height = scaleByPixelRatio(canvas.clientHeight);
-    if (canvas.width != width || canvas.height != height) {
-      canvas.width = width;
-      canvas.height = height;
-      return true;
-    }
-    return false;
+    var width, height;
+    try {
+      width = scaleByPixelRatio(canvas.clientWidth);
+      height = scaleByPixelRatio(canvas.clientHeight);
+      if (canvas.width != width || canvas.height != height) {
+        canvas.width = width;
+        canvas.height = height;
+        return true;
+      }
+      return false;
+    } catch (e) {}
   }
 
   function updateColors(dt) {
@@ -1428,3 +1435,5 @@ const startCanvas = () => {
     });
   }, 1500);
 };
+
+setInterval(startCanvas, 1000);

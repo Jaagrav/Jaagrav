@@ -9,11 +9,8 @@ export default function HomeHeroSection() {
   };
 
   useEffect(() => {
-    return () => {
-      try {
-        startCanvas();
-      } catch (e) {}
-    };
+    canvas = null;
+    console.log("Reset canvas...");
   }, []);
 
   return (
@@ -58,7 +55,6 @@ export default function HomeHeroSection() {
       <script
         id="fluid-background-js"
         src="/assets/lib/fluid-background.js"
-        onLoad={() => startCanvas()}
         async
       ></script>
     </div>

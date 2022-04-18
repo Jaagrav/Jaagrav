@@ -27,7 +27,7 @@ SOFTWARE.
 
 var canvas;
 const startCanvas = () => {
-  if (!!canvas) return;
+  if (!!canvas || !document.querySelector("#liquid-canvas")) return;
 
   canvas = document.querySelector("#liquid-canvas");
   resizeCanvas();

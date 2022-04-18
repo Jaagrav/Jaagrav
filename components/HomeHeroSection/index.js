@@ -9,8 +9,9 @@ export default function HomeHeroSection() {
   };
 
   useEffect(() => {
-    canvas = null;
-    console.log("Reset canvas...");
+    try {
+      canvas = null;
+    } catch (e) {}
   }, []);
 
   return (
@@ -51,12 +52,6 @@ export default function HomeHeroSection() {
       >
         Scroll down
       </span> */}
-      <script id="three-min-js" src="/assets/lib/three.min.js" async></script>
-      <script
-        id="fluid-background-js"
-        src="/assets/lib/fluid-background.js"
-        async
-      ></script>
     </div>
   );
 }

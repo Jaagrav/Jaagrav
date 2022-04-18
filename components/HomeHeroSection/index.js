@@ -1,5 +1,4 @@
 import { useEffect } from "react";
-import Script from "next/script";
 
 export default function HomeHeroSection() {
   const scrollDown = () => {
@@ -12,15 +11,8 @@ export default function HomeHeroSection() {
   useEffect(() => {
     return () => {
       try {
-        window.startCanvas();
+        startCanvas();
       } catch (e) {}
-      // const startCanvas = setInterval(() => {
-      //   console.log("Run");
-      //   try {
-      //     window.startCanvas();
-      //     clearInterval(startCanvas);
-      //   } catch (e) {}
-      // }, 500);
     };
   }, []);
 
@@ -62,12 +54,12 @@ export default function HomeHeroSection() {
       >
         Scroll down
       </span> */}
-      <Script id="three-min-js" src="/assets/lib/three.min.js" />
-      <Script
+      <script id="three-min-js" src="/assets/lib/three.min.js"></script>
+      <script
         id="fluid-background-js"
         src="/assets/lib/fluid-background.js"
-        onLoad={() => window.startCanvas()}
-      />
+        onLoad={() => startCanvas()}
+      ></script>
     </div>
   );
 }

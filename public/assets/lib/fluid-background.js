@@ -24,7 +24,7 @@ SOFTWARE.
 
 /* His original code was so bad, honestly it didn't work properly when the page loaded
   so Pavel if you're reading this, */
-window.startCanvas = () => {
+const startCanvas = () => {
   var canvas = document.querySelector("#liquid-canvas");
   resizeCanvas();
 

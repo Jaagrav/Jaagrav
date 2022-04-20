@@ -36,8 +36,10 @@ export default function Projects() {
         />
         <meta
           property="twitter:image"
-          content="https://jaagrav-2.vercel.app/assets/images/jaagrav.webp"
+          content="https://jaagrav-2.vercel.app/assets/images/seo/projects.webp"
         />
+        <meta property="og:image:width" content="300" />
+        <meta property="og:image:height" content="300" />
       </Head>
       <SubHeader
         title="My Projects"

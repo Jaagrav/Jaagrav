@@ -52,8 +52,10 @@ export default function About() {
         />
         <meta
           property="twitter:image"
-          content="https://jaagrav-2.vercel.app/assets/images/jaagrav.webp"
+          content="https://jaagrav-2.vercel.app/assets/images/seo/about.webp"
         />
+        <meta property="og:image:width" content="300" />
+        <meta property="og:image:height" content="300" />
       </Head>
       <div className="px-10 md:px-24 pb-12">
         <div className="md:grid md:grid-cols-[1fr_0.4fr] gap-8 max-w-screen-xl m-auto">

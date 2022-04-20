@@ -39,8 +39,10 @@ export default function Contact() {
         />
         <meta
           property="twitter:image"
-          content="https://jaagrav-2.vercel.app/assets/images/jaagrav.webp"
+          content="https://jaagrav-2.vercel.app/assets/images/seo/contact.webp"
         />
+        <meta property="og:image:width" content="300" />
+        <meta property="og:image:height" content="300" />
       </Head>
       <SubHeader
         title="Contact Me"

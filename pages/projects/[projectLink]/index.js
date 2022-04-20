@@ -37,6 +37,8 @@ export default function Page({ project, randomProject }) {
           property="twitter:image"
           content={`https://jaagrav-2.vercel.app${project.img}`}
         />
+        <meta property="og:image:width" content="300" />
+        <meta property="og:image:height" content="300" />
       </Head>
       <SubHeader
         title={project.title}

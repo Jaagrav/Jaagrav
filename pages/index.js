@@ -70,7 +70,7 @@ export default function Home() {
         if (props.showOnHome)
           return <ProjectCards key={`project-card-${index}`} {...props} />;
       })}
-      <span className="relative z-10 block text-center mx-auto my-16 text-bgColor dark:text-white text-xl skew">
+      <span className="relative z-10 block text-center mx-auto my-16 text-lightTextColor dark:text-white text-xl skew">
         Wait that’s it?{" "}
         <Link href="/projects">
           <a className="transition text-pink hover:underline underline-offset-8">
@@ -83,7 +83,7 @@ export default function Home() {
         caption="I am a goddamn professional. So long I have done some internships, have worked for some clients, and have also contributed to OpenSource bootcamps, communities and programs that you can read more about below."
       />
       <ExperienceSection />
-      <span className="relative z-10 block text-center mx-auto my-16 text-bgColor dark:text-white text-xl skew">
+      <span className="relative z-10 block text-center mx-auto my-16 text-lightTextColor dark:text-white text-xl skew">
         {"There's more, "}
         <Link href="https://linkedin.com/in/jaagrav" target="_blank">
           <a className="transition text-indigo hover:underline underline-offset-8">
@@ -96,7 +96,7 @@ export default function Home() {
         caption="Here's a list of all my skills and all the reasons why you should hire me. As a developer, I don't completely know anything, you see I am not very good at memorizing, I normally read documentations everytime I am building something, but I make sure to get the work done in time."
       />
       <SkillsSection />
-      <span className="relative z-10 block text-center mx-auto mt-16 text-bgColor dark:text-white text-xl skew">
+      <span className="relative z-10 block text-center mx-auto mt-16 text-lightTextColor dark:text-white text-xl skew">
         {"Dude c'mon if you haven't checked me out on "}
         <Link href="https://linkedin.com/in/jaagrav" target="_blank">
           <a className="transition text-indigo hover:underline underline-offset-8">
@@ -105,7 +105,7 @@ export default function Home() {
         </Link>
         , do it!
       </span>
-      <span className="relative z-10 block text-center mx-auto mt-2 mb-16 text-bgColor dark:text-white text-xl skew">
+      <span className="relative z-10 block text-center mx-auto mt-2 mb-16 text-lightTextColor dark:text-white text-xl skew">
         {"Also here's my "}
         <Link href="https://github.com/Jaagrav" target="_blank">
           <a className="transition text-pink hover:underline underline-offset-8">

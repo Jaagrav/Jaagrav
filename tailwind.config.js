@@ -22,6 +22,8 @@ module.exports = {
         indigo: "#9A6AFF",
         lightBgSecondaryColor: "#f0f0f0",
         lightBgSecondaryColorTranslucent: "#b9b9b97a",
+        lightTextColor: "#334155",
+        extraDarkBgColorTranslucent: "#040c20de",
       },
       fontFamily: {
         primary: ["TimeBurner", "sans-serif"],

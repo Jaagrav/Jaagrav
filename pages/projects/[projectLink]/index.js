@@ -49,33 +49,33 @@ export default function Page({ project, randomProject }) {
           <img src={project.img} className="w-full rounded-lg" />
           <div className="grid md:grid-cols-[1fr_2px_0.6fr] mt-12">
             <div className="py-12 md:pr-12">
-              <div className="text-xl leading-10 text-bgColor dark:text-white">
+              <div className="text-xl leading-10 text-lightTextColor dark:text-white">
                 {project.desc}
               </div>
             </div>
             <div className="h-full w-full bg-lightBgSecondaryColorTranslucent dark:bg-bgSecondaryColor"></div>
             <div className="py-12 md:pl-12">
-              <div className="text-bgColor dark:text-white text-2xl">
+              <div className="text-lightTextColor dark:text-white text-2xl">
                 Technologies used:
               </div>
               <div className="my-6">
                 {project.tech.map((tech, index) => (
                   <span
                     key={`tech-index-${index}`}
-                    className="inline-block bg-lightBgSecondaryColor dark:bg-bgSecondaryColor text-bgColor dark:text-white text-lg md:text-sm px-2 py-1 mb-2 mr-2 rounded-lg"
+                    className="inline-block bg-lightBgSecondaryColor dark:bg-bgSecondaryColor text-lightTextColor dark:text-white text-lg md:text-sm px-2 py-1 mb-2 mr-2 rounded-lg"
                   >
                     {tech}
                   </span>
                 ))}
               </div>
-              <div className="text-bgColor dark:text-white text-2xl">
+              <div className="text-lightTextColor dark:text-white text-2xl">
                 Check it out:
               </div>
               <div className="flex mt-6 gap-6">
                 {project.website && (
                   <Link href={project.website} target="_blank">
                     <a
-                      className={`block h-full w-full text-center px-8 py-2 text-white dark:text-bgColor text-xl border-bgColor dark:border-white border-2 bg-bgColor dark:bg-white rounded-lg`}
+                      className={`block h-full w-full text-center px-8 py-2 text-white dark:text-bgColor text-xl border-lightTextColor dark:border-white border-2 bg-lightTextColor dark:bg-white rounded-lg`}
                     >
                       Website
                     </a>
@@ -84,7 +84,7 @@ export default function Page({ project, randomProject }) {
                 {project.github && (
                   <Link href={project.github} target="_blank">
                     <a
-                      className={`block h-full w-full text-center px-8 py-2 text-bgColor dark:text-white text-xl border-bgColor dark:border-white border-2 rounded-lg`}
+                      className={`block h-full w-full text-center px-8 py-2 text-lightTextColor dark:text-white text-xl border-lightTextColor dark:border-white border-2 rounded-lg`}
                     >
                       GitHub
                     </a>
@@ -100,7 +100,7 @@ export default function Page({ project, randomProject }) {
         caption="This is not the only shit I made, check out this other project that this page randomly chose for you to see, hope you'll like it. And if you don't go back to the projects page to see all the projects I have built so far."
       />
       <ProjectCards {...randomProject} />
-      <span className="relative z-10 block text-center mx-auto mt-16 text-bgColor dark:text-white text-xl skew">
+      <span className="relative z-10 block text-center mx-auto mt-16 text-lightTextColor dark:text-white text-xl skew">
         {"There's more, "}
         <Link href="https://github.com/jaagrav" target="_blank">
           <a className="transition text-indigo hover:underline underline-offset-8">

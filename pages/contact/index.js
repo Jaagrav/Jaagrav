@@ -56,7 +56,7 @@ export default function Contact() {
           >
             <label
               htmlFor="email"
-              className="block text-bgColor dark:text-white text-3xl"
+              className="block text-lightTextColor dark:text-white text-3xl"
             >
               Email Address
             </label>
@@ -64,7 +64,7 @@ export default function Contact() {
               id="email"
               type="email"
               name="email"
-              className="block w-full text-bgColor dark:text-white text-xl p-6 outline-none bg-transparent border-2 border-bgColor dark:border-white my-6 rounded-lg"
+              className="block w-full text-lightTextColor dark:text-white text-xl p-6 outline-none bg-transparent border-2 border-bgColor dark:border-white my-6 rounded-lg"
               placeholder="For e.g. jaagravseal03@gmail.com"
               spellCheck={false}
             />
@@ -72,11 +72,11 @@ export default function Contact() {
               prefix="Email"
               field="email"
               errors={state.errors}
-              className="block text-bgColor dark:text-white text-xl bg-white dark:bg-bgColor px-12 py-6 mb-6 rounded-lg"
+              className="block text-lightTextColor dark:text-white text-xl bg-white dark:bg-bgColor px-12 py-6 mb-6 rounded-lg"
             />
             <label
               htmlFor="message"
-              className="block text-bgColor dark:text-white text-3xl"
+              className="block text-lightTextColor dark:text-white text-3xl"
             >
               Message
             </label>
@@ -84,13 +84,13 @@ export default function Contact() {
               id="message"
               name="message"
               placeholder="Type a message for e.g. You're hired! We can pay you whatever you want."
-              className="h-96 block w-full text-bgColor dark:text-white text-xl p-6 outline-none bg-transparent border-2 border-bgColor dark:border-white my-6 rounded-lg"
+              className="h-96 block w-full text-lightTextColor dark:text-white text-xl p-6 outline-none bg-transparent border-2 border-bgColor dark:border-white my-6 rounded-lg"
             />
             <ValidationError
               prefix="Message"
               field="message"
               errors={state.errors}
-              className="block text-bgColor dark:text-white text-xl bg-white dark:bg-bgColor px-12 py-6 mb-6 rounded-lg"
+              className="block text-lightTextColor dark:text-white text-xl bg-white dark:bg-bgColor px-12 py-6 mb-6 rounded-lg"
             />
             <button
               type="submit"

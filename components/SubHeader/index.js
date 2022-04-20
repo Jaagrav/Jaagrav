@@ -10,10 +10,10 @@ export default function SubHeader({ title, caption }) {
           src="/assets/images/blur-ball-blue.webp"
         />
         <div className="relative z-10">
-          <h1 className="m-auto bottom-0 text-bgColor dark:text-white text-5xl">
+          <h1 className="m-auto bottom-0 text-lightTextColor dark:text-white text-5xl">
             {title}
           </h1>
-          <span className="block text-bgColor dark:text-white mt-8 text-xl leading-10">
+          <span className="block text-lightTextColor dark:text-white mt-8 text-xl leading-10">
             {caption}
           </span>
         </div>

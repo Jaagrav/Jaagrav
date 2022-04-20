@@ -47,19 +47,19 @@ function Testimonial({
         </div>
         <div className="p-12 flex justify-center items-center my-auto">
           <div className="my-auto">
-            <div className="text-base text-bgColor dark:text-white text-left">
+            <div className="text-base text-lightTextColor dark:text-white text-left">
               {relationship}
             </div>
-            <div className="mt-4 text-bgColor dark:text-white text-5xl text-left">
+            <div className="mt-4 text-lightTextColor dark:text-white text-5xl text-left">
               {first_name} {last_name}
             </div>
             <div className="mt-4 text-5xl text-border text-left">
               {occupation}
             </div>
-            <div className="mt-6 text-xl leading-8 text-bgColor dark:text-white text-left">
+            <div className="mt-6 text-xl leading-8 text-lightTextColor dark:text-white text-left">
               {testimonial}
             </div>
-            <div className="mt-6 text-xl leading-8 text-bgColor dark:text-white text-left">
+            <div className="mt-6 text-xl leading-8 text-lightTextColor dark:text-white text-left">
               This is totally real,{" "}
               <Link
                 href="https://www.linkedin.com/in/jaagrav/details/recommendations/"

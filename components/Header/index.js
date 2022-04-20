@@ -56,40 +56,62 @@ function DesktopHeader({ isAtTop, currentURL, changeTheme }) {
     <div
       className={`transition fixed h-24 md:h-16 w-full z-30 px-10 md:px-24 ${
         !isAtTop
-          ? "bg-lightBgSecondaryColorTranslucent dark:bg-bgColorTranslucent backdrop-blur-lg"
-          : ""
+          ? `${
+              !isAtTop ? "bg-extraDarkBgColorTranslucent" : ""
+            } dark:bg-bgColorTranslucent backdrop-blur-lg`
+          : "bgColorTranslucent"
       }`}
     >
       <div className="max-w-screen-xl text-white m-auto h-full">
         <div className="h-full w-full grid grid-cols-[18rem_1fr_18rem] my-auto">
-          <div className="text-3xl my-auto text-bgColor dark:text-white">
+          <div
+            className={`text-3xl my-auto ${
+              !isAtTop ? "text-white" : "text-lightTextColor"
+            } dark:text-white`}
+          >
             <Link href="/">JS</Link>
           </div>
           <div className="h-full w-full max-w-screen-sm flex flex-row justify-between items-center m-auto">
-            <DesktopNavLink href="/" name="Home" currentURL={currentURL} />
+            <DesktopNavLink
+              href="/"
+              name="Home"
+              currentURL={currentURL}
+              isAtTop={isAtTop}
+            />
             <DesktopNavLink
               href="/projects"
               name="Projects"
               currentURL={currentURL}
+              isAtTop={isAtTop}
             />
             <DesktopNavLink
               href="/about"
               name="About"
               currentURL={currentURL}
+              isAtTop={isAtTop}
             />
             <DesktopNavLink
               href="/contact"
               name="Contact"
               currentURL={currentURL}
+              isAtTop={isAtTop}
             />
           </div>
           <div className="h-full w-full flex gap-4">
-            <button className="px-6 py-1 text-bgColor dark:text-white border-bgColor dark:border-white border-2 ml-auto my-auto text-bgColor dark:text-white rounded-lg">
+            <button
+              className={`px-6 py-1 ${
+                !isAtTop
+                  ? "text-white"
+                  : "text-lightTextColor border-lightTextColor"
+              } dark:text-white dark:border-white border-2 ml-auto my-auto rounded-lg`}
+            >
               Resume
             </button>
             <button
               onClick={changeTheme}
-              className="text-bgColor dark:text-white text-2xl outline-none bg-none border-none my-auto"
+              className={`${
+                !isAtTop ? "text-white" : "text-lightTextColor"
+              } dark:text-white text-2xl outline-none bg-none border-none my-auto`}
             >
               <div className="block dark:hidden">
                 <FiMoon />
@@ -105,22 +127,30 @@ function DesktopHeader({ isAtTop, currentURL, changeTheme }) {
   );
 }
 
-function DesktopNavLink({ href, name, currentURL }) {
+function DesktopNavLink({ href, name, currentURL, isAtTop }) {
   return (
     <Link href={href}>
-      <a className="text-lg text-bgColor dark:text-white">
+      <a
+        className={`text-lg ${
+          !isAtTop ? "text-white" : "text-lightTextColor"
+        } dark:text-white`}
+      >
         {currentURL === href ? `• ${name} •` : `${name}`}
       </a>
     </Link>
   );
 }
 
-function MobileNavLink({ href, name, currentURL }) {
+function MobileNavLink({ href, name, currentURL, isAtTop }) {
   return (
     <Link href={href}>
       <a
-        className={`block text-7xl text-bgColor dark:text-white my-12 ${
-          currentURL === href ? "" : "opacity-75 text-border"
+        className={`${
+          !isAtTop ? "text-white" : "text-lightTextColor"
+        } block text-7xl dark:text-white my-12 ${
+          currentURL === href
+            ? ""
+            : `opacity-75 ${isAtTop ? "text-border" : "text-border-light"}`
         }`}
       >
         {name}
@@ -139,14 +169,24 @@ function MobileHeader({ isAtTop, currentURL, changeTheme }) {
       <div
         className={`transition fixed h-24 md:h-16 w-full z-30 px-10 md:px-24 ${
           !isAtTop
-            ? `bg-lightBgSecondaryColorTranslucent dark:bg-bgColorTranslucent ${
-                isOpen ? "bg-transparent" : "backdrop-blur-lg"
+            ? `backdrop-blur-lg ${
+                isOpen
+                  ? "bg-transparent"
+                  : `${
+                      !isAtTop
+                        ? "bg-extraDarkBgColorTranslucent dark:bg-bgColorTranslucent"
+                        : ""
+                    }`
               }`
             : ""
         }`}
       >
         <div className="grid grid-cols-2 h-full">
-          <div className="text-bgColor dark:text-white text-4xl my-auto">
+          <div
+            className={`${
+              !isAtTop ? "text-white" : "text-lightTextColor"
+            } dark:text-white text-4xl my-auto`}
+          >
             <Link href="/">{isAtTop ? "JS" : "Jaagrav Seal"}</Link>
           </div>
           <div
@@ -154,14 +194,18 @@ function MobileHeader({ isAtTop, currentURL, changeTheme }) {
             onClick={handleClick}
           >
             <div
-              className={`transition m-auto origin-center h-[3px] w-full bg-bgColor dark:bg-white rounded-lg absolute ${
+              className={`transition m-auto origin-center h-[3px] w-full ${
+                !isAtTop ? "bg-white" : "bg-lightTextColor"
+              } dark:bg-white rounded-lg absolute ${
                 isOpen
                   ? "rotate-45 left-0 top-0 bottom-0 right-0 "
                   : "left-0 top-2 "
               }`}
             ></div>
             <div
-              className={`transition m-auto origin-center h-[3px] bg-bgColor dark:bg-white rounded-lg absolute ${
+              className={`transition m-auto origin-center h-[3px] ${
+                !isAtTop ? "bg-white" : "bg-lightTextColor"
+              } dark:bg-white rounded-lg absolute ${
                 isOpen
                   ? "-rotate-45 w-full left-0 top-0 bottom-0 right-0"
                   : "left-0 top-6 w-2/3"
@@ -175,7 +219,7 @@ function MobileHeader({ isAtTop, currentURL, changeTheme }) {
           isOpen
             ? `backdrop-blur-lg ${
                 !isAtTop
-                  ? `bg-lightBgSecondaryColorTranslucent dark:bg-bgColorTranslucent`
+                  ? `bg-extraDarkBgColorTranslucent dark:bg-bgColorTranslucent`
                   : ""
               }`
             : "pointer-events-none"
@@ -188,27 +232,45 @@ function MobileHeader({ isAtTop, currentURL, changeTheme }) {
           }`}
         >
           <div className="pt-24 px-10">
-            <MobileNavLink href="/" name="Home" currentURL={currentURL} />
+            <MobileNavLink
+              href="/"
+              name="Home"
+              currentURL={currentURL}
+              isAtTop={isAtTop}
+            />
             <MobileNavLink
               href="/projects"
               name="Projects"
               currentURL={currentURL}
+              isAtTop={isAtTop}
             />
-            <MobileNavLink href="/about" name="About" currentURL={currentURL} />
+            <MobileNavLink
+              href="/about"
+              name="About"
+              currentURL={currentURL}
+              isAtTop={isAtTop}
+            />
             <MobileNavLink
               href="/contact"
               name="Contact"
               currentURL={currentURL}
+              isAtTop={isAtTop}
             />
             <div className="mt-4 h-full w-full flex gap-12 items-center">
               <button
-                className={`px-6 py-4 w-full text-bgColor dark:text-white text-5xl border-bgColor dark:border-white border-2 mr-auto my-auto rounded-lg`}
+                className={`px-6 py-4 w-full ${
+                  !isAtTop
+                    ? "text-white border-white"
+                    : "text-lightTextColor border-lightTextColor"
+                } dark:text-white text-5xl dark:border-white border-2 mr-auto my-auto rounded-lg`}
               >
                 Resume
               </button>
               <button
                 onClick={changeTheme}
-                className="text-bgColor dark:text-white text-5xl outline-none bg-none border-none my-auto"
+                className={`${
+                  !isAtTop ? "text-white" : "text-lightTextColor"
+                } dark:text-white text-5xl outline-none bg-none border-none my-auto`}
               >
                 <div className="block dark:hidden">
                   <FiMoon />

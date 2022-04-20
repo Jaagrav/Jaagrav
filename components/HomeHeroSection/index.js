@@ -37,13 +37,13 @@ export default function HomeHeroSection() {
             <span className="block text-[5rem] md:text-[6rem] text-border">
               UX Designer
             </span>
-            <span className="block text-[5rem] md:text-[6rem] text-bgColor dark:text-white">
+            <span className="block text-[5rem] md:text-[6rem] text-lightTextColor dark:text-white">
               Jaagrav Seal
             </span>
             <span className="block text-[5rem] md:text-[6rem] text-border">
               Full Stack Developer
             </span>
-            <span className="mt-2 block text-bgColor dark:text-white text-xl leading-10 md:max-w-[58vw]">
+            <span className="mt-2 block text-lightTextColor dark:text-white text-xl leading-10 md:max-w-[58vw]">
               I am a very nice and humble front-end developer. I can design a
               website on figma, develop it using NextJS, TailwindCSS or Material
               UI, and deploy it on Vercel. Well that’s what I did for this

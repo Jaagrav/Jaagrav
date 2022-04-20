@@ -7,7 +7,7 @@
   --background-b: #f0f0f0;
   --pink: #ff00f5;
   --indigo: #9a6aff;
-  --text: #040c20;
+  --text: #334155;
 }
 
 :root.dark {
@@ -51,10 +51,17 @@ code {
     monospace;
 }
 
-.text-border {
+.text-border,
+html.dark .text-border-light {
   -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: var(--text);
+}
+
+html:not(.dark) .text-border-light {
+  -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: var(--background);
 }
 
 @media screen and (min-width: 300px) and (max-width: 360px) {

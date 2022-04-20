@@ -28,7 +28,7 @@
 }
 
 body {
-  transition: 0.3s;
+  transition: 250ms;
   background-color: var(--background);
   height: 100%;
   width: 100%;

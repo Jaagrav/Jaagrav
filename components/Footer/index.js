@@ -25,11 +25,13 @@ export default function Footer() {
       <div className="relative max-w-screen-xl w-full mx-auto mt-10 mb-6">
         <div className="">
           <div className="">
-            <p className="text-white text-base leading-10">
+            <p className="text-bgColor dark:text-white text-base leading-10">
               Monster Monster under my bed, come out and play cause I
             </p>
-            <h1 className="text-white text-5xl mt-2">Need a friend!</h1>
-            <p className="text-white text-xl leading-10 mt-4">
+            <h1 className="text-bgColor dark:text-white text-5xl mt-2">
+              Need a friend!
+            </h1>
+            <p className="text-bgColor dark:text-white text-xl leading-10 mt-4">
               Ever wanna touch me, hire me or just hang out with me? Feel free
               to contact me any time, it can be by filling a form, emailing me,
               direct messaging on social media or... Yeah that&apos;s it,
@@ -38,13 +40,13 @@ export default function Footer() {
             <div className="flex justify-start items-center gap-6 h-fit mt-6">
               <Link href="/contact">
                 <a
-                  className={`inline-block w-full md:w-fit text-center md:text-left px-8 py-2 text-white text-xl border-white border-2`}
+                  className={`inline-block w-full md:w-fit text-center md:text-left px-8 py-2 text-bgColor dark:text-white text-xl border-bgColor dark:border-white border-2 rounded-lg`}
                 >
                   Contact
                 </a>
               </Link>
               <a
-                className="text-white text-3xl w-fit inline "
+                className="text-bgColor dark:text-white text-3xl w-fit inline "
                 href="https://github.com/Jaagrav"
                 target="_blank"
                 rel="noreferrer"
@@ -52,7 +54,7 @@ export default function Footer() {
                 <FiGithub />
               </a>
               <a
-                className="text-white text-3xl w-fit inline "
+                className="text-bgColor dark:text-white text-3xl w-fit inline "
                 href="https://linkedin.com/in/jaagrav"
                 target="_blank"
                 rel="noreferrer"
@@ -60,7 +62,7 @@ export default function Footer() {
                 <FiLinkedin />
               </a>
               <a
-                className="text-white text-3xl w-fit inline "
+                className="text-bgColor dark:text-white text-3xl w-fit inline "
                 href="https://www.youtube.com/c/TheCoders"
                 target="_blank"
                 rel="noreferrer"
@@ -68,7 +70,7 @@ export default function Footer() {
                 <FiYoutube />
               </a>
               <a
-                className="text-white text-3xl w-fit inline "
+                className="text-bgColor dark:text-white text-3xl w-fit inline "
                 href="https://gitlab.com/Jaagrav"
                 target="_blank"
                 rel="noreferrer"
@@ -76,7 +78,7 @@ export default function Footer() {
                 <FiGitlab />
               </a>
               <a
-                className="text-white text-3xl w-fit inline "
+                className="text-bgColor dark:text-white text-3xl w-fit inline "
                 href="https://twitter.com/xJaagrav"
                 target="_blank"
                 rel="noreferrer"
@@ -84,7 +86,7 @@ export default function Footer() {
                 <FiTwitter />
               </a>
               <a
-                className="text-white text-3xl w-fit inline "
+                className="text-bgColor dark:text-white text-3xl w-fit inline "
                 href="mailto:jaagravseal03@gmail.com"
                 target="_blank"
                 rel="noreferrer"
@@ -95,7 +97,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="h-[1px] w-full bg-bgSecondaryColor mt-12 mb-6"></div>
-        <div className="text-white text-lg text-center">
+        <div className="text-bgColor dark:text-white text-lg text-center">
           © {new Date().getFullYear()}{" "}
           <a
             href="https://peerlist.io/jaagrav"

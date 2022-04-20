@@ -23,7 +23,7 @@ const testimonialData = [
     first_name: "Trusha",
     last_name: "Neogi",
     relationship: "Ex UI/UX Designer at HexCoderz · Goa Engineering College",
-    occupation: "Aspiring UI/UX Designer",
+    occupation: "UI/UX Designer",
     testimonial: `If you want to work with a prodigy, Jaagrav is THE person! He is a talented genius whose curiosity to learn and solve any given problem makes him a laudable coder. He puts his heart and soul into his work and will definitely be an asset wherever he goes!`,
     img: "./assets/images/testimonials/Trusha.webp",
   },

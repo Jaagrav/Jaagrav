@@ -9,7 +9,7 @@ export default function TestimonialsSection() {
   return (
     <div className="h-fit relative">
       <Carousel
-        autoPlay={true}
+        autoPlay={false}
         interval={3000}
         infiniteLoop={true}
         swipeable={true}
@@ -17,6 +17,7 @@ export default function TestimonialsSection() {
         showStatus={false}
         emulateTouch={true}
         stopOnHover={true}
+        useKeyboardArrows={true}
       >
         {testimonialData.map((testimonial, index) => (
           <Testimonial {...testimonial} key={`testimonial-${index}`} />
@@ -36,7 +37,7 @@ function Testimonial({
 }) {
   return (
     <div className="h-full w-full px-10 md:px-24">
-      <div className="h-full max-w-screen-xl grid md:grid-cols-[28rem_1fr] bg-bgSecondaryColor mx-auto">
+      <div className="h-full max-w-screen-xl md:grid md:grid-cols-[28rem_1fr] bg-lightBgSecondaryColor dark:bg-bgSecondaryColor mx-auto rounded-lg overflow-hidden">
         <div className="relative h-[85vw] md:h-full md:w-[28rem] flex justify-center items-center overflow-hidden">
           <div
             className="w-full h-full flex justify-center items-center blur-sm bg-cover bg-center brightness-50"
@@ -44,21 +45,21 @@ function Testimonial({
           ></div>
           <img src={img} className="absolute m-auto inset-0 w-3/4" />
         </div>
-        <div className="p-12 flex justify-center items-center">
+        <div className="p-12 flex justify-center items-center my-auto">
           <div className="my-auto">
-            <div className="text-base text-white opacity-60 text-left">
+            <div className="text-base text-bgColor dark:text-white text-left">
               {relationship}
             </div>
-            <div className="mt-4 text-white text-5xl text-left">
+            <div className="mt-4 text-bgColor dark:text-white text-5xl text-left">
               {first_name} {last_name}
             </div>
             <div className="mt-4 text-5xl text-border text-left">
               {occupation}
             </div>
-            <div className="mt-6 text-xl leading-8 text-white text-left">
+            <div className="mt-6 text-xl leading-8 text-bgColor dark:text-white text-left">
               {testimonial}
             </div>
-            <div className="mt-6 text-xl leading-8 text-white text-left">
+            <div className="mt-6 text-xl leading-8 text-bgColor dark:text-white text-left">
               This is totally real,{" "}
               <Link
                 href="https://www.linkedin.com/in/jaagrav/details/recommendations/"

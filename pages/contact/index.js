@@ -45,15 +45,21 @@ export default function Contact() {
       />
       <div className="px-10 md:px-24 relative z-10">
         <div className="max-w-screen-xl mx-auto">
-          <form onSubmit={handleSubmit} className="bg-bgSecondaryColor p-12">
-            <label htmlFor="email" className="block text-white text-3xl">
+          <form
+            onSubmit={handleSubmit}
+            className="bg-lightBgSecondaryColor dark:bg-bgSecondaryColor p-12 rounded-lg"
+          >
+            <label
+              htmlFor="email"
+              className="block text-bgColor dark:text-white text-3xl"
+            >
               Email Address
             </label>
             <input
               id="email"
               type="email"
               name="email"
-              className="block w-full text-white text-xl p-6 outline-none bg-transparent border-2 border-white my-6"
+              className="block w-full text-bgColor dark:text-white text-xl p-6 outline-none bg-transparent border-2 border-bgColor dark:border-white my-6 rounded-lg"
               placeholder="For e.g. jaagravseal03@gmail.com"
               spellCheck={false}
             />
@@ -61,26 +67,30 @@ export default function Contact() {
               prefix="Email"
               field="email"
               errors={state.errors}
-              className="block text-white text-xl bg-bgColor px-12 py-6 mb-6"
+              className="block text-bgColor dark:text-white text-xl bg-white dark:bg-bgColor px-12 py-6 mb-6 rounded-lg"
             />
-            <label htmlFor="message" className="block text-white text-3xl">
+            <label
+              htmlFor="message"
+              className="block text-bgColor dark:text-white text-3xl"
+            >
               Message
             </label>
             <textarea
               id="message"
               name="message"
               placeholder="Type a message for e.g. You're hired! We can pay you whatever you want."
-              className="h-96 block w-full text-white text-xl p-6 outline-none bg-transparent border-2 border-white my-6"
+              className="h-96 block w-full text-bgColor dark:text-white text-xl p-6 outline-none bg-transparent border-2 border-bgColor dark:border-white my-6 rounded-lg"
             />
             <ValidationError
               prefix="Message"
               field="message"
               errors={state.errors}
+              className="block text-bgColor dark:text-white text-xl bg-white dark:bg-bgColor px-12 py-6 mb-6 rounded-lg"
             />
             <button
               type="submit"
               disabled={state.submitting}
-              className="inline-block mt-4 w-full md:w-fit text-center md:text-left md:mr-4 px-8 py-2 text-bgColor text-xl border-white border-2 bg-white"
+              className="inline-block mt-4 w-full md:w-fit text-center md:text-left md:mr-4 px-8 py-2 text-white dark:text-bgColor text-xl border-bgColor dark:border-white border-2 bg-bgColor dark:border-white rounded-lg"
             >
               Submit
             </button>

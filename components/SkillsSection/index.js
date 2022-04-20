@@ -27,9 +27,11 @@ export default function SkillsSection() {
 
 function Skill({ title, description }) {
   return (
-    <div className="p-8 bg-bgSecondaryColor w-full">
-      <h3 className="text-3xl font-bold text-white">{title}</h3>
-      <p className="text-xl text-white mt-4 leading-8 opacity-80">
+    <div className="p-8 bg-lightBgSecondaryColor dark:bg-bgSecondaryColor w-full rounded-lg">
+      <h3 className="text-3xl font-bold text-bgColor dark:text-white">
+        {title}
+      </h3>
+      <p className="text-xl text-bgColor dark:text-white mt-4 leading-8 opacity-80">
         {description}
       </p>
     </div>

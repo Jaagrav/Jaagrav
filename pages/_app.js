@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import "../styles/globals.css";
 
 // Importing Components
@@ -14,13 +14,49 @@ import { PageTransition as Transition } from "next-page-transitions";
 import NextNProgress from "nextjs-progressbar";
 
 function MyApp({ Component, pageProps }) {
+  const [isMobile, setIsMobile] = useState(false),
+    setTheme = (theme) => {
+      localStorage.theme = theme;
+      if (
+        localStorage.theme === "dark" ||
+        (!("theme" in localStorage) &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches)
+      ) {
+        document.documentElement.classList.add("dark");
+      } else {
+        document.documentElement.classList.remove("dark");
+      }
+    },
+    changeTheme = () => {
+      const prevTheme = localStorage.theme;
+      setTheme(prevTheme === "light" ? "dark" : "light");
+    };
+
+  useEffect(() => {
+    setTheme(
+      localStorage.theme === "undefined" || localStorage.theme === "null"
+        ? "dark"
+        : localStorage.theme
+    );
+
+    const resize = () => {
+      if (window.innerWidth < 460) {
+        setIsMobile(true);
+      } else {
+        setIsMobile(false);
+      }
+    };
+    resize();
+    return window.addEventListener("resize", resize);
+  }, []);
+
   return (
     <div>
       <Transition timeout={500} classNames="page-transition">
         <div className="h-fit w-full overflow-x-hidden">
           <PageTransition />
-          <Header />
-          <ScrollerMotion>
+          <Header changeTheme={changeTheme} />
+          <ScrollerMotion disabled={isMobile}>
             <div className="scroll-animate h-fit w-full">
               <NextNProgress
                 color="#29D"

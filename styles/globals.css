@@ -3,10 +3,19 @@
 @tailwind utilities;
 
 :root {
+  --background: #fff;
+  --background-b: #f0f0f0;
+  --pink: #ff00f5;
+  --indigo: #9a6aff;
+  --text: #040c20;
+}
+
+:root.dark {
   --background: #040c20;
   --background-b: #262f47;
   --pink: #ff00f5;
   --indigo: #9a6aff;
+  --text: #fff;
 }
 
 @font-face {
@@ -19,7 +28,8 @@
 }
 
 body {
-  background-color: #040c20;
+  transition: 0.3s;
+  background-color: var(--background);
   height: 100%;
   width: 100%;
   margin: 0;
@@ -44,7 +54,7 @@ code {
 .text-border {
   -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
   -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: white;
+  -webkit-text-stroke-color: var(--text);
 }
 
 @media screen and (min-width: 300px) and (max-width: 360px) {
@@ -86,7 +96,7 @@ code {
 .vertical-timeline-element-content {
   background: var(--background-b) !important;
   box-shadow: none !important;
-  border-radius: 0 !important;
+  border-radius: 0.5rem !important;
   padding: 2rem !important;
 }
 

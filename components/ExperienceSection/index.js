@@ -14,18 +14,20 @@ export default function ExperienceSection() {
           ({ icon, date, organization, position, desc }, index) => (
             <VerticalTimelineElement
               className="vertical-timeline-element--education"
-              iconStyle={{ background: "#040c20", color: "#fff" }}
+              iconStyle={{ background: "var(--background)", color: "#fff" }}
               icon={<img src={icon} />}
               date={date}
               key={`experience-${index}`}
             >
-              <h3 className="vertical-timeline-element-title text-white text-4xl">
+              <h3 className="vertical-timeline-element-title text-bgColor dark:text-white text-4xl">
                 {organization}
               </h3>
-              <h4 className="vertical-timeline-element-subtitle text-white opacity-75 text-2xl mt-1">
+              <h4 className="vertical-timeline-element-subtitle text-bgColor dark:text-white opacity-75 text-2xl mt-1">
                 {position}
               </h4>
-              <ul className="text-white text-2xl xl:text-xl mt-2">{desc}</ul>
+              <ul className="text-bgColor dark:text-white text-2xl xl:text-xl mt-2">
+                {desc}
+              </ul>
             </VerticalTimelineElement>
           )
         )}

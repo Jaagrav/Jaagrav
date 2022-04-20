@@ -53,14 +53,14 @@ export default function About() {
         />
       </Head>
       <div className="px-10 md:px-24 pb-12">
-        <div className="grid md:grid-cols-[1fr_0.4fr] max-w-screen-xl mx-auto">
+        <div className="md:grid md:grid-cols-[1fr_0.4fr] gap-8 max-w-screen-xl m-auto">
           {/* <div className="block md:hidden">
               <div
                 className="relative z-10 bg-contain bg-black bg-no-repeat bg-center w-full h-[50vw]"
                 style={{ backgroundImage: "url(/assets/images/jaagrav.webp)" }}
               ></div>
             </div> */}
-          <div className="mx-auto -translate-y-1/4 mt-12 md:mt-0">
+          <div className="-translate-y-1/4 mt-12 md:m-auto ">
             <h1 className="text-border text-[6rem] md:text-[7rem] whitespace-nowrap opacity-10 translate-y-1/2">
               Jaagrav Seal
             </h1>
@@ -69,10 +69,10 @@ export default function About() {
               src="/assets/images/blur-ball-blue.webp"
             />
             <div className="relative z-10">
-              <h1 className="m-auto bottom-0 text-white text-5xl">
+              <h1 className="m-auto bottom-0 text-bgColor dark:text-white text-5xl">
                 Jaagrav Seal
               </h1>
-              <span className="block text-white mt-8 text-xl leading-10">
+              <span className="block text-bgColor dark:text-white mt-8 text-xl leading-10">
                 A Full Stack Developer based in West Bengal, India. I enjoy
                 designing and developing websites, I am currently 18 years old,
                 and am also in the first year of my college. I am currently
@@ -82,7 +82,10 @@ export default function About() {
             </div>
           </div>
           <div className="hidden md:block">
-            <img src="/assets/images/jaagrav.webp" className="w-full mx-auto" />
+            <img
+              src="/assets/images/jaagrav.webp"
+              className="w-full mx-auto rounded-lg"
+            />
           </div>
         </div>
       </div>

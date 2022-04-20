@@ -1241,14 +1241,16 @@ const startCanvas = () => {
   }
 
   function updatePointerMoveData(pointer, posX, posY) {
-    pointer.prevTexcoordX = pointer.texcoordX;
-    pointer.prevTexcoordY = pointer.texcoordY;
-    pointer.texcoordX = posX / canvas.width;
-    pointer.texcoordY = 1.0 - posY / canvas.height;
-    pointer.deltaX = correctDeltaX(pointer.texcoordX - pointer.prevTexcoordX);
-    pointer.deltaY = correctDeltaY(pointer.texcoordY - pointer.prevTexcoordY);
-    pointer.moved =
-      Math.abs(pointer.deltaX) > 0 || Math.abs(pointer.deltaY) > 0;
+    try {
+      pointer.prevTexcoordX = pointer.texcoordX;
+      pointer.prevTexcoordY = pointer.texcoordY;
+      pointer.texcoordX = posX / canvas.width;
+      pointer.texcoordY = 1.0 - posY / canvas.height;
+      pointer.deltaX = correctDeltaX(pointer.texcoordX - pointer.prevTexcoordX);
+      pointer.deltaY = correctDeltaY(pointer.texcoordY - pointer.prevTexcoordY);
+      pointer.moved =
+        Math.abs(pointer.deltaX) > 0 || Math.abs(pointer.deltaY) > 0;
+    } catch (e) {}
   }
 
   function updatePointerUpData(pointer) {
@@ -1372,7 +1374,7 @@ const startCanvas = () => {
     return hash;
   }
   setTimeout(() => {
-    canvas.addEventListener("mousemove", function (e) {
+    window.addEventListener("mousemove", function (e) {
       var pointer = pointers[0];
       var posX = scaleByPixelRatio(e.offsetX);
       var posY = scaleByPixelRatio(e.offsetY);
@@ -1383,8 +1385,8 @@ const startCanvas = () => {
       updatePointerUpData(pointers[0]);
     });
 
-    canvas.addEventListener("touchstart", function (e) {
-      e.preventDefault();
+    window.addEventListener("touchstart", function (e) {
+      // e.preventDefault();
       var touches = e.targetTouches;
       while (touches.length >= pointers.length) {
         pointers.push(new pointerPrototype());
@@ -1401,14 +1403,14 @@ const startCanvas = () => {
       }
     });
 
-    canvas.addEventListener(
+    window.addEventListener(
       "touchmove",
       function (e) {
-        e.preventDefault();
+        // e.preventDefault();
         var touches = e.targetTouches;
         for (var i = 0; i < touches.length; i++) {
           var pointer = pointers[i + 1];
-          if (!pointer.down) {
+          if (!pointer?.down) {
             continue;
           }
           var posX = scaleByPixelRatio(touches[i].pageX);
@@ -1433,7 +1435,7 @@ const startCanvas = () => {
 
       for (var i = 0; i < touches.length; i++) loop(i);
     });
-  }, 1500);
+  }, 750);
 };
 
-setInterval(startCanvas, 1000);
+window.onload = setInterval(startCanvas, 750);

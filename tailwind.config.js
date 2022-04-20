@@ -1,4 +1,5 @@
 module.exports = {
+  darkMode: "class",
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
@@ -19,6 +20,8 @@ module.exports = {
         bgSecondaryColor: "#262f47",
         pink: "#FF00F5",
         indigo: "#9A6AFF",
+        lightBgSecondaryColor: "#f0f0f0",
+        lightBgSecondaryColorTranslucent: "#b9b9b97a",
       },
       fontFamily: {
         primary: ["TimeBurner", "sans-serif"],

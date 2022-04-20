@@ -12,15 +12,15 @@ export default function ProjectCards({
     <div className="px-10 md:px-24 my-8 skew">
       <div className="w-full max-w-screen-xl mx-auto flex items-center gap-12 md:gap-4 flex-col-reverse md:flex-row transition">
         <div className="relative z-10 w-full">
-          <h1 className="text-white text-4xl">{title}</h1>
-          <span className="block text-white opacity-75 text-xl mt-4 leading-10">
+          <h1 className="text-bgColor dark:text-white text-4xl">{title}</h1>
+          <span className="block text-bgColor dark:text-white opacity-75 text-xl mt-4 leading-10">
             {miniDesc}
           </span>
           <div className="mt-6">
             {website && (
               <Link href={website} target="_blank">
                 <a
-                  className={`inline-block mt-4 w-full md:w-fit text-center md:text-left md:mr-4 px-8 py-2 text-bgColor text-xl border-white border-2 bg-white`}
+                  className={`inline-block mt-4 w-full md:w-fit text-center md:text-left md:mr-4 px-8 py-2 text-xl border-bgColor dark:border-white border-2 bg-bgColor dark:bg-white text-white dark:text-bgColor rounded-lg`}
                 >
                   Website
                 </a>
@@ -29,7 +29,7 @@ export default function ProjectCards({
             {github && (
               <Link href={github} target="_blank">
                 <a
-                  className={`inline-block mt-4 w-full md:w-fit text-center md:text-left md:mr-4 px-8 py-2 text-white text-xl border-white border-2`}
+                  className={`inline-block mt-4 w-full md:w-fit text-center md:text-left md:mr-4 px-8 py-2 text-xl border-bgColor dark:border-white border-2 text-bgColor dark:text-white rounded-lg`}
                 >
                   GitHub
                 </a>
@@ -37,7 +37,7 @@ export default function ProjectCards({
             )}
             {link && (
               <Link href={`/projects/${link}`}>
-                <a className="inline-block text-xl text-white text-center w-full md:w-fit py-4 ">
+                <a className="inline-block text-xl text-bgColor dark:text-white text-center w-full md:w-fit py-4 ">
                   Learn More
                 </a>
               </Link>

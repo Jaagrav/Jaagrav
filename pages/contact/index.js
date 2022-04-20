@@ -28,7 +28,7 @@ export default function Contact() {
         />
         <meta
           property="og:image"
-          content="https://jaagrav-2.vercel.app/assets/images/jaagrav.webp"
+          content="https://jaagrav-2.vercel.app/assets/images/seo/contact.webp"
         />
 
         <meta property="twitter:card" content="summary_large_image" />

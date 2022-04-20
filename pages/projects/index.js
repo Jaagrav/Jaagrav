@@ -25,7 +25,7 @@ export default function Projects() {
         />
         <meta
           property="og:image"
-          content="https://jaagrav-2.vercel.app/assets/images/jaagrav.webp"
+          content="https://jaagrav-2.vercel.app/assets/images/seo/projects.webp"
         />
 
         <meta property="twitter:card" content="summary_large_image" />

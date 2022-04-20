@@ -37,7 +37,7 @@ export default function About() {
         />
         <meta
           property="og:image"
-          content="https://jaagrav-2.vercel.app/assets/images/jaagrav.webp"
+          content="https://jaagrav-2.vercel.app/assets/images/seo/about.webp"
         />
 
         <meta property="twitter:card" content="summary_large_image" />

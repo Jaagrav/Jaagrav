@@ -45,12 +45,19 @@ export default function HomeHeroSection() {
             </span>
             <span className="mt-2 block text-bgColor dark:text-white text-xl leading-10 md:max-w-[58vw]">
               I am a very nice and humble front-end developer. I can design a
-              website on figma, develop it using NextJS, and deploy it on
-              Vercel. Well that’s what I did for this website, if you want to
-              know more, keep scrolling.
+              website on figma, develop it using NextJS, TailwindCSS or Material
+              UI, and deploy it on Vercel. Well that’s what I did for this
+              website, if you want to know more, keep scrolling.
               <br />
               <br />
-              P.S. I am also a very good human being.
+              P.S. I am also known as{" "}
+              <span
+                title="This is not a link dumbass, this is my other name."
+                className="underline underline-offset-8 pointer-events-auto cursor-pointer"
+              >
+                Laes Vargaaj
+              </span>
+              .
             </span>
           </div>
         </div>

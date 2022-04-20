@@ -13,7 +13,10 @@ export default function Projects() {
           name="description"
           content="Take a look at the shit I made in the name of Software Development. Honestly I am quite proud how some of them turned out. Some of them are available on Github so go ahead knock yourself out! The others are client/freelance projects."
         />
-
+        <meta
+          name="viewport"
+          content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+        />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Projects / Jaagrav" />
         <meta

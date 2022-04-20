@@ -173,7 +173,11 @@ function MobileHeader({ isAtTop, currentURL, changeTheme }) {
       <div
         className={`transition fixed h-full w-full ${
           isOpen
-            ? `backdrop-blur-lg ${!isAtTop ? `bg-bgColorTranslucent` : ""}`
+            ? `backdrop-blur-lg ${
+                !isAtTop
+                  ? `bg-lightBgSecondaryColorTranslucent dark:bg-bgColorTranslucent`
+                  : ""
+              }`
             : "pointer-events-none"
         } z-20`}
         onClick={handleClick}

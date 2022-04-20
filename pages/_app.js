@@ -17,11 +17,7 @@ function MyApp({ Component, pageProps }) {
   const [isMobile, setIsMobile] = useState(false),
     setTheme = (theme) => {
       localStorage.theme = theme;
-      if (
-        localStorage.theme === "dark" ||
-        (!("theme" in localStorage) &&
-          window.matchMedia("(prefers-color-scheme: dark)").matches)
-      ) {
+      if (localStorage.theme === "dark" || !("theme" in localStorage)) {
         document.documentElement.classList.add("dark");
       } else {
         document.documentElement.classList.remove("dark");
@@ -33,11 +29,7 @@ function MyApp({ Component, pageProps }) {
     };
 
   useEffect(() => {
-    setTheme(
-      localStorage.theme === "undefined" || localStorage.theme === "null"
-        ? "dark"
-        : localStorage.theme
-    );
+    setTheme(!("theme" in localStorage) ? "dark" : localStorage.theme);
 
     const resize = () => {
       if (window.innerWidth < 460) {

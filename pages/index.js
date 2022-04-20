@@ -16,6 +16,10 @@ export default function Home() {
     <div className="h-fit w-full overflow-hidden">
       <Head>
         <title>Home / Jaagrav</title>
+        <meta
+          name="viewport"
+          content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+        />
         <meta name="title" content="Home / Jaagrav" />
         <meta
           name="description"

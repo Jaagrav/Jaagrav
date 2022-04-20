@@ -21,7 +21,10 @@ export default function About() {
           pursuing B. Tech in Computer Science and Engineering from
           University."
         />
-
+        <meta
+          name="viewport"
+          content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+        />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="About / Jaagrav" />
         <meta

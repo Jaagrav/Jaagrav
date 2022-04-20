@@ -12,7 +12,10 @@ export default function Page({ project, randomProject }) {
         <title>{project.title} / Projects / Jaagrav</title>
         <meta name="title" content={`${project.title} / Projects / Jaagrav`} />
         <meta name="description" content={project.miniDesc} />
-
+        <meta
+          name="viewport"
+          content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+        />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
@@ -41,14 +44,14 @@ export default function Page({ project, randomProject }) {
       />
       <div className="px-10 md:px-24">
         <div className="relative z-10 max-w-screen-xl mx-auto">
-          <img src={project.img} className="w-full" />
+          <img src={project.img} className="w-full rounded-lg" />
           <div className="grid md:grid-cols-[1fr_2px_0.6fr] mt-12">
             <div className="py-12 md:pr-12">
               <div className="text-xl leading-10 text-bgColor dark:text-white">
                 {project.desc}
               </div>
             </div>
-            <div className="h-full w-full bg-bgSecondaryColor"></div>
+            <div className="h-full w-full bg-lightBgSecondaryColorTranslucent dark:bg-bgSecondaryColor"></div>
             <div className="py-12 md:pl-12">
               <div className="text-bgColor dark:text-white text-2xl">
                 Technologies used:

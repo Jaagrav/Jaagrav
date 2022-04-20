@@ -44,12 +44,15 @@ export default function ProjectCards({
             )}
           </div>
         </div>
-        <div className="relative transition duration-300 hover:scale-105">
+        <div className="relative ">
           <img
             className="w-[160vw] absolute z-0 right-0 top-0 bottom-0 m-auto translate-x-1/2"
             src="/assets/images/blur-ball-blue.webp"
           />
-          <img className="relative z-10 md:max-w-xl" src={img} />
+          <img
+            className="relative z-10 md:max-w-xl rounded-lg transition duration-300 hover:scale-105"
+            src={img}
+          />
           <img
             className="w-[160vw] absolute z-0 left-0 top-0 bottom-0 m-auto -translate-x-1/2 opacity-65"
             src="/assets/images/blur-ball-indigo.webp"

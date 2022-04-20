@@ -16,7 +16,10 @@ export default function Contact() {
           name="description"
           content="You got some shit to say? Feel free to reach out to me, I’ll respond whenever I want, and please don't send me bullshit if you're planning to, and if you're a recruiter, then keep going..."
         />
-
+        <meta
+          name="viewport"
+          content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+        />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Contact / Jaagrav" />
         <meta
@@ -90,7 +93,7 @@ export default function Contact() {
             <button
               type="submit"
               disabled={state.submitting}
-              className="inline-block mt-4 w-full md:w-fit text-center md:text-left md:mr-4 px-8 py-2 text-white dark:text-bgColor text-xl border-bgColor dark:border-white border-2 bg-bgColor dark:border-white rounded-lg"
+              className="inline-block mt-4 w-full md:w-fit text-center md:text-left md:mr-4 px-8 py-2 text-white text-xl border-bgColor dark:border-white border-2 bg-bgColor dark:bg-transparent dark:border-white rounded-lg"
             >
               Submit
             </button>

@@ -32,7 +32,7 @@ function MyApp({ Component, pageProps }) {
     setTheme(!("theme" in localStorage) ? "dark" : localStorage.theme);
 
     const resize = () => {
-      if (window.innerWidth < 460) {
+      if (window.innerWidth <= 1366) {
         setIsMobile(true);
       } else {
         setIsMobile(false);

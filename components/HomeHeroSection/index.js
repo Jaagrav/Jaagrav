@@ -32,8 +32,8 @@ export default function HomeHeroSection() {
       <div className="absolute h-full w-full bg-gradient-to-b from-transparent transition duration-300 to-white translate-y-1 pointer-events-none dark:opacity-0 opacity-100"></div>
       <div className="absolute h-full w-full bg-gradient-to-b from-transparent transition duration-300 to-bgColor translate-y-1 pointer-events-none opacity-0 dark:opacity-100"></div>
       <div className="absolute w-full h-full pointer-events-none">
-        <div className="skew max-w-screen-xl absolute top-0 left-0 bottom-0 right-0 m-auto z-10 h-fit w-fit px-10 md:px-24">
-          <div className="md:px-20">
+        <div className="skew max-w-screen-xl absolute top-0 left-0 bottom-0 right-0 m-auto z-10 h-fit w-fit px-10 md:px-32">
+          <div className="md:px-6">
             <span className="block text-[5rem] md:text-[6rem] text-border">
               UX Designer
             </span>
@@ -43,7 +43,7 @@ export default function HomeHeroSection() {
             <span className="block text-[5rem] md:text-[6rem] text-border">
               Full Stack Developer
             </span>
-            <span className="mt-2 block text-lightTextColor dark:text-white text-xl leading-10 md:max-w-[58vw]">
+            <span className="mt-2 block text-lightTextColor dark:text-white text-xl leading-10 lg:max-w-[58vw] md:max-w-[72vw]">
               I am a very nice and humble front-end developer. I can design a
               website on figma, develop it using NextJS, TailwindCSS or Material
               UI, and deploy it on Vercel. Well that’s what I did for this

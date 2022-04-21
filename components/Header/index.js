@@ -54,7 +54,7 @@ export default function Header({ changeTheme }) {
 function DesktopHeader({ isAtTop, currentURL, changeTheme }) {
   return (
     <div
-      className={`transition fixed h-24 md:h-16 w-full z-30 px-10 md:px-24 ${
+      className={`transition fixed h-24 md:h-16 w-full z-30 px-10 md:px-32 ${
         !isAtTop
           ? `${
               !isAtTop ? "bg-extraDarkBgColorTranslucent" : ""
@@ -63,7 +63,7 @@ function DesktopHeader({ isAtTop, currentURL, changeTheme }) {
       }`}
     >
       <div className="max-w-screen-xl text-white m-auto h-full">
-        <div className="h-full w-full grid grid-cols-[18rem_1fr_18rem] my-auto">
+        <div className="h-full w-full grid grid-cols-[16rem_1fr_16rem] my-auto">
           <div
             className={`text-3xl my-auto ${
               !isAtTop ? "text-white" : "text-lightTextColor"
@@ -97,16 +97,7 @@ function DesktopHeader({ isAtTop, currentURL, changeTheme }) {
               isAtTop={isAtTop}
             />
           </div>
-          <div className="h-full w-full flex gap-4">
-            <button
-              className={`px-6 py-1 ${
-                !isAtTop
-                  ? "text-white"
-                  : "text-lightTextColor border-lightTextColor"
-              } dark:text-white dark:border-white border-2 ml-auto my-auto rounded-lg`}
-            >
-              Resume
-            </button>
+          <div className="h-full w-full flex gap-4 items-center justify-end">
             <button
               onClick={changeTheme}
               className={`${
@@ -119,6 +110,15 @@ function DesktopHeader({ isAtTop, currentURL, changeTheme }) {
               <div className="hidden dark:block">
                 <FiSun />
               </div>
+            </button>
+            <button
+              className={`px-6 py-1 ${
+                !isAtTop
+                  ? "text-white"
+                  : "text-lightTextColor border-lightTextColor"
+              } dark:text-white dark:border-white border-2 my-auto rounded-lg`}
+            >
+              Resume
             </button>
           </div>
         </div>
@@ -167,7 +167,7 @@ function MobileHeader({ isAtTop, currentURL, changeTheme }) {
   return (
     <>
       <div
-        className={`transition fixed h-24 md:h-16 w-full z-30 px-10 md:px-24 ${
+        className={`transition fixed h-24 md:h-16 w-full z-30 px-10 md:px-32 ${
           !isAtTop
             ? `backdrop-blur-lg ${
                 isOpen

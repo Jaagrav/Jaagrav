@@ -1,6 +1,6 @@
 export default function SkillsSection() {
   return (
-    <div className="px-10 md:px-24 skew my-8 relative z-10">
+    <div className="px-10 md:px-32 skew my-8 relative z-10">
       <div className="max-w-screen-xl mx-auto">
         <div className="w-full grid md:grid-cols-2 gap-12 md:gap-6">
           <Skill

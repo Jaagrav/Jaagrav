@@ -75,7 +75,7 @@ html:not(.dark) .text-border-light {
   }
 }
 
-@media screen and (min-width: 360px) and (max-width: 976px) {
+@media screen and (min-width: 360px) and (max-width: 769px) {
   html,
   body {
     font-size: 10px;
@@ -86,14 +86,14 @@ html:not(.dark) .text-border-light {
   }
 }
 
-@media screen and (min-width: 976px) and (max-width: 1144px) {
+@media screen and (min-width: 769px) and (max-width: 1024px) {
   html,
   body {
-    font-size: 10px;
+    font-size: 12px;
   }
 }
 
-@media screen and (min-width: 1144px) and (max-width: 1440px) {
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
   html,
   body {
     font-size: 13px;

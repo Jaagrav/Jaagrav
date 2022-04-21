@@ -48,7 +48,7 @@ export default function Contact() {
         title="Contact Me"
         caption="You got some shit to say? Feel free to reach out to me, I’ll respond whenever I want, and please don't send me bullshit if you're planning to, and if you're a recruiter, then keep going..."
       />
-      <div className="px-10 md:px-24 relative z-10">
+      <div className="px-10 md:px-32 relative z-10">
         <div className="max-w-screen-xl mx-auto">
           <form
             onSubmit={handleSubmit}
@@ -113,7 +113,7 @@ function ThankYouMessage() {
         title="Contact Me"
         caption="You got some shit to say? Feel free to reach out to me, I’ll respond whenever I want, and please don't send me bullshit if you're planning to, and if you're a recruiter, then keep going..."
       />
-      <div className="px-10 md:px-24 relative z-10">
+      <div className="px-10 md:px-32 relative z-10">
         <div className="max-w-screen-xl mx-auto">
           <div className="bg-bgSecondaryColor p-12 text-center">
             <h1 className="text-white text-6xl ">

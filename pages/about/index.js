@@ -57,7 +57,7 @@ export default function About() {
         <meta property="og:image:width" content="300" />
         <meta property="og:image:height" content="300" />
       </Head>
-      <div className="px-10 md:px-24 pb-12">
+      <div className="px-10 md:px-32 pb-12">
         <div className="md:grid md:grid-cols-[1fr_0.4fr] gap-8 max-w-screen-xl m-auto">
           {/* <div className="block md:hidden">
               <div

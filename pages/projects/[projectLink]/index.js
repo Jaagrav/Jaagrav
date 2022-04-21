@@ -44,7 +44,7 @@ export default function Page({ project, randomProject }) {
         title={project.title}
         // caption={project.miniDesc}
       />
-      <div className="px-10 md:px-24">
+      <div className="px-10 md:px-32">
         <div className="relative z-10 max-w-screen-xl mx-auto">
           <img src={project.img} className="w-full rounded-lg" />
           <div className="grid md:grid-cols-[1fr_2px_0.6fr] mt-12">

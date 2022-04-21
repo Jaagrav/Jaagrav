@@ -5,13 +5,13 @@ import Link from "next/link";
 
 export default function Projects() {
   return (
-    <div className="h-fit w-full overflow-hidden">
+    <div className="h-fit w-full overflow-clip">
       <Head>
         <title>Projects / Jaagrav</title>
         <meta name="title" content="Projects / Jaagrav" />
         <meta
           name="description"
-          content="Take a look at the shit I made in the name of Software Development. Honestly I am quite proud how some of them turned out. Some of them are available on Github so go ahead knock yourself out! The others are client/freelance projects."
+          content="Take a look at the shit I made in the name of Software Development. Honestly I am quite proud how most of them turned out. Most of them are available on Github so go ahead knock yourself out! The others are client/freelance projects."
         />
         <meta
           name="viewport"
@@ -21,7 +21,7 @@ export default function Projects() {
         <meta property="og:title" content="Projects / Jaagrav" />
         <meta
           property="og:description"
-          content="Take a look at the shit I made in the name of Software Development. Honestly I am quite proud how some of them turned out. Some of them are available on Github so go ahead knock yourself out! The others are client/freelance projects."
+          content="Take a look at the shit I made in the name of Software Development. Honestly I am quite proud how most of them turned out. Most of them are available on Github so go ahead knock yourself out! The others are client/freelance projects."
         />
         <meta
           property="og:image"
@@ -32,7 +32,7 @@ export default function Projects() {
         <meta property="twitter:title" content="Projects / Jaagrav" />
         <meta
           property="twitter:description"
-          content="Take a look at the shit I made in the name of Software Development. Honestly I am quite proud how some of them turned out. Some of them are available on Github so go ahead knock yourself out! The others are client/freelance projects."
+          content="Take a look at the shit I made in the name of Software Development. Honestly I am quite proud how most of them turned out. Most of them are available on Github so go ahead knock yourself out! The others are client/freelance projects."
         />
         <meta
           property="twitter:image"
@@ -43,12 +43,12 @@ export default function Projects() {
       </Head>
       <SubHeader
         title="My Projects"
-        caption="Take a look at the shit I made in the name of Software Development. Honestly I am quite proud how some of them turned out. Some of them are available on Github so go ahead knock yourself out! The others are client/freelance projects."
+        caption="Take a look at the shit I made in the name of Software Development. Honestly I am quite proud how most of them turned out. Most of them are available on Github so go ahead knock yourself out! The others are client/freelance projects."
       />
       {projectData.map((props, index) => (
         <ProjectCards key={`project-card-${index}`} {...props} />
       ))}
-      <span className="relative z-10 block text-center mx-auto mt-16 text-white text-xl skew">
+      <span className="relative z-10 block text-center mx-auto mt-16 text-lightTextColor dark:text-white text-xl skew">
         {"There's more, "}
         <Link href="https://github.com/jaagrav" target="_blank">
           <a className="transition text-indigo hover:underline underline-offset-8">

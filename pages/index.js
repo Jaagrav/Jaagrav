@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Link from "next/link";
 import Head from "next/head";
 import {
@@ -12,8 +13,12 @@ import {
 import projectData from "../project-data";
 
 export default function Home() {
+  useEffect(() => {
+    console.log("Page Loaded");
+  }, []);
+
   return (
-    <div className="h-fit w-full overflow-hidden">
+    <div className="h-fit w-full overflow-clip">
       <Head>
         <title>Home / Jaagrav</title>
         <meta
@@ -64,7 +69,7 @@ export default function Home() {
       <GallerySection />
       <SubHeader
         title="Featured Projects"
-        caption="Take a look at the shit I made in the name of Software Development. Honestly I am quite proud how some of them turned out. Some of them are available on Github so go ahead knock yourself out! The others are client/freelance projects."
+        caption="Take a look at the shit I made in the name of Software Development. Honestly I am quite proud how most of them turned out. Most of them are available on Github so go ahead knock yourself out! The others are client/freelance projects."
       />
       {projectData.map((props, index) => {
         if (props.showOnHome)

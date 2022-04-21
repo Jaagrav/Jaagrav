@@ -8,7 +8,7 @@ export default function Contact() {
     return <ThankYouMessage />;
   }
   return (
-    <div className="h-fit w-full overflow-hidden">
+    <div className="h-fit w-full overflow-clip">
       <Head>
         <title>Contact / Jaagrav</title>
         <meta name="title" content="Contact / Jaagrav" />
@@ -108,7 +108,7 @@ export default function Contact() {
 
 function ThankYouMessage() {
   return (
-    <div className="h-fit w-full overflow-hidden">
+    <div className="h-fit w-full overflow-clip">
       <SubHeader
         title="Contact Me"
         caption="You got some shit to say? Feel free to reach out to me, I’ll respond whenever I want, and please don't send me bullshit if you're planning to, and if you're a recruiter, then keep going..."

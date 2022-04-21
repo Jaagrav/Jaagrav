@@ -52,7 +52,7 @@ export default function ProjectCards({
             src="/assets/images/blur-ball-blue.webp"
           />
           <img
-            className="relative z-10 md:max-w-xl rounded-lg transition duration-300 hover:scale-105"
+            className="relative z-10 md:max-w-xl rounded-lg transition duration-300 hover:scale-105 shadow-2xl"
             src={img}
           />
           <img

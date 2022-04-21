@@ -37,8 +37,8 @@ function Testimonial({
 }) {
   return (
     <div className="h-full w-full px-10 md:px-32">
-      <div className="h-full max-w-screen-xl md:grid md:grid-cols-[28rem_1fr] bg-lightBgSecondaryColor dark:bg-bgSecondaryColor mx-auto rounded-lg overflow-hidden">
-        <div className="relative h-[85vw] md:h-full md:w-[28rem] flex justify-center items-center overflow-hidden">
+      <div className="h-full max-w-screen-xl md:grid md:grid-cols-[28rem_1fr] bg-lightBgSecondaryColor dark:bg-bgSecondaryColor mx-auto rounded-lg overflow-clip">
+        <div className="relative h-[85vw] md:h-full md:w-[28rem] flex justify-center items-center overflow-clip">
           <div
             className="w-full h-full flex justify-center items-center blur-sm bg-cover bg-center brightness-50"
             style={{ backgroundImage: `url(${img})` }}

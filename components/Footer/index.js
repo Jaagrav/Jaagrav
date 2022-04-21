@@ -10,7 +10,7 @@ import {
 
 export default function Footer() {
   return (
-    <div className="mt-12 px-10 md:px-32 relative overflow-hidden w-full border-t-[1px] border-lightBgSecondaryColorTranslucent dark:border-bgSecondaryColor">
+    <div className="mt-12 px-10 md:px-32 relative overflow-clip h-fit w-full border-t-[1px] border-lightBgSecondaryColorTranslucent dark:border-bgSecondaryColor">
       <h1 className="h-fit w-fit max-w-full absolute m-auto top-0 left-0 right-0 bottom-0 text-center text-border text-[24vw] md:text-[14vw] opacity-10 md:opacity-5">
         Jaagrav Seal
       </h1>
@@ -22,7 +22,7 @@ export default function Footer() {
         className="w-[75vw] absolute z-0 left-0 bottom-0 m-auto translate-x-0 translate-y-2/3 opacity-60"
         src="/assets/images/blur-ball-indigo.webp"
       />
-      <div className="relative max-w-screen-xl w-full mx-auto mt-10 mb-6">
+      <div className="relative max-w-screen-xl w-full mx-auto mt-10">
         <div className="">
           <div className="">
             <p className="text-lightTextColor dark:text-white text-base leading-10">
@@ -97,7 +97,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="h-[1px] w-full bg-lightBgSecondaryColorTranslucent dark:bg-bgSecondaryColor mt-12 mb-6"></div>
-        <div className="text-lightTextColor dark:text-white text-lg text-center">
+        <div className="text-lightTextColor dark:text-white text-lg text-center pb-6">
           © {new Date().getFullYear()}{" "}
           <a
             href="https://peerlist.io/jaagrav"

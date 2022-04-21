@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export default function Page({ project, randomProject }) {
   return (
-    <div className="h-fit w-full overflow-hidden">
+    <div className="h-fit w-full overflow-clip">
       <Head>
         <title>{project.title} / Projects / Jaagrav</title>
         <meta name="title" content={`${project.title} / Projects / Jaagrav`} />
@@ -46,7 +46,14 @@ export default function Page({ project, randomProject }) {
       />
       <div className="px-10 md:px-32">
         <div className="relative z-10 max-w-screen-xl mx-auto">
-          <img src={project.img} className="w-full rounded-lg" />
+          <img
+            src={project.img}
+            className="w-full rounded-lg transition duration-300 hover:scale-105 shadow-2xl"
+          />
+        </div>
+      </div>
+      <div className="px-10 md:px-32">
+        <div className="relative z-10 max-w-screen-xl mx-auto">
           <div className="grid md:grid-cols-[1fr_2px_0.6fr] mt-12">
             <div className="py-12 md:pr-12">
               <div className="text-xl leading-10 text-lightTextColor dark:text-white">
@@ -55,41 +62,43 @@ export default function Page({ project, randomProject }) {
             </div>
             <div className="h-full w-full bg-lightBgSecondaryColorTranslucent dark:bg-bgSecondaryColor"></div>
             <div className="py-12 md:pl-12">
-              <div className="text-lightTextColor dark:text-white text-2xl">
-                Technologies used:
-              </div>
-              <div className="my-6">
-                {project.tech.map((tech, index) => (
-                  <span
-                    key={`tech-index-${index}`}
-                    className="inline-block bg-lightBgSecondaryColor dark:bg-bgSecondaryColor text-lightTextColor dark:text-white text-lg md:text-sm px-2 py-1 mb-2 mr-2 rounded-lg"
-                  >
-                    {tech}
-                  </span>
-                ))}
-              </div>
-              <div className="text-lightTextColor dark:text-white text-2xl">
-                Check it out:
-              </div>
-              <div className="flex mt-6 gap-6">
-                {project.website && (
-                  <Link href={project.website} target="_blank">
-                    <a
-                      className={`block h-full w-full text-center px-8 py-2 text-white dark:text-bgColor text-xl border-lightTextColor dark:border-white border-2 bg-lightTextColor dark:bg-white rounded-lg`}
+              <div className="h-fit sticky top-28">
+                <div className="text-lightTextColor dark:text-white text-2xl">
+                  Technologies used:
+                </div>
+                <div className="my-6">
+                  {project.tech.map((tech, index) => (
+                    <span
+                      key={`tech-index-${index}`}
+                      className="inline-block bg-lightBgSecondaryColor dark:bg-bgSecondaryColor text-lightTextColor dark:text-white text-lg md:text-sm px-2 py-1 mb-2 mr-2 rounded-lg"
                     >
-                      Website
-                    </a>
-                  </Link>
-                )}
-                {project.github && (
-                  <Link href={project.github} target="_blank">
-                    <a
-                      className={`block h-full w-full text-center px-8 py-2 text-lightTextColor dark:text-white text-xl border-lightTextColor dark:border-white border-2 rounded-lg`}
-                    >
-                      GitHub
-                    </a>
-                  </Link>
-                )}
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+                <div className="text-lightTextColor dark:text-white text-2xl">
+                  Check it out:
+                </div>
+                <div className="flex mt-6 gap-6">
+                  {project.website && (
+                    <Link href={project.website} target="_blank">
+                      <a
+                        className={`block h-full w-full text-center px-8 py-2 text-white dark:text-bgColor text-xl border-lightTextColor dark:border-white border-2 bg-lightTextColor dark:bg-white rounded-lg`}
+                      >
+                        Website
+                      </a>
+                    </Link>
+                  )}
+                  {project.github && (
+                    <Link href={project.github} target="_blank">
+                      <a
+                        className={`block h-full w-full text-center px-8 py-2 text-lightTextColor dark:text-white text-xl border-lightTextColor dark:border-white border-2 rounded-lg`}
+                      >
+                        GitHub
+                      </a>
+                    </Link>
+                  )}
+                </div>
               </div>
             </div>
           </div>
@@ -102,7 +111,7 @@ export default function Page({ project, randomProject }) {
       <ProjectCards {...randomProject} />
       <span className="relative z-10 block text-center mx-auto mt-16 text-lightTextColor dark:text-white text-xl skew">
         {"There's more, "}
-        <Link href="https://github.com/jaagrav" target="_blank">
+        <Link href="/projects" target="_blank">
           <a className="transition text-indigo hover:underline underline-offset-8">
             click here to find out!
           </a>

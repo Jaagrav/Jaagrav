@@ -43,8 +43,8 @@ export default function HomeHeroSection() {
             <span className="block text-[5rem] md:text-[6rem] text-border">
               Full Stack Developer
             </span>
-            <span className="mt-2 block text-lightTextColor dark:text-white text-xl leading-10 lg:max-w-[58vw] md:max-w-[72vw]">
-              I am a very nice and humble front-end developer. I can design a
+            <span className="mt-2 block text-lightTextColor dark:text-white text-xl leading-10 xl:max-w-[58vw] md:max-w-[72vw]">
+              I am a very nice and humble full stack developer. I can design a
               website on figma, develop it using NextJS, TailwindCSS or Material
               UI, and deploy it on Vercel. Well that’s what I did for this
               website, if you want to know more, keep scrolling.

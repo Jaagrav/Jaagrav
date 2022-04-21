@@ -38,7 +38,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  overflow-x: hidden;
+  overflow-x: clip;
 }
 
 html,
@@ -73,6 +73,11 @@ html:not(.dark) .text-border-light {
   .text-border {
     -webkit-text-stroke-width: 1.25px;
   }
+
+  .vertical-timeline-element-date {
+    margin-top: 0.65rem !important;
+    font-size: 1.25rem !important;
+  }
 }
 
 @media screen and (min-width: 360px) and (max-width: 769px) {
@@ -84,12 +89,22 @@ html:not(.dark) .text-border-light {
   .text-border {
     -webkit-text-stroke-width: 1.5px;
   }
+
+  .vertical-timeline-element-date {
+    margin-top: 0.65rem !important;
+    font-size: 1.25rem !important;
+  }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   html,
   body {
     font-size: 12px;
+  }
+
+  .vertical-timeline-element-date {
+    margin-top: 0.65rem !important;
+    font-size: 1.25rem !important;
   }
 }
 
@@ -120,7 +135,7 @@ html:not(.dark) .text-border-light {
 }
 
 .vertical-timeline-element-date {
-  color: white !important;
+  color: var(--text) !important;
   opacity: 1 !important;
 }
 

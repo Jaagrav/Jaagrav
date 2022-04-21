@@ -63,7 +63,7 @@ function DesktopHeader({ isAtTop, currentURL, changeTheme }) {
       }`}
     >
       <div className="max-w-screen-xl text-white m-auto h-full">
-        <div className="h-full w-full grid grid-cols-[16rem_1fr_16rem] my-auto">
+        <div className="h-full w-full grid grid-cols-[12rem_1fr_12rem] my-auto">
           <div
             className={`text-3xl my-auto ${
               !isAtTop ? "text-white" : "text-lightTextColor"
@@ -71,7 +71,7 @@ function DesktopHeader({ isAtTop, currentURL, changeTheme }) {
           >
             <Link href="/">JS</Link>
           </div>
-          <div className="h-full w-full max-w-screen-sm flex flex-row justify-between items-center m-auto">
+          <div className="h-full w-full max-w-lg lg:max-w-xl flex flex-row justify-between items-center m-auto">
             <DesktopNavLink
               href="/"
               name="Home"

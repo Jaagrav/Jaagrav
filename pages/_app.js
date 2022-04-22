@@ -29,7 +29,7 @@ function MyApp({ Component, pageProps }) {
     };
 
   useEffect(() => {
-    setTheme(!("theme" in localStorage) ? "dark" : localStorage.theme);
+    setTheme(!("theme" in localStorage) ? "light" : localStorage.theme);
 
     const resize = () => {
       if (window.innerWidth <= 1366) {

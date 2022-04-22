@@ -111,15 +111,17 @@ function DesktopHeader({ isAtTop, currentURL, changeTheme }) {
                 <FiSun />
               </div>
             </button>
-            <button
-              className={`px-6 py-1 ${
-                !isAtTop
-                  ? "text-white"
-                  : "text-lightTextColor border-lightTextColor"
-              } dark:text-white dark:border-white border-2 my-auto rounded-lg`}
-            >
-              Resume
-            </button>
+            <Link href="/resume">
+              <a
+                className={`px-6 py-1 ${
+                  !isAtTop
+                    ? "text-white"
+                    : "text-lightTextColor border-lightTextColor"
+                } dark:text-white dark:border-white border-2 my-auto rounded-lg`}
+              >
+                Resume
+              </a>
+            </Link>
           </div>
         </div>
       </div>
@@ -257,15 +259,17 @@ function MobileHeader({ isAtTop, currentURL, changeTheme }) {
               isAtTop={isAtTop}
             />
             <div className="mt-4 h-full w-full flex gap-12 items-center">
-              <button
-                className={`px-6 py-4 w-full ${
-                  !isAtTop
-                    ? "text-white border-white"
-                    : "text-lightTextColor border-lightTextColor"
-                } dark:text-white text-5xl dark:border-white border-2 mr-auto my-auto rounded-lg`}
-              >
-                Resume
-              </button>
+              <Link href="/resume">
+                <a
+                  className={`px-6 py-4 w-full ${
+                    !isAtTop
+                      ? "text-white border-white"
+                      : "text-lightTextColor border-lightTextColor"
+                  } dark:text-white text-5xl dark:border-white border-2 mr-auto my-auto rounded-lg`}
+                >
+                  Resume
+                </a>
+              </Link>
               <button
                 onClick={changeTheme}
                 className={`${

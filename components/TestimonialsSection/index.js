@@ -40,7 +40,7 @@ function Testimonial({
 }) {
   return (
     <div className="h-full w-full px-10 md:px-32">
-      <div className="pb-12 h-full max-w-screen-xl md:grid md:grid-cols-[28rem_1fr] gap-12 mx-auto rounded-lg">
+      <div className="pb-12 h-full max-w-screen-xl grid md:grid-cols-[28rem_1fr] gap-12 mx-auto rounded-lg">
         <div className="relative w-full h-auto flex justify-center items-center">
           <img src={img} className="w-full rounded-3xl shadow-xl" />
         </div>

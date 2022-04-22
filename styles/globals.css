@@ -20,7 +20,7 @@
 
 @font-face {
   font-family: "TimerBurner";
-  src: url(/assets/fonts/TimeBurner.ttf) format("truetype");
+  src: url(/assets/fonts/TimeBurner.woff);
 }
 
 * {

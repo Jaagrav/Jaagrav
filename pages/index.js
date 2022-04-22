@@ -120,9 +120,20 @@ export default function Home() {
       </span>
       <SubHeader
         title="People love me, seriously."
-        caption="The word testimonial comes from the latin word testimonium which means a formal statement testifying to someone's character and qualifications. Basically this section highlights some of the beautiful things, people I respect, say about me."
+        caption="The word testimonial comes from the latin word testimonium which means a formal statement testifying to someone's character and qualifications. Basically this section highlights some of the beautiful things, people I admire and respect, say about me."
       />
       <TestimonialsSection />
+      <span className="relative z-10 block text-center mx-auto mt-2 mb-16 text-lightTextColor dark:text-white text-xl skew">
+        {"All of these are totally real, "}
+        <Link
+          href="https://www.linkedin.com/in/jaagrav/details/recommendations/"
+          target="_blank"
+        >
+          <a className="transition text-pink hover:underline underline-offset-8">
+            look here for proof.
+          </a>
+        </Link>{" "}
+      </span>
     </div>
   );
 }

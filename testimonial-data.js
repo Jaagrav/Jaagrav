@@ -6,8 +6,20 @@ const testimonialData = [
       "Front End Developer at CuriousJr · Indian Institute of Technology, Kanpur",
     occupation: "Front End Developer",
     testimonial: `Jaagrav is an awesome kid with an awesome skillset. He is quite proficient in web development, and what makes it even better is the ability to combine his creativity with whatever he does. When it comes to problem solving, he is quick to find solutions. His belief that a solution exit if the problem does, and the ability to keenly search for that solution, is quite a distinguishing factor. On top of that, he is really fun to talk to.
-    Wish you all the best Jaagrav, have fun and keep learning`,
+    Wish you all the best Jaagrav, have fun and keep learning!`,
     img: "./assets/images/testimonials/Sharique.webp",
+    link: "https://www.linkedin.com/in/md-sharique-313b611b7",
+  },
+  {
+    first_name: "Naveen",
+    last_name: "Garg",
+    relationship:
+      "Lead Software Developer at CuriousJr · Indian Institute of Technology, Varanasi",
+    occupation: "Lead Software Developer",
+    testimonial: `I have worked with Jaagrav for quite sometime and enjoyed it thoroughly. He is a quick learner who does his task/projects diligently and always on time. He also goes beyond the assigned task and and tries to bring more creativity in the ongoing projects. Also, he is highly proficient in web development( JavaScript, HTML, CSS). He is one of the best intern i have worked with. 
+    I wish him all the best.`,
+    img: "./assets/images/testimonials/Naveen.webp",
+    link: "https://www.linkedin.com/in/naveengargbhu",
   },
   {
     first_name: "Salil",
@@ -16,8 +28,9 @@ const testimonialData = [
       "Building Socket Technology · Ex Polygon · Goa Engineering College",
     occupation: "Creative Developer",
     testimonial: `Jaagrav is an awesome kid with an awesome skillset. He is quite proficient in web development, and what makes it even better is the ability to combine his creativity with whatever he does. When it comes to problem solving, he is quick to find solutions. His belief that a solution exit if the problem does, and the ability to keenly search for that solution, is quite a distinguishing factor. On top of that, he is really fun to talk to.
-    Wish you all the best Jaagrav, have fun and keep learning`,
+    Wish you all the best Jaagrav, have fun and keep learning!`,
     img: "./assets/images/testimonials/Salil.webp",
+    link: "https://www.linkedin.com/in/salilnaik/",
   },
   {
     first_name: "Trusha",
@@ -26,6 +39,7 @@ const testimonialData = [
     occupation: "UI/UX Designer",
     testimonial: `If you want to work with a prodigy, Jaagrav is THE person! He is a talented genius whose curiosity to learn and solve any given problem makes him a laudable coder. He puts his heart and soul into his work and will definitely be an asset wherever he goes!`,
     img: "./assets/images/testimonials/Trusha.webp",
+    link: "https://www.linkedin.com/in/trusha-neogi-6a69bb191/",
   },
   {
     first_name: "Shrutika",
@@ -39,6 +53,7 @@ const testimonialData = [
     His Github activity and Linkedin profile speak for themselves!
     I would highly recommend him to anyone who needs a hardworking and passionate person for designing, web development, and software development services.`,
     img: "./assets/images/testimonials/Shrutika.webp",
+    link: "https://www.linkedin.com/in/shrutika-g-40829910b/",
   },
 ];
 

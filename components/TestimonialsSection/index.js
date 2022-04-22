@@ -5,6 +5,8 @@ import testimonialData from "../../testimonial-data";
 
 import Link from "next/link";
 
+import { FiLinkedin } from "react-icons/fi";
+
 export default function TestimonialsSection() {
   return (
     <div className="h-fit relative">
@@ -34,18 +36,15 @@ function Testimonial({
   occupation,
   testimonial,
   img,
+  link,
 }) {
   return (
     <div className="h-full w-full px-10 md:px-32">
-      <div className="h-full max-w-screen-xl md:grid md:grid-cols-[28rem_1fr] bg-lightBgSecondaryColor dark:bg-bgSecondaryColor mx-auto rounded-lg overflow-clip">
-        <div className="relative h-[85vw] md:h-full md:w-[28rem] flex justify-center items-center overflow-clip">
-          <div
-            className="w-full h-full flex justify-center items-center blur-sm bg-cover bg-center brightness-50"
-            style={{ backgroundImage: `url(${img})` }}
-          ></div>
-          <img src={img} className="absolute m-auto inset-0 w-3/4" />
+      <div className="pb-12 h-full max-w-screen-xl md:grid md:grid-cols-[28rem_1fr] gap-12 mx-auto rounded-lg">
+        <div className="relative w-full h-auto flex justify-center items-center">
+          <img src={img} className="w-full rounded-3xl shadow-xl" />
         </div>
-        <div className="p-12 flex justify-center items-center my-auto">
+        <div className="flex justify-center items-center my-auto">
           <div className="my-auto">
             <div className="text-base text-lightTextColor dark:text-white text-left">
               {relationship}
@@ -60,13 +59,10 @@ function Testimonial({
               {testimonial}
             </div>
             <div className="mt-6 text-xl leading-8 text-lightTextColor dark:text-white text-left">
-              This is totally real,{" "}
-              <Link
-                href="https://www.linkedin.com/in/jaagrav/details/recommendations/"
-                target="_blank"
-              >
-                <a className="transition text-pink hover:underline underline-offset-8">
-                  look here for proof.
+              <span>{"Check out "}</span>
+              <Link href={link}>
+                <a className="transition text-indigo hover:underline underline-offset-8">
+                  {first_name} {last_name} on LinkedIn
                 </a>
               </Link>
             </div>

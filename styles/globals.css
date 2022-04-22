@@ -153,3 +153,11 @@ html:not(.dark) .text-border-light {
   width: 100% !important;
   /* display: none !important; */
 }
+
+li.dot {
+  background: var(--text) !important;
+}
+
+li.dot.selected {
+  transform: scale(1.5) !important;
+}

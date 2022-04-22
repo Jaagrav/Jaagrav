@@ -1,6 +1,7 @@
 import { SubHeader } from "../../components";
 import { useForm, ValidationError } from "@formspree/react";
 import Head from "next/head";
+import Link from "next/link";
 
 export default function Contact() {
   const [state, handleSubmit] = useForm("mwkyravz");
@@ -101,6 +102,17 @@ export default function Contact() {
             </button>
           </form>
         </div>
+      </div>
+      <div className="text-center">
+        <Link href="mailto:contact@gmail.com">
+          <a target="_blank">
+            <div className="mt-12 md:m-auto ">
+              <h1 className="text-border text-[10vw] md:text-[7rem] whitespace-nowrap transition hover:scale-105">
+                contact@jaagrav.in
+              </h1>
+            </div>
+          </a>
+        </Link>
       </div>
     </div>
   );

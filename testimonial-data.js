@@ -1,16 +1,5 @@
 const testimonialData = [
   {
-    first_name: "MD",
-    last_name: "Sharique",
-    relationship:
-      "Front End Developer at CuriousJr · Indian Institute of Technology, Kanpur",
-    occupation: "Front End Developer",
-    testimonial: `Jaagrav is an awesome kid with an awesome skillset. He is quite proficient in web development, and what makes it even better is the ability to combine his creativity with whatever he does. When it comes to problem solving, he is quick to find solutions. His belief that a solution exit if the problem does, and the ability to keenly search for that solution, is quite a distinguishing factor. On top of that, he is really fun to talk to.
-    Wish you all the best Jaagrav, have fun and keep learning!`,
-    img: "./assets/images/testimonials/Sharique.webp",
-    link: "https://www.linkedin.com/in/md-sharique-313b611b7",
-  },
-  {
     first_name: "Naveen",
     last_name: "Garg",
     relationship:
@@ -20,6 +9,17 @@ const testimonialData = [
     I wish him all the best.`,
     img: "./assets/images/testimonials/Naveen.webp",
     link: "https://www.linkedin.com/in/naveengargbhu",
+  },
+  {
+    first_name: "MD",
+    last_name: "Sharique",
+    relationship:
+      "Front End Developer at CuriousJr · Indian Institute of Technology, Kanpur",
+    occupation: "Front End Developer",
+    testimonial: `Jaagrav is an awesome kid with an awesome skillset. He is quite proficient in web development, and what makes it even better is the ability to combine his creativity with whatever he does. When it comes to problem solving, he is quick to find solutions. His belief that a solution exit if the problem does, and the ability to keenly search for that solution, is quite a distinguishing factor. On top of that, he is really fun to talk to.
+    Wish you all the best Jaagrav, have fun and keep learning!`,
+    img: "./assets/images/testimonials/Sharique.webp",
+    link: "https://www.linkedin.com/in/md-sharique-313b611b7",
   },
   {
     first_name: "Salil",

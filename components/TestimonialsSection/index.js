@@ -20,6 +20,7 @@ export default function TestimonialsSection() {
         emulateTouch={true}
         stopOnHover={true}
         useKeyboardArrows={true}
+        dynamicHeight={true}
       >
         {testimonialData.map((testimonial, index) => (
           <Testimonial {...testimonial} key={`testimonial-${index}`} />
@@ -39,33 +40,34 @@ function Testimonial({
   link,
 }) {
   return (
-    <div className="h-full w-full px-10 md:px-32">
-      <div className="pb-12 h-full max-w-screen-xl grid md:grid-cols-[28rem_1fr] gap-12 mx-auto rounded-lg">
-        <div className="relative w-full h-auto flex justify-center items-center">
-          <img src={img} className="w-full rounded-3xl shadow-xl" />
-        </div>
-        <div className="flex justify-center items-center my-auto">
-          <div className="my-auto">
-            <div className="text-base text-lightTextColor dark:text-white text-left">
-              {relationship}
-            </div>
-            <div className="mt-4 text-lightTextColor dark:text-white text-5xl text-left">
-              {first_name} {last_name}
-            </div>
-            <div className="mt-4 text-5xl text-border text-left">
-              {occupation}
-            </div>
-            <div className="mt-6 text-xl leading-8 text-lightTextColor dark:text-white text-left">
-              {testimonial}
-            </div>
-            <div className="mt-6 text-xl leading-8 text-lightTextColor dark:text-white text-left">
-              <span>{"Check out "}</span>
-              <Link href={link}>
-                <a className="transition text-indigo hover:underline underline-offset-8">
-                  {first_name} {last_name} on LinkedIn
-                </a>
-              </Link>
-            </div>
+    <div className="px-10 md:px-32">
+      <div className="pb-12 max-w-screen-xl md:grid md:grid-cols-[auto_1fr] gap-12 mx-auto rounded-lg">
+        <span className="relative h-full h-auto flex justify-center items-center">
+          <div
+            className="h-[30rem] w-full md:w-[30rem] bg-cover bg-center bg-no-repeat rounded-2xl shadow-lg"
+            style={{ backgroundImage: `url(${img})` }}
+          ></div>
+        </span>
+        <div className="h-full py-12 md:py-0 flex justify-center items-start flex-col">
+          <div className="text-base text-lightTextColor dark:text-white text-left">
+            {relationship}
+          </div>
+          <div className="mt-4 text-lightTextColor dark:text-white text-5xl text-left">
+            {first_name} {last_name}
+          </div>
+          <div className="mt-4 text-5xl text-border text-left">
+            {occupation}
+          </div>
+          <div className="mt-6 text-xl leading-8 text-lightTextColor dark:text-white text-left">
+            {testimonial}
+          </div>
+          <div className="mt-6 text-xl leading-8 text-lightTextColor dark:text-white text-left">
+            <span>{"Check out "}</span>
+            <Link href={link}>
+              <a className="transition text-indigo hover:underline underline-offset-8">
+                {first_name} {last_name} on LinkedIn
+              </a>
+            </Link>
           </div>
         </div>
       </div>

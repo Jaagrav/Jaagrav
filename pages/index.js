@@ -13,10 +13,6 @@ import {
 import projectData from "../project-data";
 
 export default function Home() {
-  useEffect(() => {
-    console.log("Page Loaded");
-  }, []);
-
   return (
     <div className="h-fit w-full overflow-clip">
       <Head>

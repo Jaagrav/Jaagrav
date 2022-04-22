@@ -23,7 +23,7 @@ export default function Resume() {
         />
         <meta
           property="og:image"
-          content="https://jaagrav-2.vercel.app/assets/images/seo/projects.webp"
+          content="https://jaagrav-2.vercel.app/assets/images/seo/resume.webp"
         />
 
         <meta property="twitter:card" content="summary_large_image" />
@@ -34,7 +34,7 @@ export default function Resume() {
         />
         <meta
           property="twitter:image"
-          content="https://jaagrav-2.vercel.app/assets/images/seo/projects.webp"
+          content="https://jaagrav-2.vercel.app/assets/images/seo/resume.webp"
         />
         <meta property="og:image:width" content="300" />
         <meta property="og:image:height" content="300" />

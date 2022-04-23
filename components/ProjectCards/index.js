@@ -9,7 +9,7 @@ export default function ProjectCards({
   link,
 }) {
   return (
-    <div className="px-10 md:px-32 my-8 skew">
+    <div className="px-10 md:px-32">
       <div className="w-full max-w-screen-xl mx-auto flex items-center gap-12 md:gap-4 flex-col-reverse md:flex-row transition">
         <div className="relative z-10 w-full">
           <h1 className="text-lightTextColor dark:text-white text-4xl">

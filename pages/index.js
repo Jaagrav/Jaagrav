@@ -67,10 +67,12 @@ export default function Home() {
         title="Featured Projects"
         caption="Take a look at the shit I made in the name of Software Development. Honestly I am quite proud how most of them turned out. Most of them are available on Github so go ahead knock yourself out! The others are client/freelance projects."
       />
-      {projectData.map((props, index) => {
-        if (props.showOnHome)
-          return <ProjectCards key={`project-card-${index}`} {...props} />;
-      })}
+      <div className="grid grid-cols-1 gap-16">
+        {projectData.map((props, index) => {
+          if (props.showOnHome)
+            return <ProjectCards key={`project-card-${index}`} {...props} />;
+        })}
+      </div>
       <span className="relative z-10 block text-center mx-auto my-16 text-lightTextColor dark:text-white text-xl skew">
         Wait that’s it?{" "}
         <Link href="/projects">

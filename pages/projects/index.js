@@ -45,9 +45,11 @@ export default function Projects() {
         title="My Projects"
         caption="Take a look at the shit I made in the name of Software Development. Honestly I am quite proud how most of them turned out. Most of them are available on Github so go ahead knock yourself out! The others are client/freelance projects."
       />
-      {projectData.map((props, index) => (
-        <ProjectCards key={`project-card-${index}`} {...props} />
-      ))}
+      <div className="grid grid-cols-1 gap-16">
+        {projectData.map((props, index) => (
+          <ProjectCards key={`project-card-${index}`} {...props} />
+        ))}
+      </div>
       <span className="relative z-10 block text-center mx-auto mt-16 text-lightTextColor dark:text-white text-xl skew">
         {"There's more, "}
         <Link href="https://github.com/jaagrav" target="_blank">

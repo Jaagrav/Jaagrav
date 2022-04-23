@@ -50,14 +50,18 @@ export default function PageTransition() {
     <div className="page-transition fixed w-full z-40 overflow-clip flex justify-center items-center bg-white dark:bg-bgColor">
       <img
         src="/assets/images/blur-ball-blue.webp"
-        className="absolute m-auto inset-0 translate-x-1/4 "
+        className="absolute m-auto inset-0 translate-x-1/4 dark:opacity-60"
       />
       <div className="my-name h-fit w-fit text-6xl text-lightTextColor dark:text-white absolute inset-0 m-auto z-50 whitespace-nowrap">
         Jaagrav <span className="text-border">Seal</span>
       </div>
       <img
         src="/assets/images/blur-ball-indigo.webp"
-        className="absolute m-auto inset-0 -translate-x-1/4 "
+        className="absolute m-auto inset-0 -translate-x-1/4 dark:opacity-60 dark:hidden"
+      />
+      <img
+        src="/assets/images/blur-ball-orange.webp"
+        className="absolute m-auto inset-0 -translate-x-1/4 dark:opacity-60 dark:block hidden"
       />
     </div>
   );

@@ -11,16 +11,20 @@ import {
 export default function Footer() {
   return (
     <div className="mt-12 px-10 md:px-32 relative overflow-clip h-fit w-full border-t-[1px] border-lightBgSecondaryColorTranslucent dark:border-bgSecondaryColor">
-      <h1 className="h-fit w-fit max-w-full absolute m-auto top-0 left-0 right-0 bottom-0 text-center text-border text-[24vw] md:text-[14vw] opacity-10 md:opacity-5">
+      <h1 className="h-fit w-fit max-w-full absolute m-auto top-0 left-0 right-0 bottom-0 text-center text-border text-[24vw] md:text-[14vw] opacity-5">
         Jaagrav Seal
       </h1>
       <img
-        className="w-[75vw] absolute z-0 right-0 bottom-0 m-auto -translate-x-0 translate-y-2/3"
+        className="w-[75vw] absolute z-0 right-0 bottom-0 m-auto -translate-x-0 translate-y-2/3 dark:opacity-60"
         src="/assets/images/blur-ball-blue.webp"
       />
       <img
-        className="w-[75vw] absolute z-0 left-0 bottom-0 m-auto translate-x-0 translate-y-2/3 opacity-60"
+        className="w-[75vw] absolute z-0 left-0 bottom-0 m-auto translate-x-0 translate-y-2/3 dark:opacity-60 dark:hidden"
         src="/assets/images/blur-ball-indigo.webp"
+      />
+      <img
+        className="w-[75vw] absolute z-0 left-0 bottom-0 m-auto translate-x-0 translate-y-2/3 dark:opacity-60 dark:block hidden"
+        src="/assets/images/blur-ball-orange.webp"
       />
       <div className="relative max-w-screen-xl w-full mx-auto mt-10">
         <div className="">
@@ -102,7 +106,7 @@ export default function Footer() {
           <a
             href="https://peerlist.io/jaagrav"
             target="_blank"
-            className="transition text-pink hover:underline underline-offset-8 text-lg"
+            className="transition text-indigo hover:underline underline-offset-8 text-lg"
             rel="noreferrer"
           >
             Jaagrav Seal

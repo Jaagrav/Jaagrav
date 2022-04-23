@@ -15,15 +15,15 @@ module.exports = {
     },
     extend: {
       colors: {
-        bgColorTranslucent: "#040c20a3",
-        bgColor: "#040c20",
-        bgSecondaryColor: "#262f47",
+        bgColorTranslucent: "#151b28a3",
+        bgColor: "#151b28",
+        bgSecondaryColor: "#2a3241",
         pink: "#FF00F5",
-        indigo: "#9A6AFF",
+        indigo: "#5cd700",
         lightBgSecondaryColor: "#f0f0f0",
         lightBgSecondaryColorTranslucent: "#b9b9b97a",
         lightTextColor: "#334155",
-        extraDarkBgColorTranslucent: "#040c20de",
+        extraDarkBgColorTranslucent: "#151b28de",
       },
       fontFamily: {
         primary: ["TimeBurner", "sans-serif"],

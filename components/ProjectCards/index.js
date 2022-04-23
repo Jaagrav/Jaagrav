@@ -15,7 +15,7 @@ export default function ProjectCards({
           <h1 className="text-lightTextColor dark:text-white text-4xl">
             {title}
           </h1>
-          <span className="block text-lightTextColor dark:text-white opacity-75 text-xl mt-4 leading-10">
+          <span className="block text-lightTextColor dark:text-white text-xl mt-4 leading-10">
             {miniDesc}
           </span>
           <div className="mt-6">
@@ -48,7 +48,7 @@ export default function ProjectCards({
         </div>
         <div className="relative ">
           <img
-            className="w-[160vw] absolute z-0 right-0 top-0 bottom-0 m-auto translate-x-1/2"
+            className="w-[55rem] max-w-none absolute z-0 left-0 top-0 bottom-0 m-auto dark:opacity-60 translate-x-1/5"
             src="/assets/images/blur-ball-blue.webp"
           />
           <img
@@ -56,7 +56,11 @@ export default function ProjectCards({
             src={img}
           />
           <img
-            className="w-[160vw] absolute z-0 left-0 top-0 bottom-0 m-auto -translate-x-1/2 opacity-65"
+            className="w-[55rem] max-w-none absolute z-0 right-0 top-0 bottom-0 m-auto hidden dark:block dark:opacity-60 -translate-x-1/5"
+            src="/assets/images/blur-ball-orange.webp"
+          />
+          <img
+            className="w-[55rem] max-w-none absolute z-0 right-0 top-0 bottom-0 m-auto dark:hidden -translate-x-1/5"
             src="/assets/images/blur-ball-indigo.webp"
           />
         </div>

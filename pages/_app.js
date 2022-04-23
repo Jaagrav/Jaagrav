@@ -45,7 +45,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <div>
       <Transition timeout={500} classNames="page-transition">
-        <div className="h-fit w-full overflow-x-clip">
+        <div className="h-fit w-full overflow-x-clip overflow-y-visible relative z-10">
           <PageTransition />
           <Header changeTheme={changeTheme} />
           <ScrollerMotion disabled={isMobile}>

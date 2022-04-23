@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function Projects() {
   return (
-    <div className="h-fit w-full overflow-clip">
+    <div className="h-fit w-full">
       <Head>
         <title>Projects / Jaagrav</title>
         <meta name="title" content="Projects / Jaagrav" />

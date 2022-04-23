@@ -21,6 +21,7 @@ export default function TestimonialsSection() {
         stopOnHover={true}
         useKeyboardArrows={true}
         dynamicHeight={true}
+        preventMovementUntilSwipeScrollTolerance={true}
       >
         {testimonialData.map((testimonial, index) => (
           <Testimonial {...testimonial} key={`testimonial-${index}`} />

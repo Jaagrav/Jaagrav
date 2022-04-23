@@ -106,7 +106,7 @@ export default function Footer() {
           <a
             href="https://peerlist.io/jaagrav"
             target="_blank"
-            className="transition text-indigo hover:underline underline-offset-8 text-lg"
+            className="transition text-pink dark:text-indigo hover:underline underline-offset-8 text-lg"
             rel="noreferrer"
           >
             Jaagrav Seal

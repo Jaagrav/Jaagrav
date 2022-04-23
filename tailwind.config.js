@@ -18,7 +18,7 @@ module.exports = {
         bgColorTranslucent: "#151b28a3",
         bgColor: "#151b28",
         bgSecondaryColor: "#2a3241",
-        pink: "#FF00F5",
+        pink: "#513bff",
         indigo: "#5cd700",
         lightBgSecondaryColor: "#f0f0f0",
         lightBgSecondaryColorTranslucent: "#b9b9b97a",

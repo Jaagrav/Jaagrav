@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export default function Page({ project, randomProject }) {
   return (
-    <div className="h-fit w-full overflow-clip">
+    <div className="h-fit w-full">
       <Head>
         <title>{project.title} / Projects / Jaagrav</title>
         <meta name="title" content={`${project.title} / Projects / Jaagrav`} />

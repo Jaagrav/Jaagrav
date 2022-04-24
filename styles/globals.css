@@ -65,6 +65,10 @@ html:not(.dark) .text-border-light {
   -webkit-text-stroke-color: var(--background);
 }
 
+.contain-paint {
+  contain: paint;
+}
+
 @media screen and (max-width: 360px) {
   html,
   body {

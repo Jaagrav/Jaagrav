@@ -47,7 +47,7 @@ let playTransition = () => {
 
 export default function PageTransition() {
   return (
-    <div className="page-transition fixed w-full z-40 flex justify-center items-center bg-white dark:bg-bgColor overflow-hidden">
+    <div className="page-transition fixed w-full z-40 flex justify-center items-center bg-white dark:bg-bgColor contain-paint">
       <img
         src="/assets/images/blur-ball-blue.webp"
         className="absolute m-auto inset-0 translate-x-1/4 dark:opacity-60"

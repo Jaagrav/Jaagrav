@@ -10,7 +10,7 @@ import {
 
 export default function Footer() {
   return (
-    <div className="mt-12 px-10 md:px-32 relative h-fit w-full border-t-[1px] border-lightBgSecondaryColorTranslucent dark:border-bgSecondaryColor overflow-hidden">
+    <div className="mt-12 px-10 md:px-32 relative h-fit w-full border-t-[1px] border-lightBgSecondaryColorTranslucent dark:border-bgSecondaryColor contain-paint">
       <h1 className="h-fit w-fit max-w-full absolute m-auto top-0 left-0 right-0 bottom-0 text-center text-border text-[24vw] md:text-[14vw] opacity-5">
         Jaagrav Seal
       </h1>

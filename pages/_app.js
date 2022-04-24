@@ -37,7 +37,7 @@ function MyApp({ Component, pageProps }) {
         <div className="h-fit w-full relative z-10">
           <PageTransition />
           <Header changeTheme={changeTheme} />
-          <div className="scroll-animate h-fit w-full overflow-hidden -mt-20 md:-mt-16 pt-20 md:pt-16">
+          <div className="scroll-animate h-fit w-full contain-paint -mt-20 md:-mt-16 pt-20 md:pt-16">
             <NextNProgress
               color="#29D"
               startPosition={0.3}

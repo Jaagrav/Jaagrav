@@ -42,7 +42,7 @@ function Testimonial({
 }) {
   return (
     <div className="px-10 md:px-32">
-      <div className="pb-12 max-w-screen-xl md:grid md:grid-cols-[auto_1fr] gap-12 mx-auto rounded-lg">
+      <div className="pb-12 max-w-screen-xl md:grid md:grid-cols-[auto_1fr] gap-12 mx-auto rounded-xl">
         <span className="relative h-full h-auto flex justify-center items-center">
           <div
             className="h-[30rem] w-full md:w-[30rem] bg-cover bg-center bg-no-repeat rounded-2xl shadow-lg"

@@ -22,7 +22,7 @@ export default function ProjectCards({
             {website && (
               <Link href={website} target="_blank">
                 <a
-                  className={`inline-block mt-4 w-full md:w-fit text-center md:text-left md:mr-4 px-8 py-2 text-xl border-lightTextColor dark:border-white border-2 bg-lightTextColor dark:bg-white text-white dark:text-bgColor rounded-lg`}
+                  className={`inline-block mt-4 w-full md:w-fit text-center md:text-left md:mr-4 px-8 py-2 text-xl border-lightTextColor dark:border-white border-2 bg-lightTextColor dark:bg-white text-white dark:text-bgColor rounded-xl`}
                 >
                   Website
                 </a>
@@ -31,7 +31,7 @@ export default function ProjectCards({
             {github && (
               <Link href={github} target="_blank">
                 <a
-                  className={`inline-block mt-4 w-full md:w-fit text-center md:text-left md:mr-4 px-8 py-2 text-xl border-lightTextColor dark:border-white border-2 text-bgColor dark:text-white rounded-lg`}
+                  className={`inline-block mt-4 w-full md:w-fit text-center md:text-left md:mr-4 px-8 py-2 text-xl border-lightTextColor dark:border-white border-2 text-bgColor dark:text-white rounded-xl`}
                 >
                   GitHub
                 </a>
@@ -46,13 +46,13 @@ export default function ProjectCards({
             )}
           </div>
         </div>
-        <div className="relative ">
+        <div className="relative z-0">
           <img
             className="w-[55rem] max-w-none absolute z-0 left-0 top-0 bottom-0 m-auto dark:opacity-60 translate-x-1/5"
             src="/assets/images/blur-ball-blue.webp"
           />
           <img
-            className="relative z-10 md:max-w-xl rounded-lg transition duration-300 hover:scale-105 shadow-2xl"
+            className="relative z-10 md:max-w-sm lg:max-w-xl rounded-xl transition duration-300 hover:scale-105 shadow-2xl"
             src={img}
           />
           <img

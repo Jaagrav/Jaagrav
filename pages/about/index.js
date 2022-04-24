@@ -9,7 +9,7 @@ import Head from "next/head";
 
 export default function About() {
   return (
-    <div className="h-fit w-full overflow-clip pt-24">
+    <div className="h-fit w-full pt-4">
       <Head>
         <title>About / Jaagrav</title>
         <meta name="title" content="About / Jaagrav" />
@@ -89,7 +89,7 @@ export default function About() {
           <div className="hidden md:block">
             <img
               src="/assets/images/jaagrav.webp"
-              className="w-full mx-auto rounded-lg shadow-2xl"
+              className="w-full mx-auto rounded-xl shadow-2xl"
             />
           </div>
         </div>

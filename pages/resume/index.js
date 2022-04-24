@@ -47,7 +47,7 @@ export default function Resume() {
         <div className="max-w-screen-xl mx-auto">
           <iframe
             src="/assets/resume/jaagrav-resume-2022.pdf"
-            className="h-[90vw] w-full"
+            className="h-[50vw] w-full rounded-xl"
           ></iframe>
         </div>
       </div>

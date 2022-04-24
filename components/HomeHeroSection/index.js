@@ -15,7 +15,7 @@ export default function HomeHeroSection() {
   }, []);
 
   return (
-    <div className="h-screen w-full relative">
+    <div className="h-screen w-full relative -mt-20 md:-mt-16">
       <div
         className="h-full w-full absolute bg-center bg-no-repeat bg-cover transition dark:duration-300 opacity-0 dark:opacity-100"
         style={{
@@ -34,16 +34,16 @@ export default function HomeHeroSection() {
       <div className="absolute w-full h-full pointer-events-none">
         <div className="skew max-w-screen-xl absolute top-0 left-0 bottom-0 right-0 m-auto z-10 h-fit w-fit px-10 md:px-32">
           <div className="md:px-6">
-            <span className="block text-[5rem] md:text-[6rem] text-border">
+            <span className="block text-[13vw] md:text-[6rem] text-border">
               UX Designer
             </span>
-            <span className="block text-[5rem] md:text-[6rem] text-lightTextColor dark:text-white">
+            <span className="block text-[13vw] md:text-[6rem] text-lightTextColor dark:text-white">
               Jaagrav Seal
             </span>
-            <span className="block text-[5rem] md:text-[6rem] text-border">
+            <span className="block text-[13vw] md:text-[6rem] text-border">
               Full Stack Developer
             </span>
-            <span className="mt-2 block text-lightTextColor dark:text-white text-xl leading-10 xl:max-w-[58vw] md:max-w-[72vw]">
+            <span className="mt-2 block text-lightTextColor dark:text-white text-xl leading-10 md:max-w-[58vw]">
               I am a very nice and humble full stack developer. I can design a
               website on figma, develop it using NextJS, TailwindCSS or Material
               UI, and deploy it on Vercel. Well that’s what I did for this

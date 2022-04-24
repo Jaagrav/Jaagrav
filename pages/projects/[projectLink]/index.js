@@ -4,6 +4,7 @@ import projectData from "../../../project-data";
 import { useRouter } from "next/router";
 import Head from "next/head";
 import Link from "next/link";
+import ReadMoreReact from "read-more-react";
 
 export default function Page({ project, randomProject }) {
   return (
@@ -48,16 +49,22 @@ export default function Page({ project, randomProject }) {
         <div className="relative z-10 max-w-screen-xl mx-auto">
           <img
             src={project.img}
-            className="w-full rounded-lg transition duration-300 hover:scale-105 shadow-2xl"
+            className="w-full rounded-xl transition duration-300 hover:scale-105 shadow-2xl"
           />
         </div>
       </div>
       <div className="px-10 md:px-32">
-        <div className="relative z-10 max-w-screen-xl mx-auto">
+        <div className="relative z-20 max-w-screen-xl mx-auto">
           <div className="grid md:grid-cols-[1fr_2px_0.6fr] mt-12">
             <div className="py-12 md:pr-12">
               <div className="text-xl leading-10 text-lightTextColor dark:text-white">
-                {project.desc}
+                <ReadMoreReact
+                  text={project.desc}
+                  min={100}
+                  ideal={350}
+                  max={1000}
+                  readMoreText="Click here to read more"
+                />
               </div>
             </div>
             <div className="h-full w-full bg-lightBgSecondaryColorTranslucent dark:bg-bgSecondaryColor"></div>
@@ -70,7 +77,7 @@ export default function Page({ project, randomProject }) {
                   {project.tech.map((tech, index) => (
                     <span
                       key={`tech-index-${index}`}
-                      className="inline-block bg-lightBgSecondaryColor dark:bg-bgSecondaryColor text-lightTextColor dark:text-white text-lg md:text-sm px-2 py-1 mb-2 mr-2 rounded-lg"
+                      className="inline-block bg-lightBgSecondaryColor dark:bg-bgSecondaryColor text-lightTextColor dark:text-white text-lg md:text-sm px-2 py-1 mb-2 mr-2 rounded-xl"
                     >
                       {tech}
                     </span>
@@ -83,7 +90,7 @@ export default function Page({ project, randomProject }) {
                   {project.website && (
                     <Link href={project.website} target="_blank">
                       <a
-                        className={`block h-full w-full text-center px-8 py-2 text-white dark:text-bgColor text-xl border-lightTextColor dark:border-white border-2 bg-lightTextColor dark:bg-white rounded-lg`}
+                        className={`block h-full w-full text-center px-8 py-2 text-white dark:text-bgColor text-xl border-lightTextColor dark:border-white border-2 bg-lightTextColor dark:bg-white rounded-xl`}
                       >
                         Website
                       </a>
@@ -92,7 +99,7 @@ export default function Page({ project, randomProject }) {
                   {project.github && (
                     <Link href={project.github} target="_blank">
                       <a
-                        className={`block h-full w-full text-center px-8 py-2 text-lightTextColor dark:text-white text-xl border-lightTextColor dark:border-white border-2 rounded-lg`}
+                        className={`block h-full w-full text-center px-8 py-2 text-lightTextColor dark:text-white text-xl border-lightTextColor dark:border-white border-2 rounded-xl`}
                       >
                         GitHub
                       </a>

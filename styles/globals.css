@@ -5,16 +5,16 @@
 :root {
   --background: #fff;
   --background-b: #f0f0f0;
-  --pink: #ff00f5;
-  --indigo: #9a6aff;
+  --pink: #513bff;
+  --indigo: #5cd700;
   --text: #334155;
 }
 
 :root.dark {
   --background: #151b28;
   --background-b: #2a3241;
-  --pink: #ff00f5;
-  --indigo: #9a6aff;
+  --pink: #513bff;
+  --indigo: #5cd700;
   --text: #fff;
 }
 
@@ -38,7 +38,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  overflow-x: clip;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 html,
@@ -64,7 +65,7 @@ html:not(.dark) .text-border-light {
   -webkit-text-stroke-color: var(--background);
 }
 
-@media screen and (min-width: 300px) and (max-width: 360px) {
+@media screen and (max-width: 360px) {
   html,
   body {
     font-size: 9px;
@@ -80,10 +81,26 @@ html:not(.dark) .text-border-light {
   }
 }
 
-@media screen and (min-width: 360px) and (max-width: 769px) {
+@media screen and (min-width: 360px) and (max-width: 411px) {
   html,
   body {
-    font-size: 10px;
+    font-size: 11px;
+  }
+
+  .text-border {
+    -webkit-text-stroke-width: 1.5px;
+  }
+
+  .vertical-timeline-element-date {
+    margin-top: 0.65rem !important;
+    font-size: 1.25rem !important;
+  }
+}
+
+@media screen and (min-width: 411px) and (max-width: 769px) {
+  html,
+  body {
+    font-size: 11px;
   }
 
   .text-border {
@@ -111,7 +128,7 @@ html:not(.dark) .text-border-light {
 @media screen and (min-width: 1024px) and (max-width: 1440px) {
   html,
   body {
-    font-size: 13px;
+    font-size: 12px;
   }
 }
 
@@ -160,4 +177,13 @@ li.dot {
 
 li.dot.selected {
   transform: scale(1.5) !important;
+}
+
+.read-more-button {
+  cursor: pointer !important;
+  color: var(--pink) !important;
+  text-decoration: underline !important;
+  text-underline-offset: 0.5rem !important;
+  display: inline !important;
+  margin: 0 0.25rem;
 }

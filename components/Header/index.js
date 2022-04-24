@@ -32,7 +32,7 @@ export default function Header({ changeTheme }) {
   }, []);
 
   return (
-    <div className="">
+    <div className="sticky top-0 z-30">
       <div className="hidden md:block">
         <DesktopHeader
           isAtTop={isAtTop}
@@ -54,7 +54,7 @@ export default function Header({ changeTheme }) {
 function DesktopHeader({ isAtTop, currentURL, changeTheme }) {
   return (
     <div
-      className={`transition fixed h-24 md:h-16 w-full z-30 px-10 md:px-32 ${
+      className={`transition h-24 md:h-16 w-full z-30 px-10 md:px-32 ${
         !isAtTop
           ? `${
               !isAtTop ? "bg-extraDarkBgColorTranslucent" : ""
@@ -117,7 +117,7 @@ function DesktopHeader({ isAtTop, currentURL, changeTheme }) {
                   !isAtTop
                     ? "text-white"
                     : "text-lightTextColor border-lightTextColor"
-                } dark:text-white dark:border-white border-2 my-auto rounded-lg`}
+                } dark:text-white dark:border-white border-2 my-auto rounded-xl`}
               >
                 Resume
               </a>
@@ -169,16 +169,12 @@ function MobileHeader({ isAtTop, currentURL, changeTheme }) {
   return (
     <>
       <div
-        className={`transition fixed h-24 md:h-16 w-full z-30 px-10 md:px-32 ${
+        className={`transition h-20 md:h-16 w-full z-30 px-10 md:px-32 ${
           !isAtTop
             ? `backdrop-blur-lg ${
-                isOpen
-                  ? "bg-transparent"
-                  : `${
-                      !isAtTop
-                        ? "bg-extraDarkBgColorTranslucent dark:bg-bgColorTranslucent"
-                        : ""
-                    }`
+                !isAtTop
+                  ? "bg-extraDarkBgColorTranslucent dark:bg-bgColorTranslucent"
+                  : ""
               }`
             : ""
         }`}
@@ -187,18 +183,18 @@ function MobileHeader({ isAtTop, currentURL, changeTheme }) {
           <div
             className={`${
               !isAtTop ? "text-white" : "text-lightTextColor"
-            } dark:text-white text-4xl my-auto`}
+            } dark:text-white text-3xl md:text-4xl my-auto`}
           >
             <Link href="/">{isAtTop ? "JS" : "Jaagrav Seal"}</Link>
           </div>
           <div
-            className="h-10 w-10 my-auto ml-auto relative"
+            className="scale-75 origin-right md:scale-100 h-10 w-12 md:w-10 my-auto ml-auto relative"
             onClick={handleClick}
           >
             <div
               className={`transition m-auto origin-center h-[3px] w-full ${
                 !isAtTop ? "bg-white" : "bg-lightTextColor"
-              } dark:bg-white rounded-lg absolute ${
+              } dark:bg-white rounded-xl absolute ${
                 isOpen
                   ? "rotate-45 left-0 top-0 bottom-0 right-0 "
                   : "left-0 top-2 "
@@ -207,7 +203,7 @@ function MobileHeader({ isAtTop, currentURL, changeTheme }) {
             <div
               className={`transition m-auto origin-center h-[3px] ${
                 !isAtTop ? "bg-white" : "bg-lightTextColor"
-              } dark:bg-white rounded-lg absolute ${
+              } dark:bg-white rounded-xl absolute ${
                 isOpen
                   ? "-rotate-45 w-full left-0 top-0 bottom-0 right-0"
                   : "left-0 top-6 w-2/3"
@@ -233,7 +229,7 @@ function MobileHeader({ isAtTop, currentURL, changeTheme }) {
             isOpen ? "translate-x-0" : "translate-x-full"
           }`}
         >
-          <div className="pt-24 px-10">
+          <div className="px-10">
             <MobileNavLink
               href="/"
               name="Home"
@@ -265,7 +261,7 @@ function MobileHeader({ isAtTop, currentURL, changeTheme }) {
                     !isAtTop
                       ? "text-white border-white"
                       : "text-lightTextColor border-lightTextColor"
-                  } dark:text-white text-5xl dark:border-white border-2 mr-auto my-auto rounded-lg`}
+                  } dark:text-white text-5xl dark:border-white border-2 mr-auto my-auto rounded-xl`}
                 >
                   Resume
                 </a>

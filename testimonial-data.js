@@ -4,7 +4,7 @@ const testimonialData = [
     last_name: "Garg",
     relationship:
       "Lead Software Developer at CuriousJr · Indian Institute of Technology, Varanasi",
-    occupation: "Lead Software Developer",
+    occupation: "Lead Developer",
     testimonial: `I have worked with Jaagrav for quite sometime and enjoyed it thoroughly. He is a quick learner who does his task/projects diligently and always on time. He also goes beyond the assigned task and and tries to bring more creativity in the ongoing projects. Also, he is highly proficient in web development( JavaScript, HTML, CSS). He is one of the best intern i have worked with. 
     I wish him all the best.`,
     img: "./assets/images/testimonials/Naveen.webp",

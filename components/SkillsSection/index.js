@@ -1,6 +1,6 @@
 export default function SkillsSection() {
   return (
-    <div className="px-10 md:px-32 skew my-8 relative z-10">
+    <div className="px-10 md:px-32 skew my-8 relative z-20">
       <div className="max-w-screen-xl mx-auto">
         <div className="w-full grid md:grid-cols-2 gap-12 md:gap-6">
           <Skill
@@ -27,7 +27,7 @@ export default function SkillsSection() {
 
 function Skill({ title, description }) {
   return (
-    <div className="p-8 bg-lightBgSecondaryColor dark:bg-bgSecondaryColor w-full rounded-lg">
+    <div className="p-8 bg-lightBgSecondaryColor dark:bg-bgSecondaryColor w-full rounded-xl">
       <h3 className="text-3xl font-bold text-lightTextColor dark:text-white">
         {title}
       </h3>

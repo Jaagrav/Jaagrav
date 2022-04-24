@@ -21,6 +21,7 @@
     "react-responsive-carousel": "^3.2.23",
     "react-transition-group": "^4.4.2",
     "react-vertical-timeline-component": "^3.5.2",
+    "read-more-react": "^1.0.10",
     "scroller-motion": "^1.1.0"
   },
   "devDependencies": {

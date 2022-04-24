@@ -14,8 +14,7 @@ import { PageTransition as Transition } from "next-page-transitions";
 import NextNProgress from "nextjs-progressbar";
 
 function MyApp({ Component, pageProps }) {
-  const [isMobile, setIsMobile] = useState(false),
-    setTheme = (theme) => {
+  const setTheme = (theme) => {
       localStorage.theme = theme;
       if (localStorage.theme === "dark" || !("theme" in localStorage)) {
         document.documentElement.classList.add("dark");
@@ -30,37 +29,25 @@ function MyApp({ Component, pageProps }) {
 
   useEffect(() => {
     setTheme(!("theme" in localStorage) ? "light" : localStorage.theme);
-
-    const resize = () => {
-      if (window.innerWidth <= 1366) {
-        setIsMobile(true);
-      } else {
-        setIsMobile(false);
-      }
-    };
-    resize();
-    return window.addEventListener("resize", resize);
   }, []);
 
   return (
     <div>
       <Transition timeout={500} classNames="page-transition">
-        <div className="h-fit w-full overflow-x-clip overflow-y-visible relative z-10">
+        <div className="h-fit w-full relative z-10">
           <PageTransition />
           <Header changeTheme={changeTheme} />
-          <ScrollerMotion disabled={isMobile}>
-            <div className="scroll-animate h-fit w-full">
-              <NextNProgress
-                color="#29D"
-                startPosition={0.3}
-                stopDelayMs={200}
-                height={3}
-                showOnShallow={true}
-              />
-              <Content Component={Component} pageProps={pageProps} />
-              <Footer />
-            </div>
-          </ScrollerMotion>
+          <div className="scroll-animate h-fit w-full overflow-hidden -mt-20 md:-mt-16 pt-20 md:pt-16">
+            <NextNProgress
+              color="#29D"
+              startPosition={0.3}
+              stopDelayMs={200}
+              height={3}
+              showOnShallow={true}
+            />
+            <Component {...pageProps} />
+            <Footer />
+          </div>
         </div>
       </Transition>
       <style jsx global>{`
@@ -96,37 +83,6 @@ function MyApp({ Component, pageProps }) {
       ></script>
     </div>
   );
-}
-
-function Content({ Component, pageProps }) {
-  // const scroller = useScrollerMotion(),
-  //   scrollY = useMotionValue(0);
-
-  // useEffect(() => {
-  //   const unsubscribe = scroller.y.onChange((v) => {
-  //     scrollY.set(v);
-  //     if (window.innerWidth > 460) {
-  //       // document.querySelector(".scroll-animate").style.transform = `scale(${
-  //       //   Math.abs(scrollY.getVelocity() * 0.000025) + 1
-  //       // })`;
-  //       // document.querySelector(".scroll-animate").style.transform = `skew(${
-  //       //   scrollY.getVelocity() * 0.00025
-  //       // }deg)`;
-  //     }
-  //     document.querySelectorAll(".skew").forEach((skewItem) => {
-  //       // skewItem.style.transform = `scale(${
-  //       //   Math.abs(scrollY.getVelocity() * 0.000025) + 1
-  //       // })`;
-  //       // skewItem.style.opacity = `${
-  //       //   1 - Math.abs(scrollY.getVelocity() * 0.00005)
-  //       // }`;
-  //     });
-  //   });
-
-  //   return () => unsubscribe();
-  // }, [scrollY]);
-
-  return <Component {...pageProps} />;
 }
 
 export default MyApp;

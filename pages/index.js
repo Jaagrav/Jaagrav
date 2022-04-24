@@ -14,7 +14,7 @@ import projectData from "../project-data";
 
 export default function Home() {
   return (
-    <div className="h-fit w-full overflow-clip">
+    <div className="h-fit w-full ">
       <Head>
         <title>Home / Jaagrav</title>
         <meta
@@ -67,7 +67,7 @@ export default function Home() {
         title="Featured Projects"
         caption="Take a look at the shit I made in the name of Software Development. Honestly I am quite proud how most of them turned out. Most of them are available on Github so go ahead knock yourself out! The others are client/freelance projects."
       />
-      <div className="grid grid-cols-1 gap-16">
+      <div className="grid grid-cols-1 gap-24">
         {projectData.map((props, index) => {
           if (props.showOnHome)
             return <ProjectCards key={`project-card-${index}`} {...props} />;
@@ -99,7 +99,7 @@ export default function Home() {
         caption="Here's a list of all my skills and all the reasons why you should hire me. As a developer, I don't completely know anything, you see I am not very good at memorizing, I normally read documentations everytime I am building something, but I make sure to get the work done in time."
       />
       <SkillsSection />
-      <span className="relative z-10 block text-center mx-auto mt-16 text-lightTextColor dark:text-white text-xl skew">
+      <span className="relative z-10 block text-center mx-auto my-16 text-lightTextColor dark:text-white text-xl px-10 md:px-32">
         {"Dude c'mon if you haven't checked me out on "}
         <Link href="https://linkedin.com/in/jaagrav" target="_blank">
           <a className="transition text-indigo hover:underline underline-offset-8">
@@ -107,9 +107,7 @@ export default function Home() {
           </a>
         </Link>
         , do it!
-      </span>
-      <span className="relative z-10 block text-center mx-auto mt-2 mb-16 text-lightTextColor dark:text-white text-xl skew">
-        {"Also here's my "}
+        {" Also here's my "}
         <Link href="https://github.com/Jaagrav" target="_blank">
           <a className="transition text-pink hover:underline underline-offset-8">
             GitHub!!!

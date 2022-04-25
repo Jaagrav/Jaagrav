@@ -46,9 +46,9 @@ export default function ProjectCards({
             )}
           </div>
         </div>
-        <div className="relative z-0">
+        <div className="relative">
           <img
-            className="w-[55rem] max-w-none absolute z-0 left-0 top-0 bottom-0 m-auto dark:opacity-60 translate-x-1/5"
+            className="w-[55rem] max-w-none absolute left-0 top-0 bottom-0 m-auto dark:opacity-60 translate-x-1/5"
             src="/assets/images/blur-ball-blue.webp"
           />
           <img
@@ -56,11 +56,11 @@ export default function ProjectCards({
             src={img}
           />
           <img
-            className="w-[55rem] max-w-none absolute z-0 right-0 top-0 bottom-0 m-auto hidden dark:block dark:opacity-60 -translate-x-1/5"
+            className="w-[55rem] max-w-none absolute right-0 top-0 bottom-0 m-auto hidden dark:block dark:opacity-60 -translate-x-1/5"
             src="/assets/images/blur-ball-orange.webp"
           />
           <img
-            className="w-[55rem] max-w-none absolute z-0 right-0 top-0 bottom-0 m-auto dark:hidden -translate-x-1/5"
+            className="w-[55rem] max-w-none absolute right-0 top-0 bottom-0 m-auto dark:hidden -translate-x-1/5"
             src="/assets/images/blur-ball-indigo.webp"
           />
         </div>

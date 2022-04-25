@@ -8,7 +8,7 @@ import experienceData from "../../experience-data";
 
 export default function ExperienceSection() {
   return (
-    <div className="skew px-6 md:px-32">
+    <div className="skew px-6 md:px-32 relative z-10">
       <VerticalTimeline>
         {experienceData.map(
           ({ icon, date, organization, position, desc }, index) => (

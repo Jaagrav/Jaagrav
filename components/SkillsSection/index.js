@@ -50,7 +50,7 @@ export default function SkillsSection() {
           </div>
           <div className="grid grid-cols-[auto_2px_auto_2px_auto] gap-12 mt-12">
             <GithubStats
-              number={commaNumber(totalContributions)}
+              number={commaNumber(totalContributions + 3)}
               desc="Contributions in the last year on GitHub*"
             />
             <div className="h-full w-full bg-lightBgSecondaryColorTranslucent dark:bg-bgSecondaryColor"></div>

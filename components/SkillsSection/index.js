@@ -42,13 +42,13 @@ export default function SkillsSection() {
   return (
     <div className="px-10 md:px-32 relative z-10 mb-12">
       <div className="max-w-screen-xl mx-auto flex flex-col md:grid md:grid-cols-2 gap-12">
-        <div className="flex justify-center flex-col">
+        <div className="flex justify-center flex-col gap-6">
           <div className="text-xl text-lightTextColor dark:text-white leading-10">
             {
               "Here's a list of all my skills and all the reasons why you should hire me. As a developer, I don't completely know anything, you see I am not very good at memorizing, I normally read documentations everytime I am building something, but I make sure to get the work done in time."
             }
           </div>
-          <div className="grid grid-cols-[auto_2px_auto_2px_auto] gap-12 mt-12">
+          <div className="grid grid-cols-[auto_2px_auto_2px_auto] gap-6">
             <GithubStats
               number={commaNumber(totalContributions + 3)}
               desc="Contributions in the last year on GitHub*"
@@ -64,7 +64,7 @@ export default function SkillsSection() {
               desc="Public Repositories on Github*"
             />
           </div>
-          <div className="text-sm text-lightTextColor dark:text-white mt-6 mb-6">
+          <div className="text-sm text-lightTextColor dark:text-white">
             *data above is requested from the Github API{" "}
           </div>
           <div>
@@ -74,7 +74,7 @@ export default function SkillsSection() {
             <Link href={"https://bit.ly/book-jaagrav"}>
               <a
                 target="_blank"
-                className={`inline-block mt-4 w-full md:w-fit text-center md:text-left md:mr-4 px-10 py-2 text-xl border-lightTextColor dark:border-white border-2 bg-lightTextColor dark:bg-white text-white dark:text-bgColor rounded-xl transition shadow-none hover:shadow-xl hover:scale-105`}
+                className={`inline-block mt-6 w-full md:w-fit text-center md:text-left md:mr-4 px-10 py-2 text-xl border-lightTextColor dark:border-white border-2 bg-lightTextColor dark:bg-white text-white dark:text-bgColor rounded-xl transition shadow-none hover:shadow-xl hover:scale-105`}
               >
                 Schedule event
               </a>

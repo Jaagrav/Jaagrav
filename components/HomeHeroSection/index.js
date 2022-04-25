@@ -34,13 +34,13 @@ export default function HomeHeroSection() {
       <div className="absolute w-full h-full pointer-events-none">
         <div className="skew max-w-screen-xl absolute top-0 left-0 bottom-0 right-0 m-auto z-10 h-fit w-fit px-10 md:px-32">
           <div className="md:px-6">
-            <span className="block text-[13vw] md:text-[6rem] text-border">
+            <span className="block text-[13vw] md:text-[6rem] text-border-thick">
               UX Designer
             </span>
             <span className="block text-[13vw] md:text-[6rem] text-lightTextColor dark:text-white">
               Jaagrav Seal
             </span>
-            <span className="block text-[13vw] md:text-[6rem] text-border">
+            <span className="block text-[13vw] md:text-[6rem] text-border-thick">
               Full Stack Developer
             </span>
             <span className="mt-2 block text-lightTextColor dark:text-white text-xl leading-10 md:max-w-[58vw]">

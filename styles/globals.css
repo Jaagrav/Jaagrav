@@ -52,10 +52,9 @@ code {
     monospace;
 }
 
-.text-border,
-html.dark .text-border-light {
+.text-border {
   -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
-  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-width: 1.5px;
   -webkit-text-stroke-color: var(--text);
 }
 
@@ -63,6 +62,13 @@ html:not(.dark) .text-border-light {
   -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: var(--background);
+}
+
+.text-border-thick,
+html.dark .text-border-light {
+  -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: var(--text);
 }
 
 .contain-paint {

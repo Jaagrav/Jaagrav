@@ -20,18 +20,20 @@ export default function ProjectCards({
           </span>
           <div className="mt-6">
             {website && (
-              <Link href={website} target="_blank">
+              <Link href={website}>
                 <a
-                  className={`inline-block mt-4 w-full md:w-fit text-center md:text-left md:mr-4 px-8 py-2 text-xl border-lightTextColor dark:border-white border-2 bg-lightTextColor dark:bg-white text-white dark:text-bgColor rounded-xl`}
+                  target="_blank"
+                  className={`inline-block mt-4 w-full md:w-fit text-center md:text-left md:mr-4 px-8 py-2 text-xl border-lightTextColor dark:border-white border-2 bg-lightTextColor dark:bg-white text-white dark:text-bgColor rounded-xl transition shadow-none hover:shadow-xl hover:scale-105`}
                 >
                   Website
                 </a>
               </Link>
             )}
             {github && (
-              <Link href={github} target="_blank">
+              <Link href={github}>
                 <a
-                  className={`inline-block mt-4 w-full md:w-fit text-center md:text-left md:mr-4 px-8 py-2 text-xl border-lightTextColor dark:border-white border-2 text-bgColor dark:text-white rounded-xl`}
+                  target="_blank"
+                  className={`inline-block mt-4 w-full md:w-fit text-center md:text-left md:mr-4 px-8 py-2 text-xl border-lightTextColor dark:border-white border-2 text-bgColor dark:text-white rounded-xl transition shadow-none hover:shadow-xl hover:scale-105`}
                 >
                   GitHub
                 </a>
@@ -39,7 +41,7 @@ export default function ProjectCards({
             )}
             {link && (
               <Link href={`/projects/${link}`}>
-                <a className="inline-block text-xl text-lightTextColor dark:text-white text-center w-full md:w-fit py-4 ">
+                <a className="inline-block text-xl text-lightTextColor dark:text-white text-center w-full md:w-fit py-4 transition hover:underline underline-offset-8">
                   Learn More
                 </a>
               </Link>

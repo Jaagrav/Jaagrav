@@ -52,8 +52,11 @@ export default function Projects() {
       </div>
       <span className="relative z-10 block text-center mx-auto mt-16 text-lightTextColor dark:text-white text-xl skew">
         {"There's more, "}
-        <Link href="https://github.com/jaagrav" target="_blank">
-          <a className="transition text-indigo hover:underline underline-offset-8">
+        <Link href="https://github.com/jaagrav">
+          <a
+            className="transition text-indigo hover:underline underline-offset-8"
+            target="_blank"
+          >
             click here to find out!
           </a>
         </Link>

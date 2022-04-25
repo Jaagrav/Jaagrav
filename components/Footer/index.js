@@ -11,7 +11,7 @@ import {
 export default function Footer() {
   return (
     <div className="mt-12 px-10 md:px-32 relative h-fit w-full border-t-[1px] border-lightBgSecondaryColorTranslucent dark:border-bgSecondaryColor contain-paint">
-      <h1 className="h-fit w-fit max-w-full absolute m-auto top-0 left-0 right-0 bottom-0 text-center text-border text-[24vw] md:text-[14vw] opacity-5">
+      <h1 className="h-fit w-fit max-w-full absolute m-auto top-0 left-0 right-0 bottom-0 text-center text-border-thick text-[24vw] md:text-[14vw] opacity-5">
         Jaagrav Seal
       </h1>
       <img
@@ -44,7 +44,7 @@ export default function Footer() {
             <div className="flex justify-start items-center gap-6 h-fit mt-6">
               <Link href="/contact">
                 <a
-                  className={`inline-block w-full md:w-fit text-center md:text-left px-8 py-2 text-lightTextColor dark:text-white text-xl border-lightTextColor dark:border-white border-2 rounded-xl`}
+                  className={`inline-block w-full md:w-fit text-center md:text-left px-8 py-2 text-lightTextColor dark:text-white text-xl border-lightTextColor dark:border-white border-2 rounded-xl transition shadow-none hover:shadow-xl hover:scale-105`}
                 >
                   Contact
                 </a>

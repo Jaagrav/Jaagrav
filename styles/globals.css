@@ -54,7 +54,7 @@ code {
 
 .text-border {
   -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
-  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-width: 1.3px;
   -webkit-text-stroke-color: var(--text);
 }
 
@@ -73,6 +73,14 @@ html.dark .text-border-light {
 
 .contain-paint {
   contain: paint;
+}
+
+.carousel-root {
+  height: 100%;
+}
+
+.carousel-slider {
+  height: 95%;
 }
 
 @media screen and (max-width: 360px) {

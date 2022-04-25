@@ -43,7 +43,7 @@ export default function SkillsSection() {
     <div className="px-10 md:px-32 relative z-10 mb-12">
       <div className="max-w-screen-xl mx-auto flex flex-col md:grid md:grid-cols-2 gap-12">
         <div className="flex justify-center flex-col">
-          <div className="text-xl text-lightTextColor dark:text-white">
+          <div className="text-xl text-lightTextColor dark:text-white leading-10">
             {
               "Here's a list of all my skills and all the reasons why you should hire me. As a developer, I don't completely know anything, you see I am not very good at memorizing, I normally read documentations everytime I am building something, but I make sure to get the work done in time."
             }
@@ -74,7 +74,7 @@ export default function SkillsSection() {
             <Link href={"https://bit.ly/book-jaagrav"}>
               <a
                 target="_blank"
-                className={`inline-block mt-4 w-full md:w-fit text-center md:text-left md:mr-4 px-10 py-2 text-xl border-lightTextColor dark:border-white border-2 bg-lightTextColor dark:bg-white text-white dark:text-bgColor rounded-xl`}
+                className={`inline-block mt-4 w-full md:w-fit text-center md:text-left md:mr-4 px-10 py-2 text-xl border-lightTextColor dark:border-white border-2 bg-lightTextColor dark:bg-white text-white dark:text-bgColor rounded-xl transition shadow-none hover:shadow-xl hover:scale-105`}
               >
                 Schedule event
               </a>
@@ -136,7 +136,7 @@ function Skill({ logo, title, desc }) {
   const Logo = () => logo;
   return (
     <div className="skill text-left p-6 pb-12 h-full w-full select-none cursor-grab active:cursor-grabbing">
-      <div className="rounded-xl p-4 text-3xl text-lightTextColor dark:text-white mb-2 bg-white dark:bg-bgColor flex justify-start items-center gap-4">
+      <div className="rounded-xl p-4 text-3xl text-lightTextColor dark:text-white mb-2 bg-white dark:bg-bgColor flex justify-start items-center gap-4 shadow-2xl">
         <Logo />
         <span className="">{title}</span>
       </div>

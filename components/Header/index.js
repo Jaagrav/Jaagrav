@@ -117,7 +117,7 @@ function DesktopHeader({ isAtTop, currentURL, changeTheme }) {
                   !isAtTop
                     ? "text-white"
                     : "text-lightTextColor border-lightTextColor"
-                } dark:text-white dark:border-white border-2 my-auto rounded-xl`}
+                } dark:text-white dark:border-white border-2 my-auto rounded-xl transition shadow-none hover:shadow-xl hover:scale-105`}
               >
                 Resume
               </a>
@@ -135,7 +135,9 @@ function DesktopNavLink({ href, name, currentURL, isAtTop }) {
       <a
         className={`text-lg ${
           !isAtTop ? "text-white" : "text-lightTextColor"
-        } dark:text-white`}
+        } ${
+          currentURL !== href ? "hover:underline" : "cursor-default"
+        } dark:text-white underline-offset-8`}
       >
         {currentURL === href ? `• ${name} •` : `${name}`}
       </a>

@@ -88,8 +88,11 @@ export default function Home() {
       <ExperienceSection />
       <span className="relative z-10 block text-center mx-auto my-16 text-lightTextColor dark:text-white text-xl skew">
         {"There's more, "}
-        <Link href="https://linkedin.com/in/jaagrav" target="_blank">
-          <a className="transition text-indigo hover:underline underline-offset-8">
+        <Link href="https://linkedin.com/in/jaagrav">
+          <a
+            target="_blank"
+            className="transition text-indigo hover:underline underline-offset-8"
+          >
             click here to find out!
           </a>
         </Link>
@@ -98,15 +101,21 @@ export default function Home() {
       <SkillsSection />
       <span className="relative z-10 block text-center mx-auto my-16 text-lightTextColor dark:text-white text-xl px-10 md:px-32">
         {"Dude c'mon if you haven't checked me out on "}
-        <Link href="https://linkedin.com/in/jaagrav" target="_blank">
-          <a className="transition text-indigo hover:underline underline-offset-8">
+        <Link href="https://linkedin.com/in/jaagrav">
+          <a
+            className="transition text-indigo hover:underline underline-offset-8"
+            target="_blank"
+          >
             LinkedIn
           </a>
         </Link>
         , do it!
         {" Also here's my "}
-        <Link href="https://github.com/Jaagrav" target="_blank">
-          <a className="transition text-pink hover:underline underline-offset-8">
+        <Link href="https://github.com/Jaagrav">
+          <a
+            className="transition text-pink hover:underline underline-offset-8"
+            target="_blank"
+          >
             GitHub!!!
           </a>
         </Link>{" "}
@@ -118,11 +127,11 @@ export default function Home() {
       <TestimonialsSection />
       <span className="relative z-10 block text-center mx-auto mt-2 mb-16 text-lightTextColor dark:text-white text-xl skew">
         {"All of these are totally real, "}
-        <Link
-          href="https://www.linkedin.com/in/jaagrav/details/recommendations/"
-          target="_blank"
-        >
-          <a className="transition text-pink hover:underline underline-offset-8">
+        <Link href="https://www.linkedin.com/in/jaagrav/details/recommendations/">
+          <a
+            target="_blank"
+            className="transition text-pink hover:underline underline-offset-8"
+          >
             look here for proof.
           </a>
         </Link>{" "}

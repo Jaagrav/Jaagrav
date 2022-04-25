@@ -88,18 +88,20 @@ export default function Page({ project, randomProject }) {
                 </div>
                 <div className="flex mt-6 gap-6">
                   {project.website && (
-                    <Link href={project.website} target="_blank">
+                    <Link href={project.website}>
                       <a
-                        className={`block h-full w-full text-center px-8 py-2 text-white dark:text-bgColor text-xl border-lightTextColor dark:border-white border-2 bg-lightTextColor dark:bg-white rounded-xl`}
+                        target="_blank"
+                        className={`block h-full w-full text-center px-8 py-2 text-white dark:text-bgColor text-xl border-lightTextColor dark:border-white border-2 bg-lightTextColor dark:bg-white rounded-xl transition shadow-none hover:shadow-xl hover:scale-105`}
                       >
                         Website
                       </a>
                     </Link>
                   )}
                   {project.github && (
-                    <Link href={project.github} target="_blank">
+                    <Link href={project.github}>
                       <a
-                        className={`block h-full w-full text-center px-8 py-2 text-lightTextColor dark:text-white text-xl border-lightTextColor dark:border-white border-2 rounded-xl`}
+                        target="_blank"
+                        className={`block h-full w-full text-center px-8 py-2 text-lightTextColor dark:text-white text-xl border-lightTextColor dark:border-white border-2 rounded-xl transition shadow-none hover:shadow-xl hover:scale-105`}
                       >
                         GitHub
                       </a>
@@ -118,8 +120,11 @@ export default function Page({ project, randomProject }) {
       <ProjectCards {...randomProject} />
       <span className="relative z-10 block text-center mx-auto mt-16 text-lightTextColor dark:text-white text-xl skew">
         {"There's more, "}
-        <Link href="/projects" target="_blank">
-          <a className="transition text-indigo hover:underline underline-offset-8">
+        <Link href="/projects">
+          <a
+            target="_blank"
+            className="transition text-indigo hover:underline underline-offset-8"
+          >
             click here to find out!
           </a>
         </Link>

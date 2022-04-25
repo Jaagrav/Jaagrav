@@ -1,5 +1,5 @@
 import { Carousel } from "react-responsive-carousel";
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 import testimonialData from "../../testimonial-data";
 
@@ -41,8 +41,8 @@ function Testimonial({
   link,
 }) {
   return (
-    <div className="px-10 md:px-32">
-      <div className="pb-12 max-w-screen-xl md:grid md:grid-cols-[auto_1fr] gap-12 mx-auto rounded-xl">
+    <div className="px-10 md:px-32 cursor-grab active:cursor-grabbing">
+      <div className="pb-12 max-w-screen-xl md:grid md:grid-cols-[auto_1fr] gap-12 mx-auto rounded-xl select-none">
         <span className="relative h-full h-auto flex justify-center items-center">
           <div
             className="h-[30rem] w-full md:w-[30rem] bg-cover bg-center bg-no-repeat rounded-2xl shadow-lg"

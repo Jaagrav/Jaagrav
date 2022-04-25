@@ -94,10 +94,7 @@ export default function Home() {
           </a>
         </Link>
       </span>
-      <SubHeader
-        title="Why hire me?"
-        caption="Here's a list of all my skills and all the reasons why you should hire me. As a developer, I don't completely know anything, you see I am not very good at memorizing, I normally read documentations everytime I am building something, but I make sure to get the work done in time."
-      />
+      <SubHeader title="Why hire me?" />
       <SkillsSection />
       <span className="relative z-10 block text-center mx-auto my-16 text-lightTextColor dark:text-white text-xl px-10 md:px-32">
         {"Dude c'mon if you haven't checked me out on "}

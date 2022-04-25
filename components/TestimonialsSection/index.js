@@ -5,8 +5,6 @@ import testimonialData from "../../testimonial-data";
 
 import Link from "next/link";
 
-import { FiLinkedin } from "react-icons/fi";
-
 export default function TestimonialsSection() {
   return (
     <div className="h-fit relative">

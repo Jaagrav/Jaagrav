@@ -11,3 +11,4 @@ export { default as PageTransition } from "./PageTransition";
 export { default as FeaturedArticle } from "./FeaturedArticle";
 export { default as Animatify } from "./Animatify";
 export { default as FeaturedArticle } from "./FeaturedArticle";
+export { default as Animatify } from "./Animatify";

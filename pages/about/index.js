@@ -74,7 +74,7 @@ export default function About() {
                 Jaagrav Seal
               </h1>
               <img
-                className="absolute m-auto top-0 left-0 -translate-y-1/2 -translate-x-1/2 max-w-none w-[50rem] md:w-[75rem] dark:opacity-60"
+                className="absolute m-auto top-0 left-0 -translate-y-1/2 -translate-x-1/4 max-w-none w-[50rem] md:w-[75rem] dark:opacity-60"
                 src="/assets/images/blur-ball-blue.webp"
               />
               <div className="relative z-10">

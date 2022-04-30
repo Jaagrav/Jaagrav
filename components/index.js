@@ -8,3 +8,4 @@ export { default as ExperienceSection } from "./ExperienceSection";
 export { default as SkillsSection } from "./SkillsSection";
 export { default as TestimonialsSection } from "./TestimonialsSection";
 export { default as PageTransition } from "./PageTransition";
+export { default as FeaturedArticle } from "./FeaturedArticle";

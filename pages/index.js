@@ -138,6 +138,14 @@ export default function Home() {
             </a>
           </Link>{" "}
         </span>
+        <FeaturedArticle
+          title="Drive a Tesla Cybertruck or literally any car on your browser with Threejs"
+          tags={["javascript", "webdev", "threejs"]}
+          desc="In this article, we would be building this, a 3D Tesla Cybertruck that can be driven with your arrow keys and WASD keys on your browser. We would be building this project with the help of RV-Engine..."
+          dev="https://dev.to/jaagrav/drive-a-tesla-cybertruck-or-literally-any-car-on-your-browser-with-threejs-4ila"
+          project="/projects/raycast-vehicle-engine"
+          img="/assets/images/projects/Rv-Engine.webp"
+        />
       </Animatify>
     </div>
   );

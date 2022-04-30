@@ -27,8 +27,7 @@ const testimonialData = [
     relationship:
       "Building Socket Technology · Ex Polygon · Goa Engineering College",
     occupation: "Creative Developer",
-    testimonial: `Jaagrav is an awesome kid with an awesome skillset. He is quite proficient in web development, and what makes it even better is the ability to combine his creativity with whatever he does. When it comes to problem solving, he is quick to find solutions. His belief that a solution exit if the problem does, and the ability to keenly search for that solution, is quite a distinguishing factor. On top of that, he is really fun to talk to.
-    Wish you all the best Jaagrav, have fun and keep learning!`,
+    testimonial: `Jaagrav did an exceptional job while working with me on the CoronaTracker project. His passion for building challenging products separates him from other students his age. Having mentored and worked with him, I found him to be a fast learner, hardworking and very reliable person. His development skills coupled with his design knowledge would make him a valuable addition to any team. I would definitely love to work with him again.`,
     img: "./assets/images/testimonials/Salil.webp",
     link: "https://www.linkedin.com/in/salilnaik/",
   },

@@ -1,4 +1,4 @@
-import { SubHeader, ProjectCards } from "../../components";
+import { SubHeader, ProjectCards, Animatify } from "../../components";
 import projectData from "../../project-data";
 import Head from "next/head";
 import Link from "next/link";
@@ -46,21 +46,25 @@ export default function Projects() {
         caption="Take a look at the shit I made in the name of Software Development. Honestly I am quite proud how most of them turned out. Most of them are available on Github so go ahead knock yourself out! The others are client/freelance projects."
       />
       <div className="grid grid-cols-1 gap-24">
-        {projectData.map((props, index) => (
-          <ProjectCards key={`project-card-${index}`} {...props} />
-        ))}
+        <Animatify>
+          {projectData.map((props, index) => (
+            <ProjectCards key={`project-card-${index}`} {...props} />
+          ))}
+        </Animatify>
       </div>
-      <span className="relative z-10 block text-center mx-auto mt-16 text-lightTextColor dark:text-white text-xl skew">
-        {"There's more, "}
-        <Link href="https://github.com/jaagrav">
-          <a
-            className="transition text-indigo hover:underline underline-offset-8"
-            target="_blank"
-          >
-            click here to find out!
-          </a>
-        </Link>
-      </span>
+      <Animatify>
+        <span className="relative z-10 block text-center mx-auto mt-16 text-lightTextColor dark:text-white text-xl skew">
+          {"There's more, "}
+          <Link href="https://github.com/jaagrav">
+            <a
+              className="transition text-indigo hover:underline underline-offset-8"
+              target="_blank"
+            >
+              click here to find out!
+            </a>
+          </Link>
+        </span>
+      </Animatify>
     </div>
   );
 }

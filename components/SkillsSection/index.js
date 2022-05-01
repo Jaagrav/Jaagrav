@@ -14,7 +14,6 @@ import { VscSymbolInterface } from "react-icons/vsc";
 import { GiRobotGolem } from "react-icons/gi";
 import { GoTools } from "react-icons/go";
 
-const poop = process.env.GITHUB_ACCESS_TOKEN;
 export default function SkillsSection() {
   const octokit = new Octokit({ auth: process.env.GITHUB_ACCESS_TOKEN });
   const [followers, setFollowers] = useState(0),

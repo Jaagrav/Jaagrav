@@ -1,12 +1,35 @@
 import { useEffect, useState } from "react";
 import { SubHeader, ProjectCards } from "../../../components";
 import projectData from "../../../project-data";
-import { useRouter } from "next/router";
 import Head from "next/head";
 import Link from "next/link";
 import ReadMoreReact from "read-more-react";
 
+import { Octokit } from "@octokit/core";
+import commaNumber from "comma-number";
+
 export default function Page({ project, randomProject }) {
+  const octokit = new Octokit({ auth: process.env.GITHUB_ACCESS_TOKEN });
+  const [stars, setStars] = useState(0),
+    [forks, setForks] = useState(0);
+
+  useEffect(() => {
+    const getGithubData = async () => {
+      try {
+        const githubRepoData = await octokit.request(
+          "GET /repos/{username}/{repo}",
+          {
+            username: "Jaagrav",
+            repo: project.link,
+          }
+        );
+
+        setStars(githubRepoData.data.stargazers_count);
+        setForks(githubRepoData.data.forks_count);
+      } catch (error) {}
+    };
+    getGithubData();
+  }, []);
   return (
     <div className="h-fit w-full">
       <Head>
@@ -70,6 +93,22 @@ export default function Page({ project, randomProject }) {
             <div className="h-full w-full bg-lightBgSecondaryColorTranslucent dark:bg-bgSecondaryColor"></div>
             <div className="py-12 md:pl-12">
               <div className="h-fit sticky top-28">
+                {!!stars && !!forks && (
+                  <div className="text-lightTextColor dark:text-white text-5xl mb-6">
+                    {!!stars && (
+                      <span>
+                        <b className="text-border">{stars}</b> stars
+                      </span>
+                    )}
+                    {!!forks && (
+                      <span>
+                        {" "}
+                        and <b className="text-border">{forks}</b> forks
+                      </span>
+                    )}{" "}
+                    on GitHub.
+                  </div>
+                )}
                 <div className="text-lightTextColor dark:text-white text-2xl">
                   Technologies used:
                 </div>

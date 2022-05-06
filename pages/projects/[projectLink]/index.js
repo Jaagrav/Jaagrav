@@ -161,10 +161,7 @@ export default function Page({ project, randomProject }) {
         <span className="relative z-10 block text-center mx-auto mt-16 text-lightTextColor dark:text-white text-xl skew">
           {"There's more, "}
           <Link href="/projects">
-            <a
-              target="_blank"
-              className="transition text-indigo hover:underline underline-offset-8"
-            >
+            <a className="transition text-indigo hover:underline underline-offset-8">
               click here to find out!
             </a>
           </Link>

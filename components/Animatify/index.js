@@ -11,12 +11,18 @@ export default function Animatify({ children }) {
     <>
       {children.length &&
         children.map((component, index) => (
-          <div key={`animatify-${index}`} data-aos="fade-up">
+          <span
+            className="translate-y-0"
+            key={`animatify-${index}`}
+            data-aos="fade-up"
+          >
             {component}
-          </div>
+          </span>
         ))}
       {typeof children.length !== "number" && (
-        <div data-aos="fade-up">{children}</div>
+        <span className="translate-y-0" data-aos="fade-up">
+          {children}
+        </span>
       )}
     </>
   );

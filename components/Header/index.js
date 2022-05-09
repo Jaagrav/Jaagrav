@@ -208,7 +208,7 @@ function MobileHeader({ isAtTop, currentURL, changeTheme }) {
               } dark:bg-white rounded-xl absolute ${
                 isOpen
                   ? "-rotate-45 w-full left-0 top-0 bottom-0 right-0"
-                  : "left-0 top-6 w-2/3"
+                  : "right-0 top-6 w-2/3"
               }`}
             ></div>
           </div>

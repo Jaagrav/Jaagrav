@@ -1,7 +1,7 @@
 export default function SubHeader({ title, caption }) {
   return (
     <div className="relative px-10 md:px-32 mx-auto skew">
-      <div className="max-w-screen-xl mx-auto -translate-y-1/4">
+      <div className="max-w-screen-xl mx-auto -translate-y-1/4 pointer-events-none">
         <h1 className="z-0 text-border-thick text-[6rem] md:text-[7rem] whitespace-nowrap opacity-10 translate-y-1/2">
           {title}
         </h1>

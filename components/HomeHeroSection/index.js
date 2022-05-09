@@ -29,8 +29,8 @@ export default function HomeHeroSection() {
         }}
       ></div>
       <canvas className="h-full w-full absolute" id="liquid-canvas"></canvas>
-      <div className="absolute h-full w-full bg-gradient-to-b from-transparent transition duration-300 to-white translate-y-1 pointer-events-none dark:opacity-0 opacity-100"></div>
-      <div className="absolute h-full w-full bg-gradient-to-b from-transparent transition duration-300 to-bgColor translate-y-1 pointer-events-none opacity-0 dark:opacity-100"></div>
+      <div className="absolute h-1/4 w-full bg-gradient-to-b from-transparent transition duration-300 to-white translate-y-1 pointer-events-none dark:opacity-0 opacity-100 bottom-0"></div>
+      <div className="absolute h-1/4 w-full bg-gradient-to-b from-transparent transition duration-300 to-bgColor translate-y-1 pointer-events-none opacity-0 dark:opacity-100 bottom-0"></div>
       <div className="absolute w-full h-full pointer-events-none">
         <div className="skew max-w-screen-xl absolute top-0 left-0 bottom-0 right-0 m-auto z-10 h-fit w-fit px-10 md:px-32">
           <div className="md:px-6">

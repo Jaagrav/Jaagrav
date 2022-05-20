@@ -1,4 +1,4 @@
-import { SubHeader, Animatify } from "../../components";
+import { SubHeader, Animatify, Analytics } from "../../components";
 import { useForm, ValidationError } from "@formspree/react";
 import Head from "next/head";
 import Link from "next/link";

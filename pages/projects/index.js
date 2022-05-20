@@ -1,4 +1,9 @@
-import { SubHeader, ProjectCards, Animatify } from "../../components";
+import {
+  SubHeader,
+  ProjectCards,
+  Animatify,
+  Analytics,
+} from "../../components";
 import projectData from "../../project-data";
 import Head from "next/head";
 import Link from "next/link";

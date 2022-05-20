@@ -1,4 +1,4 @@
-import { SubHeader } from "../../components";
+import { SubHeader, Analytics } from "../../components";
 import Head from "next/head";
 
 export default function Resume() {

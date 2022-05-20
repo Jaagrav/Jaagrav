@@ -7,7 +7,7 @@ import { Header, Footer } from "../components";
 import { ScrollerMotion, useScrollerMotion } from "scroller-motion";
 import { useMotionValue } from "framer-motion";
 
-import PageTransition from "../components/PageTransition";
+import { PageTransition, Analytics } from "../components";
 
 import { PageTransition as Transition } from "next-page-transitions";
 
@@ -81,6 +81,7 @@ function MyApp({ Component, pageProps }) {
         src="/assets/lib/fluid-background.js"
         async
       ></script>
+      <Analytics />
     </div>
   );
 }

@@ -7,6 +7,7 @@ import {
   TestimonialsSection,
   ExperienceSection,
   Animatify,
+  Analytics,
 } from "../../components";
 import Head from "next/head";
 

@@ -9,7 +9,7 @@ import {
   ExperienceSection,
   SkillsSection,
   TestimonialsSection,
-  FeaturedArticle,
+  Analytics,
 } from "../components";
 import projectData from "../project-data";
 
@@ -62,6 +62,7 @@ export default function Home() {
         <meta property="og:image:width" content="300" />
         <meta property="og:image:height" content="300" />
       </Head>
+
       <HomeHeroSection />
       <Animatify>
         <GallerySection />

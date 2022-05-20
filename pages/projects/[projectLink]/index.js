@@ -1,5 +1,10 @@
 import { useEffect, useState } from "react";
-import { SubHeader, ProjectCards, Animatify } from "../../../components";
+import {
+  SubHeader,
+  ProjectCards,
+  Animatify,
+  Analytics,
+} from "../../../components";
 import projectData from "../../../project-data";
 import Head from "next/head";
 import Link from "next/link";
@@ -98,13 +103,18 @@ export default function Page({ project, randomProject }) {
                     <div className="text-lightTextColor dark:text-white text-5xl mb-6">
                       {!!stars && (
                         <span>
-                          <b className="text-border">{stars}</b> stars
+                          <b className="text-border">{commaNumber(stars)}</b>{" "}
+                          stars
                         </span>
                       )}
                       {!!forks && (
                         <span>
                           {" "}
-                          and <b className="text-border">{forks}</b> forks
+                          and{" "}
+                          <b className="text-border">
+                            {commaNumber(forks)}
+                          </b>{" "}
+                          forks
                         </span>
                       )}{" "}
                       on GitHub.

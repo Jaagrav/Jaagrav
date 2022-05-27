@@ -91,7 +91,7 @@ const projectData = [
     title: "Xper",
     miniDesc:
       "Xper is a realtime code editor where you can both write and save your code in realtime! The unique thing about Xper is it updates your deployed code in realtime, which means you can...",
-    website: "https://xperbycoder.netlify.app/",
+    website: "https://xper.jaagrav.in/",
     github: "https://github.com/Jaagrav/Xper",
     img: "/assets/images/projects/Xper.webp",
     link: "xper",
@@ -110,7 +110,7 @@ const projectData = [
     title: "Fragments",
     miniDesc:
       "Fragments is a light weight code editor which supports multiple languages, store your code/snippets here for future use. In Fragments, you can create/edit/store code and snippets for future use...",
-    website: "https://fragmentsbycoder.netlify.app/",
+    website: "https://fragments.jaagrav.in/",
     github: "https://github.com/Jaagrav/Fragments",
     img: "/assets/images/projects/Fragments.webp",
     link: "fragments",

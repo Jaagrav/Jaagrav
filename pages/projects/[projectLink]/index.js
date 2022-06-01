@@ -13,6 +13,8 @@ import ReadMoreReact from "read-more-react";
 import { Octokit } from "@octokit/core";
 import commaNumber from "comma-number";
 
+import { FiExternalLink } from "react-icons/fi";
+
 export default function Page({ project, randomProject }) {
   const octokit = new Octokit({ auth: process.env.GITHUB_ACCESS_TOKEN });
   const [stars, setStars] = useState(0),
@@ -154,6 +156,18 @@ export default function Page({ project, randomProject }) {
                           className={`block h-full w-full text-center px-8 py-2 text-lightTextColor dark:text-white text-xl border-lightTextColor dark:border-white border-2 rounded-xl transition shadow-none hover:shadow-xl hover:scale-105`}
                         >
                           GitHub
+                        </a>
+                      </Link>
+                    )}
+                  </div>
+                  <div className="w-full flex">
+                    {project?.apiDocs && (
+                      <Link href={project.apiDocs}>
+                        <a
+                          target="_blank"
+                          className={`mt-6 block h-full w-full text-center px-8 py-2 text-white dark:text-bgColor text-xl border-lightTextColor dark:border-white border-2 bg-lightTextColor dark:bg-white rounded-xl transition shadow-none hover:shadow-xl hover:scale-105`}
+                        >
+                          API Docs <FiExternalLink className="inline" />
                         </a>
                       </Link>
                     )}

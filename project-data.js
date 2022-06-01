@@ -73,6 +73,7 @@ const projectData = [
     img: "/assets/images/projects/Codex.webp",
     link: "codex",
     showOnHome: true,
+    apiDocs: "https://github.com/Jaagrav/Codex-API",
     tech: [
       "Docker",
       "ExpressJS",
@@ -84,6 +85,7 @@ const projectData = [
       "React-Ace",
       "UUID",
       "Node:child_process",
+      "API",
     ],
     desc: "100+ stars on Github, my most popular project on Github, CodeX is an online compiler for various languages like Java, C++, Python, etc. Execute code in various languages on your own website for free with the CodeX API!!! You can share the codes' links that you write with your friends without being worried about them making any changes. CodeX stores all your code details on your device, which means every code that you write will only be editable on the device where you write you code in. Every Code shares a key that only your device and CodeX's backend know, so don't fear about others making any changes. Although there are ways to hack into others code and make changes but that's for you to find out. Once you find it out simply create an issue reporting the bug. No need to Sign In / Sign Up in order to execute and save your code. Every code automatically saves and updates in realtime so don't worry about losing it. It will always live in your computer unless you decide to clear your cache.",
   },

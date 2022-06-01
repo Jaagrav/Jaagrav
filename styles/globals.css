@@ -19,12 +19,21 @@
 }
 
 @font-face {
-  font-family: "TimerBurner";
+  font-family: "TimeBurner";
   src: url(/assets/fonts/TimeBurner.woff);
+}
+@font-face {
+  font-family: "Marcellus";
+  src: url(/assets/fonts/Marcellus.woff);
+}
+@font-face {
+  font-family: "Sulphur Point";
+  src: url(/assets/fonts/SulphurPoint-Bold.woff);
 }
 
 * {
-  font-family: "TimerBurner", sans-serif;
+  font-family: "Sulphur Point", "TimeBurner", sans-serif;
+  /* font-weight: bold; */
 }
 
 body {

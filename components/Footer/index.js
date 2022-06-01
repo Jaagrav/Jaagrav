@@ -93,7 +93,7 @@ export default function Footer() {
                 </a>
                 <a
                   className="text-lightTextColor dark:text-white text-3xl w-fit inline "
-                  href="mailto:jaagravseal03@gmail.com"
+                  href="mailto:contact@jaagrav.in"
                   target="_blank"
                   rel="noreferrer"
                 >

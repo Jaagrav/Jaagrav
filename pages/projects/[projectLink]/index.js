@@ -165,7 +165,7 @@ export default function Page({ project, randomProject }) {
         </div>
         <SubHeader
           title="Next Project"
-          caption="This is not the only shit I made, check out this other project that this page randomly chose for you to see, hope you'll like it. And if you don't go back to the projects page to see all the projects I have built so far."
+          caption="This is not the only project I made, check out this other project that this page randomly chose for you to see, hope you'll like it. And if you don't go back to the projects page to see all the projects I have built so far."
         />
         <ProjectCards {...randomProject} />
         <span className="relative z-10 block text-center mx-auto mt-16 text-lightTextColor dark:text-white text-xl skew">

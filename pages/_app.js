@@ -28,7 +28,7 @@ function MyApp({ Component, pageProps }) {
     };
 
   useEffect(() => {
-    setTheme(!("theme" in localStorage) ? "light" : localStorage.theme);
+    setTheme(!("theme" in localStorage) ? "dark" : localStorage.theme); // Set default theme
   }, []);
 
   return (

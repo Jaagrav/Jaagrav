@@ -15,7 +15,7 @@ export default function Contact() {
         <meta name="title" content="Contact / Jaagrav" />
         <meta
           name="description"
-          content="You got some shit to say? Feel free to reach out to me, I’ll respond whenever I want, and please don't send me bullshit if you're planning to, and if you're a recruiter, then keep going..."
+          content="You got something to say? Feel free to reach out to me, I’ll respond as soon as possible"
         />
         <meta
           name="viewport"
@@ -25,7 +25,7 @@ export default function Contact() {
         <meta property="og:title" content="Contact / Jaagrav" />
         <meta
           property="og:description"
-          content="You got some shit to say? Feel free to reach out to me, I’ll respond whenever I want, and please don't send me bullshit if you're planning to, and if you're a recruiter, then keep going..."
+          content="You got something to say? Feel free to reach out to me, I’ll respond as soon as possible"
         />
         <meta
           property="og:image"
@@ -36,7 +36,7 @@ export default function Contact() {
         <meta property="twitter:title" content="Contact / Jaagrav" />
         <meta
           property="twitter:description"
-          content="You got some shit to say? Feel free to reach out to me, I’ll respond whenever I want, and please don't send me bullshit if you're planning to, and if you're a recruiter, then keep going..."
+          content="You got something to say? Feel free to reach out to me, I’ll respond as soon as possible"
         />
         <meta
           property="twitter:image"
@@ -48,7 +48,7 @@ export default function Contact() {
       <Animatify>
         <SubHeader
           title="Contact Me"
-          caption="You got some shit to say? Feel free to reach out to me, I’ll respond whenever I want, and please don't send me bullshit if you're planning to, and if you're a recruiter, then keep going..."
+          caption="You got something to say? Feel free to reach out to me, I’ll respond as soon as possible"
         />
         <div className="px-10 md:px-32 relative z-10">
           <div className="max-w-screen-xl mx-auto">
@@ -125,7 +125,7 @@ function ThankYouMessage() {
     <div className="h-fit w-full">
       <SubHeader
         title="Contact Me"
-        caption="You got some shit to say? Feel free to reach out to me, I’ll respond whenever I want, and please don't send me bullshit if you're planning to, and if you're a recruiter, then keep going..."
+        caption="You got something to say? Feel free to reach out to me, I’ll respond as soon as possible"
       />
       <div className="px-10 md:px-32 relative z-10">
         <div className="max-w-screen-xl mx-auto">

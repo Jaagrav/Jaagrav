@@ -42,7 +42,7 @@ export default function SkillsSection() {
     <div className="px-10 md:px-32 relative z-10 mb-12">
       <div className="max-w-screen-xl mx-auto flex flex-col md:grid md:grid-cols-2 gap-12">
         <div className="flex justify-center flex-col gap-6">
-          <div className="text-xl text-lightTextColor dark:text-white leading-10">
+          <div className="text-xl text-lightTextColor dark:text-white leading-8">
             {
               "Here's a list of all my skills and all the reasons why you should hire me. As a developer, I don't completely know anything, you see I am not very good at memorizing, I normally read documentations everytime I am building something, but I make sure to get the work done in time."
             }
@@ -82,7 +82,7 @@ export default function SkillsSection() {
         </div>
         <div className="h-full w-full bg-lightBgSecondaryColor dark:bg-bgSecondaryColor rounded-xl">
           <Carousel
-            autoPlay={true}
+            autoPlay={false}
             interval={3000}
             infiniteLoop={true}
             swipeable={true}

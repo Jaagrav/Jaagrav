@@ -16,7 +16,7 @@ export default function Projects() {
         <meta name="title" content="Projects / Jaagrav" />
         <meta
           name="description"
-          content="Take a look at the shit I made in the name of Software Development. Honestly I am quite proud how most of them turned out. Most of them are available on Github so go ahead knock yourself out! The others are client/freelance projects."
+          content="Take a look at these projects I made in the name of Software Development. Honestly I am quite proud how most of them turned out. Most of them are available on Github so go ahead knock yourself out! The others are client/freelance projects."
         />
         <meta
           name="viewport"
@@ -26,7 +26,7 @@ export default function Projects() {
         <meta property="og:title" content="Projects / Jaagrav" />
         <meta
           property="og:description"
-          content="Take a look at the shit I made in the name of Software Development. Honestly I am quite proud how most of them turned out. Most of them are available on Github so go ahead knock yourself out! The others are client/freelance projects."
+          content="Take a look at these projects I made in the name of Software Development. Honestly I am quite proud how most of them turned out. Most of them are available on Github so go ahead knock yourself out! The others are client/freelance projects."
         />
         <meta
           property="og:image"
@@ -37,7 +37,7 @@ export default function Projects() {
         <meta property="twitter:title" content="Projects / Jaagrav" />
         <meta
           property="twitter:description"
-          content="Take a look at the shit I made in the name of Software Development. Honestly I am quite proud how most of them turned out. Most of them are available on Github so go ahead knock yourself out! The others are client/freelance projects."
+          content="Take a look at these projects I made in the name of Software Development. Honestly I am quite proud how most of them turned out. Most of them are available on Github so go ahead knock yourself out! The others are client/freelance projects."
         />
         <meta
           property="twitter:image"
@@ -48,7 +48,7 @@ export default function Projects() {
       </Head>
       <SubHeader
         title="My Projects"
-        caption="Take a look at the shit I made in the name of Software Development. Honestly I am quite proud how most of them turned out. Most of them are available on Github so go ahead knock yourself out! The others are client/freelance projects."
+        caption="Take a look at these projects I made in the name of Software Development. Honestly I am quite proud how most of them turned out. Most of them are available on Github so go ahead knock yourself out! The others are client/freelance projects."
       />
       <div className="grid grid-cols-1 gap-24">
         <Animatify>

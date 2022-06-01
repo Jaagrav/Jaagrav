@@ -68,7 +68,7 @@ export default function Home() {
         <GallerySection />
         <SubHeader
           title="Featured Projects"
-          caption="Take a look at the shit I made in the name of Software Development. Honestly I am quite proud how most of them turned out. Most of them are available on Github so go ahead knock yourself out! The others are client/freelance projects."
+          caption="Take a look at these projects I made in the name of Software Development. Honestly I am quite proud how most of them turned out. Most of them are available on Github so go ahead knock yourself out! The others are client/freelance projects."
         />
         <div className="grid grid-cols-1 gap-24">
           {projectData.map((props, index) => {

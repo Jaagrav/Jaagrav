@@ -29,7 +29,7 @@ const projectData = [
     github: null,
     img: "/assets/images/projects/Ayasya.webp",
     link: "ayasya-eco",
-    showOnHome: true,
+    showOnHome: false,
     tech: [
       "NextJS",
       "TailwindCSS",
@@ -72,7 +72,7 @@ const projectData = [
     github: "https://github.com/Jaagrav/CodeX",
     img: "/assets/images/projects/Codex.webp",
     link: "codex",
-    showOnHome: false,
+    showOnHome: true,
     tech: [
       "Docker",
       "ExpressJS",

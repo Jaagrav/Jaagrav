@@ -1,14 +1,14 @@
 var experienceData = [
   {
     icon: "/assets/images/org-cjr.webp",
-    date: "Aug 2021 - Present",
+    date: "Aug 2021 - May 2022",
     organization: "CuriousJr",
     position: "L2 SDE Intern",
     desc: "Mentoring 5 interns, working on JS courses and blockly courses.",
   },
   {
     icon: "/assets/images/org-dc.webp",
-    date: "May 2021 - Present",
+    date: "May 2021 - January 2022",
     organization: "Design And Code",
     position: "Front End Developer",
     desc: "Worked on community websites.",

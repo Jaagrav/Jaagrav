@@ -9,7 +9,7 @@ export default function Resume() {
         <meta name="title" content="Resume / Jaagrav" />
         <meta
           name="description"
-          content="Take a look at the shit I made in the name of Software Development. Honestly I am quite proud how most of them turned out. Most of them are available on Github so go ahead knock yourself out! The others are client/freelance projects."
+          content="Take a look at my resume to get a more formal description about myself. To know stuff like my education, etc. You can download my resume for future reference."
         />
         <meta
           name="viewport"
@@ -19,7 +19,7 @@ export default function Resume() {
         <meta property="og:title" content="Resume / Jaagrav" />
         <meta
           property="og:description"
-          content="Take a look at the shit I made in the name of Software Development. Honestly I am quite proud how most of them turned out. Most of them are available on Github so go ahead knock yourself out! The others are client/freelance projects."
+          content="Take a look at my resume to get a more formal description about myself. To know stuff like my education, etc. You can download my resume for future reference."
         />
         <meta
           property="og:image"
@@ -30,7 +30,7 @@ export default function Resume() {
         <meta property="twitter:title" content="Resume / Jaagrav" />
         <meta
           property="twitter:description"
-          content="Take a look at the shit I made in the name of Software Development. Honestly I am quite proud how most of them turned out. Most of them are available on Github so go ahead knock yourself out! The others are client/freelance projects."
+          content="Take a look at my resume to get a more formal description about myself. To know stuff like my education, etc. You can download my resume for future reference."
         />
         <meta
           property="twitter:image"

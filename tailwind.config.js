@@ -1,10 +1,10 @@
 module.exports = {
+  important: true,
   darkMode: "class",
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
-  important: true,
   theme: {
     backgroundSize: {
       auto: "auto",
@@ -29,7 +29,8 @@ module.exports = {
       },
       fontFamily: {
         primary: ["TimeBurner", "sans-serif"],
-        secondary: ["sans-serif"],
+        secondary: ["Marcellus", "sans-serif"],
+        tertiary: ["sans-serif"],
       },
     },
   },

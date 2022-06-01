@@ -19,7 +19,7 @@ export default function HomeHeroSection() {
   return (
     <div className="h-screen w-full relative -mt-20 md:-mt-16">
       <div
-        className="h-full w-full absolute bg-center bg-no-repeat bg-cover transition dark:duration-300 opacity-0 dark:opacity-70"
+        className="h-full w-full absolute bg-center bg-no-repeat bg-cover transition dark:duration-300 opacity-0 dark:opacity-100"
         style={{
           backgroundImage: `url(./assets/images/hero-section-bg-dark.webp)`,
         }}

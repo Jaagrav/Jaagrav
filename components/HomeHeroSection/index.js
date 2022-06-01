@@ -40,19 +40,19 @@ export default function HomeHeroSection() {
               Hi {"I'm "}
               <span
                 title="This is not a link fool."
-                className="underline underline-offset-8 pointer-events-auto cursor-pointer text-pink dark:text-indigo"
+                className="underline underline-offset-8 pointer-events-auto cursor-pointer text-pink dark:text-blue"
               >
                 Jaagrav Seal
               </span>
             </span>
-            <span className="block text-[14vw] md:text-[7rem] text-lightTextColor dark:text-white md:text-center font-secondary max-w-[100vw] md:max-w-[80rem]">
+            <span className="md:leading-[9rem] mb-6 block text-[13vw] sm:text-[7rem] text-lightTextColor dark:text-white md:text-center font-secondary max-w-[100vw] md:max-w-[80rem]">
               Building Websites, Products, Interfaces & Experiences
             </span>
             <span className="md:m-auto block text-lightTextColor dark:text-white text-2xl md:text-xl leading-10 md:text-center max-w-xl my-4">
               I am a{" "}
               <span
                 title="Still not a link."
-                className="pointer-events-auto cursor-pointer text-pink dark:text-indigo"
+                className="pointer-events-auto cursor-pointer text-pink dark:text-blue"
               >
                 Full Stack Developer
               </span>{" "}

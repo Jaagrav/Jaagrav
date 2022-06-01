@@ -106,7 +106,7 @@ export default function Footer() {
           <div className="text-lightTextColor dark:text-white text-lg text-center pb-6">
             © {new Date().getFullYear()}{" "}
             <a
-              href="https://peerlist.io/jaagrav"
+              href="https://github.com/Jaagrav/Jaagrav"
               target="_blank"
               className="transition text-pink dark:text-indigo hover:underline underline-offset-8 text-lg"
               rel="noreferrer"

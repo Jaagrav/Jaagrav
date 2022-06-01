@@ -28,7 +28,20 @@ function MyApp({ Component, pageProps }) {
     };
 
   useEffect(() => {
-    setTheme(!("theme" in localStorage) ? "dark" : localStorage.theme); // Set default theme
+    window
+      .matchMedia("(prefers-color-scheme: dark)")
+      .addEventListener("change", (event) => {
+        const theme = event.matches ? "dark" : "light";
+        setTheme(theme);
+      });
+
+    setTheme(
+      !("theme" in localStorage)
+        ? window.matchMedia("(prefers-color-scheme: dark)").matches
+          ? "dark"
+          : "light"
+        : localStorage.theme
+    ); // Set default theme
   }, []);
 
   return (

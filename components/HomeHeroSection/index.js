@@ -19,7 +19,7 @@ export default function HomeHeroSection() {
   return (
     <div className="h-screen w-full relative -mt-20 md:-mt-16">
       <div
-        className="h-full w-full absolute bg-center bg-no-repeat bg-cover transition dark:duration-300 opacity-0 dark:opacity-100"
+        className="h-full w-full absolute bg-center bg-no-repeat bg-cover transition dark:duration-300 opacity-0 dark:opacity-70"
         style={{
           backgroundImage: `url(./assets/images/hero-section-bg-dark.webp)`,
         }}
@@ -48,7 +48,7 @@ export default function HomeHeroSection() {
             <span className="block text-[14vw] md:text-[7rem] text-lightTextColor dark:text-white md:text-center font-secondary max-w-[100vw] md:max-w-[80rem]">
               Building Websites, Products, Interfaces & Experiences
             </span>
-            <span className="md:m-auto block text-lightTextColor dark:text-white text-2xl md:text-xl leading-10 md:text-center max-w-xl">
+            <span className="md:m-auto block text-lightTextColor dark:text-white text-2xl md:text-xl leading-10 md:text-center max-w-xl my-4">
               I am a{" "}
               <span
                 title="Still not a link."
@@ -58,7 +58,7 @@ export default function HomeHeroSection() {
               </span>{" "}
               by profession, and a design enthusiast and learner by passion.
             </span>
-            <div className="flex justify-center items-center gap-6 mt-6">
+            <div className="flex justify-center items-center gap-6 mt-8">
               <a
                 className="text-lightTextColor dark:text-white text-4xl md:text-2xl w-fit inline pointer-events-auto"
                 href="https://github.com/Jaagrav"

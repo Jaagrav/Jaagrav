@@ -13,6 +13,8 @@ import ReadMoreReact from "read-more-react";
 import { Octokit } from "@octokit/core";
 import commaNumber from "comma-number";
 
+import { FiExternalLink } from "react-icons/fi";
+
 export default function Page({ project, randomProject }) {
   const octokit = new Octokit({ auth: process.env.GITHUB_ACCESS_TOKEN });
   const [stars, setStars] = useState(0),
@@ -158,6 +160,18 @@ export default function Page({ project, randomProject }) {
                       </Link>
                     )}
                   </div>
+                  <div className="w-full flex">
+                    {project?.apiDocs && (
+                      <Link href={project.apiDocs}>
+                        <a
+                          target="_blank"
+                          className={`mt-6 block h-full w-full text-center px-8 py-2 text-white dark:text-bgColor text-xl border-lightTextColor dark:border-white border-2 bg-lightTextColor dark:bg-white rounded-xl transition shadow-none hover:shadow-xl hover:scale-105`}
+                        >
+                          API Docs <FiExternalLink className="inline" />
+                        </a>
+                      </Link>
+                    )}
+                  </div>
                 </div>
               </div>
             </div>
@@ -165,7 +179,7 @@ export default function Page({ project, randomProject }) {
         </div>
         <SubHeader
           title="Next Project"
-          caption="This is not the only shit I made, check out this other project that this page randomly chose for you to see, hope you'll like it. And if you don't go back to the projects page to see all the projects I have built so far."
+          caption="This is not the only project I made, check out this other project that this page randomly chose for you to see, hope you'll like it. And if you don't go back to the projects page to see all the projects I have built so far."
         />
         <ProjectCards {...randomProject} />
         <span className="relative z-10 block text-center mx-auto mt-16 text-lightTextColor dark:text-white text-xl skew">

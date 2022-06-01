@@ -84,10 +84,10 @@ export default function About() {
                 </h1>
                 <span className="block text-lightTextColor dark:text-white mt-8 text-xl leading-10">
                   A Full Stack Developer based in West Bengal, India. I enjoy
-                  designing and developing websites, I am currently 18 years
-                  old, and am also in the first year of my college. I am
-                  currently pursuing B. Tech in Computer Science and Engineering
-                  from KIIT University.
+                  designing and developing websites, I am currently{" "}
+                  {new Date().getFullYear() - 2004} years old, and am also in
+                  the first year of my college. I am currently pursuing B. Tech
+                  in Computer Science and Engineering from KIIT University.
                 </span>
                 <Link href="/resume">
                   <a

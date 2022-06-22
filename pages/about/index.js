@@ -7,60 +7,22 @@ import {
   TestimonialsSection,
   ExperienceSection,
   Animatify,
-  Analytics,
+  SEO,
 } from "../../components";
 import Head from "next/head";
 
 export default function About() {
   return (
     <div className="h-fit w-full pt-4">
-      <Head>
-        <title>About / Jaagrav</title>
-        <meta name="title" content="About / Jaagrav" />
-        <meta
-          name="description"
-          content="A Full Stack Developer based in West Bengal, India. I enjoy
-          designing and developing websites, I am currently 18 years old,
-          and am also in the first year of my college. I am currently
-          pursuing B. Tech in Computer Science and Engineering from
-          University."
-        />
-        <meta
-          name="viewport"
-          content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
-        />
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="About / Jaagrav" />
-        <meta
-          property="og:description"
-          content="A Full Stack Developer based in West Bengal, India. I enjoy
-          designing and developing websites, I am currently 18 years old,
-          and am also in the first year of my college. I am currently
-          pursuing B. Tech in Computer Science and Engineering from
-          University."
-        />
-        <meta
-          property="og:image"
-          content="https://jaagrav-2.vercel.app/assets/images/seo/about.webp"
-        />
-
-        <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:title" content="About / Jaagrav" />
-        <meta
-          property="twitter:description"
-          content="A Full Stack Developer based in West Bengal, India. I enjoy
-          designing and developing websites, I am currently 18 years old,
-          and am also in the first year of my college. I am currently
-          pursuing B. Tech in Computer Science and Engineering from
-          University."
-        />
-        <meta
-          property="twitter:image"
-          content="https://jaagrav-2.vercel.app/assets/images/seo/about.webp"
-        />
-        <meta property="og:image:width" content="300" />
-        <meta property="og:image:height" content="300" />
-      </Head>
+      <SEO
+        title="About / Jaagrav"
+        desc="A Full Stack Developer based in West Bengal, India. I enjoy
+      designing and developing websites, I am currently 18 years old,
+      and am also in the first year of my college. I am currently
+      pursuing B. Tech in Computer Science and Engineering from
+      University."
+        img="https://jaagrav-2.vercel.app/assets/images/seo/about.webp"
+      />
       <Animatify>
         <div className="px-10 md:px-32 pb-12">
           <div className="md:grid md:grid-cols-[1fr_0.4fr] gap-8 max-w-screen-xl m-auto mt-4">

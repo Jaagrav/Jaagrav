@@ -6,6 +6,7 @@ const projectData = [
     website: "https://rv-engine.jaagrav.in/",
     github: "https://github.com/Jaagrav/raycast-vehicle-engine",
     img: "/assets/images/projects/Rv-Engine.webp",
+    seoimg: "/assets/images/seo/Rv-Engine.webp",
     link: "raycast-vehicle-engine",
     showOnHome: true,
     tech: [
@@ -28,6 +29,7 @@ const projectData = [
     website: "https://ayasyaeco.com/",
     github: null,
     img: "/assets/images/projects/Ayasya.webp",
+    seoimg: "/assets/images/seo/Ayasya.webp",
     link: "ayasya-eco",
     showOnHome: false,
     tech: [
@@ -49,6 +51,7 @@ const projectData = [
     website: "https://brisko.app/",
     github: null,
     img: "/assets/images/projects/Brisko.webp",
+    seoimg: "/assets/images/seo/Brisko.webp",
     link: "brisko",
     showOnHome: false,
     tech: [
@@ -71,6 +74,7 @@ const projectData = [
     website: "https://codex.jaagrav.in/",
     github: "https://github.com/Jaagrav/CodeX",
     img: "/assets/images/projects/Codex.webp",
+    seoimg: "/assets/images/seo/Codex.webp",
     link: "codex",
     showOnHome: true,
     apiDocs: "https://github.com/Jaagrav/Codex-API",
@@ -96,6 +100,7 @@ const projectData = [
     website: "https://xper.jaagrav.in/",
     github: "https://github.com/Jaagrav/Xper",
     img: "/assets/images/projects/Xper.webp",
+    seoimg: "/assets/images/seo/Xper.webp",
     link: "xper",
     showOnHome: false,
     tech: [
@@ -115,6 +120,7 @@ const projectData = [
     website: "https://fragments.jaagrav.in/",
     github: "https://github.com/Jaagrav/Fragments",
     img: "/assets/images/projects/Fragments.webp",
+    seoimg: "/assets/images/seo/Fragments.webp",
     link: "fragments",
     showOnHome: false,
     tech: ["AceJS", "jQuery", "Font-Awesome", "HTML", "CSS", "JavaScript"],

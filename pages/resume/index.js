@@ -1,44 +1,14 @@
-import { SubHeader, Analytics } from "../../components";
+import { SubHeader, SEO } from "../../components";
 import Head from "next/head";
 
 export default function Resume() {
   return (
     <div>
-      <Head>
-        <title>Resume / Jaagrav</title>
-        <meta name="title" content="Resume / Jaagrav" />
-        <meta
-          name="description"
-          content="Take a look at my resume to get a more formal description about myself. To know stuff like my education, etc. You can download my resume for future reference."
-        />
-        <meta
-          name="viewport"
-          content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
-        />
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="Resume / Jaagrav" />
-        <meta
-          property="og:description"
-          content="Take a look at my resume to get a more formal description about myself. To know stuff like my education, etc. You can download my resume for future reference."
-        />
-        <meta
-          property="og:image"
-          content="https://jaagrav-2.vercel.app/assets/images/seo/resume.webp"
-        />
-
-        <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:title" content="Resume / Jaagrav" />
-        <meta
-          property="twitter:description"
-          content="Take a look at my resume to get a more formal description about myself. To know stuff like my education, etc. You can download my resume for future reference."
-        />
-        <meta
-          property="twitter:image"
-          content="https://jaagrav-2.vercel.app/assets/images/seo/resume.webp"
-        />
-        <meta property="og:image:width" content="300" />
-        <meta property="og:image:height" content="300" />
-      </Head>
+      <SEO
+        title="Resume / Jaagrav"
+        desc="Take a look at my resume to get a more formal description about myself. To know stuff like my education, etc. You can download my resume for future reference."
+        img="https://jaagrav-2.vercel.app/assets/images/seo/resume.webp"
+      />
       <SubHeader
         title="My Resume"
         caption="Take a look at my resume to get a more formal description about myself. To know stuff like my education, etc. You can download my resume for future reference."

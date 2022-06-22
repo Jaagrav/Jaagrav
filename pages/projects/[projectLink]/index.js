@@ -1,10 +1,5 @@
 import { useEffect, useState } from "react";
-import {
-  SubHeader,
-  ProjectCards,
-  Animatify,
-  Analytics,
-} from "../../../components";
+import { SubHeader, ProjectCards, Animatify, SEO } from "../../../components";
 import projectData from "../../../project-data";
 import Head from "next/head";
 import Link from "next/link";
@@ -39,38 +34,11 @@ export default function Page({ project, randomProject }) {
   }, []);
   return (
     <div className="h-fit w-full">
-      <Head>
-        <title>{project.title} / Projects / Jaagrav</title>
-        <meta name="title" content={`${project.title} / Projects / Jaagrav`} />
-        <meta name="description" content={project.miniDesc} />
-        <meta
-          name="viewport"
-          content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
-        />
-        <meta property="og:type" content="website" />
-        <meta
-          property="og:title"
-          content={`${project.title} / Projects / Jaagrav`}
-        />
-        <meta property="og:description" content={project.miniDesc} />
-        <meta
-          property="og:image"
-          content={`https://jaagrav-2.vercel.app${project.img}`}
-        />
-
-        <meta property="twitter:card" content="summary_large_image" />
-        <meta
-          property="twitter:title"
-          content={`${project.title} / Projects / Jaagrav`}
-        />
-        <meta property="twitter:description" content={project.miniDesc} />
-        <meta
-          property="twitter:image"
-          content={`https://jaagrav-2.vercel.app${project.img}`}
-        />
-        <meta property="og:image:width" content="300" />
-        <meta property="og:image:height" content="300" />
-      </Head>
+      <SEO
+        title={`${project.title} / Projects / Jaagrav`}
+        desc={`${project.miniDesc} / Projects / Jaagrav`}
+        img={`https://jaagrav-2.vercel.app${project.seoimg}`}
+      />
       <Animatify>
         <SubHeader
           title={project.title}

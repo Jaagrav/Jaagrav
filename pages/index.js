@@ -9,60 +9,21 @@ import {
   ExperienceSection,
   SkillsSection,
   TestimonialsSection,
-  Analytics,
+  SEO,
 } from "../components";
 import projectData from "../project-data";
 
 export default function Home() {
   return (
     <div className="h-fit w-full ">
-      <Head>
-        <title>Home / Jaagrav</title>
-        <meta
-          name="viewport"
-          content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
-        />
-        <meta name="title" content="Home / Jaagrav" />
-        <meta
-          name="description"
-          content="I am a very nice and humble front-end developer. I can design a
+      <SEO
+        title="Home / Jaagrav"
+        desc="I am a very nice and humble front-end developer. I can design a
           website on figma, develop it using NextJS, and deploy it on
           Vercel. Well that’s what I did for this website, if you want to
           know more, keep scrolling."
-        />
-
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="Home / Jaagrav" />
-        <meta
-          property="og:description"
-          content="I am a very nice and humble front-end developer. I can design a
-          website on figma, develop it using NextJS, and deploy it on
-          Vercel. Well that’s what I did for this website, if you want to
-          know more, keep scrolling."
-        />
-        <meta
-          property="og:image"
-          content="https://jaagrav-2.vercel.app/assets/images/seo/home.webp"
-        />
-
-        <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:title" content="Home / Jaagrav" />
-        <meta
-          property="twitter:description"
-          content="I am a very nice and humble front-end developer. I can design a
-          website on figma, develop it using NextJS, and deploy it on
-          Vercel. Well that’s what I did for this website, if you want to
-          know more, keep scrolling."
-        />
-        <meta
-          property="twitter:image"
-          content="https://jaagrav-2.vercel.app/assets/images/seo/home.webp"
-        />
-
-        <meta property="og:image:width" content="300" />
-        <meta property="og:image:height" content="300" />
-      </Head>
-
+        img="https://jaagrav-2.vercel.app/assets/images/seo/home.webp"
+      />
       <HomeHeroSection />
       <Animatify>
         <GallerySection />

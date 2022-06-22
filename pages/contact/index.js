@@ -1,4 +1,4 @@
-import { SubHeader, Animatify, Analytics } from "../../components";
+import { SubHeader, Animatify, SEO } from "../../components";
 import { useForm, ValidationError } from "@formspree/react";
 import Head from "next/head";
 import Link from "next/link";
@@ -10,41 +10,11 @@ export default function Contact() {
   }
   return (
     <div className="h-fit w-full">
-      <Head>
-        <title>Contact / Jaagrav</title>
-        <meta name="title" content="Contact / Jaagrav" />
-        <meta
-          name="description"
-          content="You got something to say? Feel free to reach out to me, I’ll respond as soon as possible"
-        />
-        <meta
-          name="viewport"
-          content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
-        />
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="Contact / Jaagrav" />
-        <meta
-          property="og:description"
-          content="You got something to say? Feel free to reach out to me, I’ll respond as soon as possible"
-        />
-        <meta
-          property="og:image"
-          content="https://jaagrav-2.vercel.app/assets/images/seo/contact.webp"
-        />
-
-        <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:title" content="Contact / Jaagrav" />
-        <meta
-          property="twitter:description"
-          content="You got something to say? Feel free to reach out to me, I’ll respond as soon as possible"
-        />
-        <meta
-          property="twitter:image"
-          content="https://jaagrav-2.vercel.app/assets/images/seo/contact.webp"
-        />
-        <meta property="og:image:width" content="300" />
-        <meta property="og:image:height" content="300" />
-      </Head>
+      <SEO
+        title="Contact / Jaagrav"
+        desc="You got something to say? Feel free to reach out to me, I’ll respond as soon as possible."
+        img="https://jaagrav-2.vercel.app/assets/images/seo/contact.webp"
+      />
       <Animatify>
         <SubHeader
           title="Contact Me"

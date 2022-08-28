@@ -1,5 +1,14 @@
 var experienceData = [
   {
+    icon: "/assets/images/org-social3.webp",
+    date: "June 2022 - Present",
+    organization: "Social3",
+    position: "Front End Intern",
+    desc: `-Refactored code base from CSR React to NextJS and TailwindCSS. Wrote quality code and followed best practices so future developers thank me.
+
+- Working with Web3 based libraries and APIs like Ethers, RainbowKit, Lens Protocol, Wagmi, etc.`,
+  },
+  {
     icon: "/assets/images/org-cjr.webp",
     date: "Aug 2021 - May 2022",
     organization: "CuriousJr",

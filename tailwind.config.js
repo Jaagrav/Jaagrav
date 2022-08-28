@@ -14,6 +14,9 @@ module.exports = {
       "120%": "150%",
     },
     extend: {
+      maxWidth: {
+        "screen-xl": "84rem",
+      },
       colors: {
         bgColorTranslucent: "#151b28a3",
         bgColor: "#151b28",

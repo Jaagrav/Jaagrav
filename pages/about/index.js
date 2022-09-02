@@ -19,7 +19,7 @@ export default function About() {
         desc="A Full Stack Developer based in West Bengal, India. I enjoy
       designing and developing websites, I am currently 18 years old,
       and am also in the first year of my college. I am currently
-      pursuing B. Tech in Computer Science and Engineering from
+      pursuing B. Tech in Computer Science and Engineering from Techno India
       University."
         img="https://jaagrav-2.vercel.app/assets/images/seo/about.webp"
       />
@@ -49,7 +49,8 @@ export default function About() {
                   designing and developing websites, I am currently{" "}
                   {new Date().getFullYear() - 2004} years old, and am also in
                   the first year of my college. I am currently pursuing B. Tech
-                  in Computer Science and Engineering from KIIT University.
+                  in Computer Science and Engineering from Techno India
+                  University.
                 </span>
                 <Link href="/resume">
                   <a

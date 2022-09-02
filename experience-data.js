@@ -1,5 +1,12 @@
 var experienceData = [
   {
+    icon: "/assets/images/org-atlan.webp",
+    date: "Sep 2022 - Present",
+    organization: "Atlan",
+    position: "Product Engineering Intern",
+    desc: `We're a modern data workspace enabling better collaboration between diverse users like business, analysts and engineers — creating higher efficiency and agility in data projects. Think what Github did for engineering teams or Figma for Design. Today, we are proud to enable pioneering data teams like Postman, Plaid, WeWork, Unilever & Ralph Lauren.`,
+  },
+  {
     icon: "/assets/images/org-social3.webp",
     date: "June 2022 - Present",
     organization: "Social3",

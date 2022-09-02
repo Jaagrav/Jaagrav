@@ -16,7 +16,7 @@ export default function Resume() {
       <div className="px-10 md:px-32 relative z-10">
         <div className="max-w-screen-xl mx-auto">
           <iframe
-            src="/assets/resume/jaagrav-resume-2022.pdf"
+            src="/assets/resume/jaagrav-resume.pdf"
             className="h-[90vh] w-full rounded-xl"
           ></iframe>
         </div>

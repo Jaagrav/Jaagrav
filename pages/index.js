@@ -12,10 +12,11 @@ import {
   SEO,
 } from "../components";
 import projectData from "../project-data";
+import SpotifySection from "../components/SpotifySection";
 
 export default function Home() {
   return (
-    <div className="h-fit w-full ">
+    <div className="w-full h-fit ">
       <SEO
         title="Home / Jaagrav"
         desc="I am a very nice and humble front-end developer. I can design a
@@ -37,7 +38,7 @@ export default function Home() {
               return <ProjectCards key={`project-card-${index}`} {...props} />;
           })}
         </div>
-        <span className="relative z-10 block text-center mx-auto my-16 text-lightTextColor dark:text-white text-xl skew">
+        <span className="relative z-10 block mx-auto my-16 text-xl text-center text-lightTextColor dark:text-white skew">
           Wait that’s it?{" "}
           <Link href="/projects">
             <a className="transition text-pink hover:underline underline-offset-8">
@@ -50,7 +51,7 @@ export default function Home() {
           caption="I am a goddamn professional. So long I have done some internships, have worked for some clients, and have also contributed to OpenSource bootcamps, communities and programs that you can read more about below."
         />
         <ExperienceSection />
-        <span className="relative z-10 block text-center mx-auto my-16 text-lightTextColor dark:text-white text-xl skew">
+        <span className="relative z-10 block mx-auto my-16 text-xl text-center text-lightTextColor dark:text-white skew">
           {"There's more, "}
           <Link href="https://linkedin.com/in/jaagrav">
             <a
@@ -63,7 +64,7 @@ export default function Home() {
         </span>
         <SubHeader title="Why hire me?" />
         <SkillsSection />
-        <span className="relative z-10 block text-center mx-auto my-16 text-lightTextColor dark:text-white text-xl px-10 md:px-32">
+        <span className="relative z-10 block px-10 mx-auto my-16 text-xl text-center text-lightTextColor dark:text-white md:px-32">
           {"Dude c'mon if you haven't checked me out on "}
           <Link href="https://linkedin.com/in/jaagrav">
             <a
@@ -89,7 +90,7 @@ export default function Home() {
           caption="The word testimonial comes from the latin word testimonium which means a formal statement testifying to someone's character and qualifications. Basically this section highlights some of the beautiful things, people I admire and respect, say about me."
         />
         <TestimonialsSection />
-        <span className="relative z-10 block text-center mx-auto mt-2 mb-16 text-lightTextColor dark:text-white text-xl skew">
+        <span className="relative z-10 block mx-auto mt-2 mb-16 text-xl text-center text-lightTextColor dark:text-white skew">
           {"All of these are totally real, "}
           <Link href="https://www.linkedin.com/in/jaagrav/details/recommendations/">
             <a
@@ -108,6 +109,7 @@ export default function Home() {
           project="/projects/raycast-vehicle-engine"
           img="/assets/images/projects/Rv-Engine.webp"
         /> */}
+        <SpotifySection />
       </Animatify>
     </div>
   );

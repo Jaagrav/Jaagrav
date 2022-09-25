@@ -10,10 +10,11 @@ import {
   SEO,
 } from "../../components";
 import Head from "next/head";
+import SpotifySection from "../../components/SpotifySection";
 
 export default function About() {
   return (
-    <div className="h-fit w-full pt-4">
+    <div className="w-full pt-4 h-fit">
       <SEO
         title="About / Jaagrav"
         desc="A Full Stack Developer based in West Bengal, India. I enjoy
@@ -24,7 +25,7 @@ export default function About() {
         img="https://jaagrav-2.vercel.app/assets/images/seo/about.webp"
       />
       <Animatify>
-        <div className="px-10 md:px-32 pb-12">
+        <div className="px-10 pb-12 md:px-32">
           <div className="md:grid md:grid-cols-[1fr_0.4fr] gap-8 max-w-screen-xl m-auto mt-4">
             {/* <div className="block md:hidden">
               <div
@@ -41,10 +42,10 @@ export default function About() {
                 src="/assets/images/blur-ball-blue.webp"
               />
               <div className="relative z-10">
-                <h1 className="m-auto bottom-0 text-lightTextColor dark:text-white text-5xl">
+                <h1 className="bottom-0 m-auto text-5xl text-lightTextColor dark:text-white">
                   Jaagrav Seal
                 </h1>
-                <span className="block text-lightTextColor dark:text-white mt-8 text-xl leading-10">
+                <span className="block mt-8 text-xl leading-10 text-lightTextColor dark:text-white">
                   A Full Stack Developer based in West Bengal, India. I enjoy
                   designing and developing websites, I am currently{" "}
                   {new Date().getFullYear() - 2004} years old, and am also in
@@ -64,7 +65,7 @@ export default function About() {
             <div className="hidden md:block">
               <img
                 src="/assets/images/jaagrav.webp"
-                className="w-full mx-auto rounded-xl shadow-2xl"
+                className="w-full mx-auto shadow-2xl rounded-xl"
               />
             </div>
           </div>
@@ -77,12 +78,13 @@ export default function About() {
           caption="I am a goddamn professional. So long I have done some internships, have worked for some clients, and have also contributed to OpenSource bootcamps, communities and programs that you can read more about below."
         />
         <ExperienceSection />
+        <SpotifySection />
         <SubHeader
           title="People love me, seriously."
           caption="The word testimonial comes from the latin word testimonium which means a formal statement testifying to someone's character and qualifications. Basically this section highlights some of the beautiful things, people I admire and respect, say about me."
         />
         <TestimonialsSection />
-        <span className="relative z-10 block text-center mx-auto mt-2 mb-16 text-lightTextColor dark:text-white text-xl skew">
+        <span className="relative z-10 block mx-auto mt-2 mb-16 text-xl text-center text-lightTextColor dark:text-white skew">
           {"All of these are totally real, "}
           <Link href="https://www.linkedin.com/in/jaagrav/details/recommendations/">
             <a

@@ -78,7 +78,6 @@ export default function About() {
           caption="I am a goddamn professional. So long I have done some internships, have worked for some clients, and have also contributed to OpenSource bootcamps, communities and programs that you can read more about below."
         />
         <ExperienceSection />
-        <SpotifySection />
         <SubHeader
           title="People love me, seriously."
           caption="The word testimonial comes from the latin word testimonium which means a formal statement testifying to someone's character and qualifications. Basically this section highlights some of the beautiful things, people I admire and respect, say about me."
@@ -95,6 +94,7 @@ export default function About() {
             </a>
           </Link>{" "}
         </span>
+        <SpotifySection />
       </Animatify>
     </div>
   );

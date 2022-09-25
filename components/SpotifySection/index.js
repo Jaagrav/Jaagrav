@@ -108,13 +108,15 @@ export default function SpotifySection() {
                   )}
                 </div>
               </div>
-              <div className="text-5xl text-white">{featuredSong.name}</div>
+              <div className="text-5xl text-bgColor dark:text-white">
+                {featuredSong.name}
+              </div>
               <div className="text-5xl text-border">
                 {featuredSong.artists.replace(/,(?=[^,]*$)/, " and")}
               </div>
             </div>
             <a href={featuredSong.spotify_url} target="_blank" rel="noreferrer">
-              <div className="flex flex-row items-center gap-4 text-3xl text-white">
+              <div className="flex flex-row items-center gap-4 text-3xl text-bgColor dark:text-white">
                 <span>Listen on </span>
                 <img
                   src="/assets/images/spotify-logo.webp"

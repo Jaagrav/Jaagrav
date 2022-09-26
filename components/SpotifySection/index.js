@@ -108,10 +108,10 @@ export default function SpotifySection() {
                   )}
                 </div>
               </div>
-              <div className="text-5xl text-bgColor dark:text-white">
+              <div className="text-5xl text-bgColor dark:text-white line-clamp-2">
                 {featuredSong.name}
               </div>
-              <div className="text-5xl text-border">
+              <div className="text-5xl text-border line-clamp-3">
                 {featuredSong.artists.replace(/,(?=[^,]*$)/, " and")}
               </div>
             </div>

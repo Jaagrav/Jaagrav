@@ -26,7 +26,7 @@ const testimonialData = [
     last_name: "Naik",
     relationship:
       "Building Socket Technology · Ex Polygon · Goa Engineering College",
-    occupation: "Creative Developer",
+    occupation: "Senior Frontend Engineer",
     testimonial: `Jaagrav did an exceptional job while working with me on the CoronaTracker project. His passion for building challenging products separates him from other students his age. Having mentored and worked with him, I found him to be a fast learner, hardworking and very reliable person. His development skills coupled with his design knowledge would make him a valuable addition to any team. I would definitely love to work with him again.`,
     img: "./assets/images/testimonials/Salil.webp",
     link: "https://www.linkedin.com/in/salilnaik/",

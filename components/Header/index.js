@@ -215,7 +215,7 @@ function MobileHeader({ isAtTop, currentURL, changeTheme }) {
         </div>
       </div>
       <div
-        className={`transition fixed h-full w-full ${
+        className={`transition fixed left-0 top-20 h-full w-full ${
           isOpen
             ? `backdrop-blur-lg ${
                 !isAtTop

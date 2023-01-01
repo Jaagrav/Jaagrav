@@ -5,8 +5,8 @@ import { getGithubContributions } from "github-contributions-counter";
 
 import commaNumber from "comma-number";
 
-import { Carousel } from "react-responsive-carousel";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
+import AliceCarousel from 'react-alice-carousel';
+import 'react-alice-carousel/lib/alice-carousel.css';
 import Link from "next/link";
 
 import { BsCodeSlash } from "react-icons/bs";
@@ -47,23 +47,23 @@ export default function SkillsSection() {
               "Here's a list of all my skills and all the reasons why you should hire me. As a developer, I don't completely know anything, you see I am not very good at memorizing, I normally read documentations everytime I am building something, but I make sure to get the work done in time."
             }
           </div>
-          <div className="grid grid-cols-[auto_2px_auto_2px_auto] gap-6">
+          <div className="flex flex-row justify-center items-center gap-3 h-full">
             <GithubStats
               number={commaNumber(totalContributions + 3)}
-              desc="Contributions in the last year on GitHub*"
+              desc="Commits made last year on Github*"
             />
-            <div className="h-full w-full bg-lightBgSecondaryColorTranslucent dark:bg-bgSecondaryColor"></div>
+            <div className="h-24 w-2 bg-lightBgSecondaryColorTranslucent dark:bg-bgSecondaryColor rounded-lg"></div>
             <GithubStats
               number={commaNumber(followers)}
               desc="Total Followers on Github*"
             />
-            <div className="h-full w-full bg-lightBgSecondaryColorTranslucent dark:bg-bgSecondaryColor"></div>
+            <div className="h-24 w-2 bg-lightBgSecondaryColorTranslucent dark:bg-bgSecondaryColor rounded-lg"></div>
             <GithubStats
               number={commaNumber(publicRepos)}
               desc="Public Repositories on Github*"
             />
           </div>
-          <div className="text-sm text-lightTextColor dark:text-white">
+          <div className="text-sm text-lightTextColor dark:text-white mt-2 md:mt-0">
             *data above is requested from the Github API{" "}
           </div>
           <div>
@@ -80,18 +80,15 @@ export default function SkillsSection() {
             </Link>
           </div>
         </div>
-        <div className="h-full w-full bg-lightBgSecondaryColor dark:bg-bgSecondaryColor rounded-xl">
-          <Carousel
-            autoPlay={false}
-            interval={3000}
-            infiniteLoop={true}
-            swipeable={true}
-            showArrows={false}
-            showStatus={false}
-            emulateTouch={true}
-            stopOnHover={true}
-            useKeyboardArrows={true}
-            preventMovementUntilSwipeScrollTolerance={true}
+        <div className="h-full w-full bg-lightBgSecondaryColor dark:bg-bgSecondaryColor rounded-xl overflow-hidden pb-6">
+          <AliceCarousel
+              infinite
+              autoWidth
+              autoHeight
+              mouseTracking
+              ssrSilentMode
+              touchTracking
+              disableButtonsControls
           >
             <Skill
               logo={<BsCodeSlash />}
@@ -113,7 +110,7 @@ export default function SkillsSection() {
               title="Other Tools and Softwares"
               desc="So I know Git, and I am on GitHub, which I'm sure you already know, I am on GitLab as well, although I don't really use that account as much as I do GitHub. I am also familiar with Slack, Trello, and Trello Boards. I am also familiar with Postman, SendGrid and Google Analytics."
             />
-          </Carousel>
+          </AliceCarousel>
         </div>
       </div>
     </div>
@@ -122,7 +119,7 @@ export default function SkillsSection() {
 
 function GithubStats({ number, desc }) {
   return (
-    <div className="flex flex-col items-center justify-center gap-2">
+    <div className="flex flex-col items-center justify-center gap-2 w-full">
       <div className="text-5xl text-border">{number}</div>
       <div className="text-md text-lightTextColor dark:text-white text-center">
         {desc}
@@ -134,7 +131,7 @@ function GithubStats({ number, desc }) {
 function Skill({ logo, title, desc }) {
   const Logo = () => logo;
   return (
-    <div className="skill text-left p-6 pb-12 h-full w-full select-none cursor-grab active:cursor-grabbing">
+    <div className="skill text-left p-6 h-full w-full select-none cursor-grab active:cursor-grabbing">
       <div className="rounded-xl p-4 text-3xl text-lightTextColor dark:text-white mb-2 bg-white dark:bg-bgColor flex justify-start items-center gap-4 shadow-2xl">
         <Logo />
         <span className="">{title}</span>

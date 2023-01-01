@@ -1,37 +1,56 @@
-import {
-  VerticalTimeline,
-  VerticalTimelineElement,
-} from "react-vertical-timeline-component";
-import "react-vertical-timeline-component/style.min.css";
+import AliceCarousel from 'react-alice-carousel';
+import 'react-alice-carousel/lib/alice-carousel.css';
 
 import experienceData from "../../experience-data";
+import Image from "next/image";
+import Link from "next/link";
 
 export default function ExperienceSection() {
-  return (
-    <div className="skew relative z-10 max-w-screen-xl mx-auto">
-      <VerticalTimeline>
-        {experienceData.map(
-          ({ icon, date, organization, position, desc }, index) => (
-            <VerticalTimelineElement
-              className="vertical-timeline-element--education"
-              iconStyle={{ background: "var(--background)", color: "#fff" }}
-              icon={<img src={icon} className="rounded-full w-3/4" />}
-              date={date}
-              key={`experience-${index}`}
+    return (
+        <div className="skew relative z-10 h-fit md:px-32">
+            <div className='max-w-screen-xl mx-auto'>
+                <AliceCarousel
+                    autoWidth
+                    autoHeight
+                    mouseTracking
+                    ssrSilentMode
+                    touchTracking
+                    disableButtonsControls
+                    swipeExtraPadding={2000}
+                >
+                    {experienceData.map((experience, index) => (
+                        <Experience {...experience} key={`experience-${index}`}/>
+                    ))}
+                </AliceCarousel>
+            </div>
+        </div>
+    );
+}
+
+function Experience({icon, date, organization, position, desc, website}) {
+    return (
+        <div className="flex flex-col gap-4 px-10 md:pl-0 md:pr-12 select-none cursor-grab active:cursor-grabbing w-full md:w-[45rem]">
+            <div className="flex flex-row gap-4">
+                <div className="h-24 w-24">
+                    <img src={icon} className="h-24 w-24 rounded-lg select-none drag" alt={organization + " logo"}/>
+                </div>
+                <div className="flex flex-col">
+                    <span className="text-5xl text-lightTextColor dark:text-white">{organization}</span>
+                    <span className="text-5xl text-border md:whitespace-nowrap">{position}</span>
+                </div>
+            </div>
+            <div className={"flex flex-col gap-2"}>
+                <div className="text-xl text-white">{date}</div>
+                <div className="text-xl text-white whitespace-pre-line">{desc}</div>
+            </div>
+            <Link href={website}>
+            <a
+                target="_blank"
+                className={`inline-block w-full md:w-fit text-center md:text-left md:mr-4 px-8 py-2 text-xl border-lightTextColor dark:border-white border-2 bg-lightTextColor dark:bg-white text-white dark:text-bgColor rounded-xl transition shadow-none`}
             >
-              <h3 className="vertical-timeline-element-title text-lightTextColor dark:text-white text-4xl">
-                {organization}
-              </h3>
-              <h4 className="vertical-timeline-element-subtitle text-lightTextColor dark:text-white opacity-75 text-2xl mt-1">
-                {position}
-              </h4>
-              <ul className="text-lightTextColor dark:text-white text-2xl xl:text-xl mt-2 whitespace-pre-wrap">
-                {desc}
-              </ul>
-            </VerticalTimelineElement>
-          )
-        )}
-      </VerticalTimeline>
-    </div>
-  );
+                Website
+            </a>
+            </Link>
+        </div>
+    )
 }

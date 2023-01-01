@@ -1,5 +1,5 @@
-import { Carousel } from "react-responsive-carousel";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
+import AliceCarousel from 'react-alice-carousel';
+import 'react-alice-carousel/lib/alice-carousel.css';
 
 import testimonialData from "../../testimonial-data";
 
@@ -7,24 +7,20 @@ import Link from "next/link";
 
 export default function TestimonialsSection() {
   return (
-    <div className="h-fit relative">
-      <Carousel
-        autoPlay={false}
-        interval={3000}
-        infiniteLoop={true}
-        swipeable={true}
-        showArrows={false}
-        showStatus={false}
-        emulateTouch={true}
-        stopOnHover={true}
-        useKeyboardArrows={true}
-        dynamicHeight={true}
-        preventMovementUntilSwipeScrollTolerance={true}
+    <div className="h-fit relative pb-6">
+      <AliceCarousel
+          infinite
+          autoWidth
+          autoHeight
+          mouseTracking
+          ssrSilentMode
+          touchTracking
+          disableButtonsControls
       >
         {testimonialData.map((testimonial, index) => (
           <Testimonial {...testimonial} key={`testimonial-${index}`} />
         ))}
-      </Carousel>
+      </AliceCarousel>
     </div>
   );
 }
@@ -40,7 +36,7 @@ function Testimonial({
 }) {
   return (
     <div className="px-10 md:px-32 cursor-grab active:cursor-grabbing">
-      <div className="pb-12 max-w-screen-xl md:grid md:grid-cols-[auto_1fr] gap-12 mx-auto rounded-xl select-none">
+      <div className="max-w-screen-xl md:grid md:grid-cols-[auto_1fr] gap-12 mx-auto rounded-xl select-none">
         <span className="relative h-full h-auto flex justify-center items-center">
           <div
             className="h-[30rem] w-full md:w-[30rem] bg-cover bg-center bg-no-repeat rounded-2xl shadow-lg"

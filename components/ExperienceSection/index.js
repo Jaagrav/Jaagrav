@@ -37,8 +37,8 @@ function Experience({icon, date, organization, position, desc, website}) {
                 </div>
             </div>
             <div className={"flex flex-col gap-2"}>
-                <div className="text-xl text-white">{date}</div>
-                <div className="text-xl text-white whitespace-pre-line">{desc}</div>
+                <div className="text-xl text-lightTextColor dark:text-white">{date}</div>
+                <div className="text-xl text-lightTextColor dark:text-white whitespace-pre-line">{desc}</div>
             </div>
             <Link href={website}>
             <a

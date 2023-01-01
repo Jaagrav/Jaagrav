@@ -30,10 +30,8 @@ export default function ExperienceSection() {
 function Experience({icon, date, organization, position, desc, website}) {
     return (
         <div className="flex flex-col gap-4 px-10 md:pl-0 md:pr-12 select-none cursor-grab active:cursor-grabbing w-full md:w-[45rem]">
-            <div className="flex flex-row gap-4">
-                <div className="h-24 w-24">
-                    <img src={icon} className="h-24 w-24 rounded-lg select-none drag" alt={organization + " logo"}/>
-                </div>
+            <div className="flex flex-col md:flex-row gap-4">
+                <img src={icon} className="h-24 w-24 rounded-lg select-none drag" alt={organization + " logo"}/>
                 <div className="flex flex-col">
                     <span className="text-5xl text-lightTextColor dark:text-white">{organization}</span>
                     <span className="text-5xl text-border md:whitespace-nowrap">{position}</span>

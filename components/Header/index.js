@@ -74,25 +74,27 @@ function DesktopHeader({ isAtTop, currentURL, changeTheme }) {
               href="/"
               name="Home"
               currentURL={currentURL}
-              isAtTop={isAtTop}
             />
             <DesktopNavLink
               href="/projects"
               name="Projects"
               currentURL={currentURL}
-              isAtTop={isAtTop}
+            />
+            <DesktopNavLink
+              href="https://blog.jaagrav.in"
+              name="Blog"
+              currentURL={currentURL}
+              target={'_blank'}
             />
             <DesktopNavLink
               href="/about"
               name="About"
               currentURL={currentURL}
-              isAtTop={isAtTop}
             />
             <DesktopNavLink
               href="/contact"
               name="Contact"
               currentURL={currentURL}
-              isAtTop={isAtTop}
             />
           </div>
           <div className="h-full w-full flex gap-4 items-center justify-end">
@@ -121,10 +123,11 @@ function DesktopHeader({ isAtTop, currentURL, changeTheme }) {
   );
 }
 
-function DesktopNavLink({ href, name, currentURL, isAtTop }) {
+function DesktopNavLink({ href, name, currentURL, target }) {
   return (
     <Link href={href}>
       <a
+          target={target}
         className={`text-lg text-lightTextColor dark:text-white ${
           currentURL !== href ? "hover:underline" : "cursor-default"
         } underline-offset-8`}
@@ -135,10 +138,11 @@ function DesktopNavLink({ href, name, currentURL, isAtTop }) {
   );
 }
 
-function MobileNavLink({ href, name, currentURL, isAtTop }) {
+function MobileNavLink({ href, name, currentURL, target = '_self' }) {
   return (
     <Link href={href}>
       <a
+          target={target}
         className={`block text-7xl text-lightTextColor dark:text-white my-12 ${
           currentURL === href
             ? ""
@@ -210,25 +214,27 @@ function MobileHeader({ isAtTop, currentURL, changeTheme }) {
               href="/"
               name="Home"
               currentURL={currentURL}
-              isAtTop={isAtTop}
             />
             <MobileNavLink
               href="/projects"
               name="Projects"
               currentURL={currentURL}
-              isAtTop={isAtTop}
+            />
+            <MobileNavLink
+                href="https://blog.jaagrav.in"
+                name="Blog"
+                currentURL={currentURL}
+                target={'_blank'}
             />
             <MobileNavLink
               href="/about"
               name="About"
               currentURL={currentURL}
-              isAtTop={isAtTop}
             />
             <MobileNavLink
               href="/contact"
               name="Contact"
               currentURL={currentURL}
-              isAtTop={isAtTop}
             />
             <div className="mt-4 h-full w-full flex gap-12 items-center">
               <Link href="/resume">

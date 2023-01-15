@@ -7,7 +7,7 @@ import {
   TestimonialsSection,
   ExperienceSection,
   Animatify,
-  SEO,
+  SEO, BlogSection,
 } from "../../components";
 import Head from "next/head";
 import SpotifySection from "../../components/SpotifySection";
@@ -95,6 +95,7 @@ export default function About() {
           </Link>{" "}
         </span>
         {/*<SpotifySection />*/}
+        <BlogSection />
       </Animatify>
     </div>
   );

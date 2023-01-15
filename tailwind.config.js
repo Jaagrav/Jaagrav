@@ -29,6 +29,7 @@ module.exports = {
         lightBgSecondaryColorTranslucent: "#b9b9b97a",
         lightTextColor: "#334155",
         extraDarkBgColorTranslucent: "#151b28de",
+        extraLightBgColorTranslucent: "#ffffff5c",
       },
       fontFamily: {
         primary: ["TimeBurner", "sans-serif"],

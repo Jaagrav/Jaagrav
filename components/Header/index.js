@@ -57,7 +57,7 @@ function DesktopHeader({ isAtTop, currentURL, changeTheme }) {
       className={`transition h-24 md:h-16 w-full z-30 px-10 md:px-32 ${
         !isAtTop
           ? `${
-              !isAtTop ? "bg-extraDarkBgColorTranslucent" : ""
+              !isAtTop ? "bg-extraLightBgColorTranslucent" : ""
             } dark:bg-bgColorTranslucent backdrop-blur-lg`
           : "bgColorTranslucent"
       }`}
@@ -65,9 +65,7 @@ function DesktopHeader({ isAtTop, currentURL, changeTheme }) {
       <div className="max-w-screen-xl text-white m-auto h-full">
         <div className="h-full w-full grid grid-cols-[12rem_1fr_12rem] my-auto">
           <div
-            className={`text-3xl my-auto ${
-              !isAtTop ? "text-white" : "text-lightTextColor"
-            } dark:text-white`}
+            className={`text-3xl my-auto text-lightTextColor dark:text-white`}
           >
             <Link href="/">JS</Link>
           </div>
@@ -100,9 +98,7 @@ function DesktopHeader({ isAtTop, currentURL, changeTheme }) {
           <div className="h-full w-full flex gap-4 items-center justify-end">
             <button
               onClick={changeTheme}
-              className={`${
-                !isAtTop ? "text-white" : "text-lightTextColor"
-              } dark:text-white text-2xl outline-none bg-none border-none my-auto`}
+              className={`text-lightTextColor dark:text-white text-2xl outline-none bg-none border-none my-auto`}
             >
               <div className="block dark:hidden">
                 <FiMoon />
@@ -113,11 +109,7 @@ function DesktopHeader({ isAtTop, currentURL, changeTheme }) {
             </button>
             <Link href="/resume">
               <a
-                className={`px-6 py-1 ${
-                  !isAtTop
-                    ? "text-white"
-                    : "text-lightTextColor border-lightTextColor"
-                } dark:text-white dark:border-white border-2 my-auto rounded-xl transition shadow-none hover:shadow-xl hover:scale-105`}
+                className={`px-6 py-1 text-lightTextColor border-lightTextColor dark:text-white dark:border-white border-2 my-auto rounded-xl transition shadow-none hover:shadow-xl hover:scale-105`}
               >
                 Resume
               </a>
@@ -133,11 +125,9 @@ function DesktopNavLink({ href, name, currentURL, isAtTop }) {
   return (
     <Link href={href}>
       <a
-        className={`text-lg ${
-          !isAtTop ? "text-white" : "text-lightTextColor"
-        } ${
+        className={`text-lg text-lightTextColor dark:text-white ${
           currentURL !== href ? "hover:underline" : "cursor-default"
-        } dark:text-white underline-offset-8`}
+        } underline-offset-8`}
       >
         {currentURL === href ? `• ${name} •` : `${name}`}
       </a>
@@ -149,12 +139,10 @@ function MobileNavLink({ href, name, currentURL, isAtTop }) {
   return (
     <Link href={href}>
       <a
-        className={`${
-          !isAtTop ? "text-white" : "text-lightTextColor"
-        } block text-7xl dark:text-white my-12 ${
+        className={`block text-7xl text-lightTextColor dark:text-white my-12 ${
           currentURL === href
             ? ""
-            : `opacity-75 ${isAtTop ? "text-border" : "text-border-light"}`
+            : `opacity-75 text-border`
         }`}
       >
         {name}
@@ -173,19 +161,13 @@ function MobileHeader({ isAtTop, currentURL, changeTheme }) {
       <div
         className={`transition h-20 md:h-16 w-full z-30 px-10 md:px-32 ${
           !isAtTop
-            ? `backdrop-blur-lg ${
-                !isAtTop
-                  ? "bg-extraDarkBgColorTranslucent dark:bg-bgColorTranslucent"
-                  : ""
-              }`
+            ? `backdrop-blur-lg bg-extraLightBgColorTranslucent`
             : ""
         }`}
       >
         <div className="grid grid-cols-2 h-full">
           <div
-            className={`${
-              !isAtTop ? "text-white" : "text-lightTextColor"
-            } dark:text-white text-3xl md:text-4xl my-auto`}
+            className={`text-lightTextColor dark:text-white dark:text-white text-3xl md:text-4xl my-auto`}
           >
             <Link href="/">{isAtTop ? "JS" : "Jaagrav Seal"}</Link>
           </div>
@@ -194,18 +176,14 @@ function MobileHeader({ isAtTop, currentURL, changeTheme }) {
             onClick={handleClick}
           >
             <div
-              className={`transition m-auto origin-center h-[3px] w-full ${
-                !isAtTop ? "bg-white" : "bg-lightTextColor"
-              } dark:bg-white rounded-xl absolute ${
+              className={`transition m-auto origin-center h-[3px] w-full bg-lightTextColor dark:bg-white rounded-xl absolute ${
                 isOpen
                   ? "rotate-45 left-0 top-0 bottom-0 right-0 "
                   : "left-0 top-2 "
               }`}
             ></div>
             <div
-              className={`transition m-auto origin-center h-[3px] ${
-                !isAtTop ? "bg-white" : "bg-lightTextColor"
-              } dark:bg-white rounded-xl absolute ${
+              className={`transition m-auto origin-center h-[3px] bg-lightTextColor dark:bg-white rounded-xl absolute ${
                 isOpen
                   ? "-rotate-45 w-full left-0 top-0 bottom-0 right-0"
                   : "right-0 top-6 w-2/3"
@@ -217,11 +195,7 @@ function MobileHeader({ isAtTop, currentURL, changeTheme }) {
       <div
         className={`transition fixed left-0 top-20 h-full w-full ${
           isOpen
-            ? `backdrop-blur-lg ${
-                !isAtTop
-                  ? `bg-extraDarkBgColorTranslucent dark:bg-bgColorTranslucent`
-                  : ""
-              }`
+            ? `backdrop-blur-lg bg-extraLightBgColorTranslucent`
             : "pointer-events-none"
         } z-20`}
         onClick={handleClick}
@@ -259,20 +233,14 @@ function MobileHeader({ isAtTop, currentURL, changeTheme }) {
             <div className="mt-4 h-full w-full flex gap-12 items-center">
               <Link href="/resume">
                 <a
-                  className={`px-6 py-4 w-full ${
-                    !isAtTop
-                      ? "text-white border-white"
-                      : "text-lightTextColor border-lightTextColor"
-                  } dark:text-white text-5xl dark:border-white border-2 mr-auto my-auto rounded-xl`}
+                  className={`px-6 py-4 w-full text-lightTextColor border-lightTextColor dark:text-white text-5xl dark:border-white border-2 mr-auto my-auto rounded-xl`}
                 >
                   Resume
                 </a>
               </Link>
               <button
                 onClick={changeTheme}
-                className={`${
-                  !isAtTop ? "text-white" : "text-lightTextColor"
-                } dark:text-white text-5xl outline-none bg-none border-none my-auto`}
+                className={`text-lightTextColor dark:text-white text-5xl outline-none bg-none border-none my-auto`}
               >
                 <div className="block dark:hidden">
                   <FiMoon />

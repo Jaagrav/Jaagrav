@@ -9,6 +9,6 @@ export { default as SkillsSection } from "./SkillsSection";
 export { default as TestimonialsSection } from "./TestimonialsSection";
 export { default as PageTransition } from "./PageTransition";
 export { default as Animatify } from "./Animatify";
-export { default as FeaturedArticle } from "./FeaturedArticle";
 export { default as Analytics } from "./Analytics";
 export { default as SEO } from "./SEO";
+export { default as BlogSection } from "./BlogSection";

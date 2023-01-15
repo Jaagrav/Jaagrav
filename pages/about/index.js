@@ -94,7 +94,7 @@ export default function About() {
             </a>
           </Link>{" "}
         </span>
-        <SpotifySection />
+        {/*<SpotifySection />*/}
       </Animatify>
     </div>
   );

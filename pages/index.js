@@ -109,7 +109,7 @@ export default function Home() {
           project="/projects/raycast-vehicle-engine"
           img="/assets/images/projects/Rv-Engine.webp"
         /> */}
-        <SpotifySection />
+        {/*<SpotifySection />*/}
       </Animatify>
     </div>
   );

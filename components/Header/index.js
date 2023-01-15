@@ -161,7 +161,7 @@ function MobileHeader({ isAtTop, currentURL, changeTheme }) {
       <div
         className={`transition h-20 md:h-16 w-full z-30 px-10 md:px-32 ${
           !isAtTop
-            ? `backdrop-blur-lg bg-extraLightBgColorTranslucent`
+            ? `backdrop-blur-lg bg-extraLightBgColorTranslucent dark:bg-extraDarkBgColorTranslucent`
             : ""
         }`}
       >
@@ -195,7 +195,7 @@ function MobileHeader({ isAtTop, currentURL, changeTheme }) {
       <div
         className={`transition fixed left-0 top-20 h-full w-full ${
           isOpen
-            ? `backdrop-blur-lg bg-extraLightBgColorTranslucent`
+            ? `backdrop-blur-lg bg-extraLightBgColorTranslucent dark:bg-extraDarkBgColorTranslucent`
             : "pointer-events-none"
         } z-20`}
         onClick={handleClick}
